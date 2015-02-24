@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>jNews Tag: Joomla Modules</name>
+	<author>Joobi Limited</author>
+	<creationDate>January 2012</creationDate>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.1</version>
+	<description>This jNews plugin will enable you to insert Joomla modules in your newsletter, smart-newsletter or auto-responders.</description>
+	<files>
+		<filename plugin="tagmodule">tagmodule.php</filename>
+	</files>
+	<params>
+		<param name="moduleaccess" type="list" default="0" label="Module Access" description="jNews will only include modules having the selected access">
+		<option value="0">Public Only</option>
+		<option value="1">Registered</option>
+		<option value="2">All</option>
+		</param>
+		<param name="modexclude" size="40" type="text" default="mod_login,mod_breadcrumbs,mod_wrapper,mod_jnews,mod_poll" label="Excluded Module Type" description="These are the module types which will not be included in the module tags." />
+		<param name="loadmethod" type="list" default="fileget" label="Load method" description="The preferred method is file_get_contents method if it does not work you can use cURL method if cURL is available on your server. Ultimately use Degraded, which will work on any website configuration except that you HAVE to send the newsletter through the cron task. Manual sending or preview will not work for Degraded method.">
+			<option value="fileget">file_get_contents</option>
+			<option value="curl">cURL</option>
+			<option value="standard">Degraded</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleaccess" type="list" default="2" label="Module Access" description="jNews will only include modules having the selected access">
+					<option value="0">Public only</option>
+					<option value="1">Public and Registered</option>
+					<option value="2">All</option>
+				</field>
+				<field name="modexclude" size="40" type="text" default="mod_login,mod_breadcrumbs,mod_wrapper,mod_jnews,mod_poll" label="Excluded Module Type" description="These are the module types which will not be included in the module tags." />
+				<field name="loadmethod" type="list" default="fileget" label="Load method" description="The preferred method is file_get_contents method if it does not work you can use cURL method if cURL is available on your server. Ultimately use Degraded, which will work on any website configuration except that you HAVE to send the newsletter through the cron task. Manual sending or preview will not work for Degraded method.">
+					<option value="fileget">file_get_contents</option>
+					<option value="curl">cURL</option>
+					<option value="standard">Degraded</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

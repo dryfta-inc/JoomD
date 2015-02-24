@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>jNews Tag: Subscriber</name>
+	<author>Joobi Limited</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+	<description>This plugin enables you to add information of your subscriber in the newsletter.</description>
+	<files>
+		<filename plugin="tagsubscriber">tagsubscriber.php</filename>
+	</files>
+</install>

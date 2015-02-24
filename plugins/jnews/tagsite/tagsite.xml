@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>jNews Tag: Site Links</name>
+	<author>Joobi Limited</author>
+	<creationDate>June 2011</creationDate>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+	<description>This plugin enables you to add "view it online link" to the newsletter and custom site links.</description>
+	<files>
+		<filename plugin="tagsite">tagsite.php</filename>
+	</files>
+
+	<params>
+		<param name="viewtemplate" type="radio" default="standard" label="Display the online version" description="Select if you want to display the online version (when the user clicks on the view it online link) without any Joomla module (no template) or inside your default Joomla Template">
+			<option value="standard">Standard template</option>
+			<option value="notemplate">No template</option>
+		</param>
+		<param name="customlink" size="40" type="text" default="" label="Custom Links" description="Enter the custom site link tags here with the format sitename|url. Ex. ijoobi|www.joobi.co" />
+
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="viewtemplate" type="radio" default="standard" label="Display the online version" description="Select if you want to display the online version (when the user clicks on the view it online link) without any Joomla module (no template) or inside your default Joomla Template">
+					<option value="standard">Standard template</option>
+					<option value="notemplate">No template</option>
+				</field>
+				<field name="customlink" size="40" type="text" default="" label="Custom Links" description="Enter the custom site link tags here with the format sitename|url. Ex. ijoobi|www.joobi.co" />
+			</fieldset>
+		</fields>
+	</config>
+
+</install>

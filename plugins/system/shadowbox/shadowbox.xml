@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="4.0" type="plugin" group="system" method="upgrade">
+	<name>Shadowbox Media Viewer</name>
+	<author>Joe Palmer</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2009/2012 SoftForge Ltd.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>joe@softforge.co.uk</authorEmail>
+	<authorUrl>http://www.softforge.co.uk</authorUrl>
+	<version>4.0</version>
+	<description>SHADOWBOX_INSTALL_DESC</description>
+	<files>
+		<filename plugin="shadowbox">shadowbox.php</filename>
+		<folder>shadowbox</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_shadowbox.ini</language>
+		<language tag="en-GB">en-GB.plg_system_shadowbox.sys.ini</language>
+	</languages>
+	<params>
+		<param name="adapter" type="list" default="base" label="SHADOWBOX_ADAPTER_NAME" description="SHADOWBOX_ADAPTER_DESC">
+			<option value="base">SHADOWBOX_ADAPTER_BASE</option>
+			<option value="prototype">SHADOWBOX_ADAPTER_PROTOTYPE</option>
+			<option value="jquery">SHADOWBOX_ADAPTER_JQUERY</option>
+			<option value="mootools">SHADOWBOX_ADAPTER_MOOTOOLS</option>
+			<option value="dojo">SHADOWBOX_ADAPTER_DOJO</option>
+			<option value="yui">SHADOWBOX_ADAPTER_YUI</option>
+			<option value="ext">SHADOWBOX_ADAPTER_EXT</option>
+		</param>
+		<param name="language" type="list" default="en" label="SHADOWBOX_LANGUAGE_NAME" description="SHADOWBOX_LANGUAGE_DESC">
+            <option value="ar">SHADOWBOX_LANGUAGE_ARABIC</option>
+            <option value="ca">SHADOWBOX_LANGUAGE_CATALAN</option>
+            <option value="cs">SHADOWBOX_LANGUAGE_CZECH</option>
+            <option value="da">SHADOWBOX_LANGUAGE_DANISH</option>
+            <option value="de-CH">SHADOWBOX_LANGUAGE_GERMAN_SWISS</option>
+            <option value="de-DE">SHADOWBOX_LANGUAGE_GERMAN</option>
+            <option value="en">SHADOWBOX_LANGUAGE_ENGLISH</option>
+            <option value="es">SHADOWBOX_LANGUAGE_SPANISH</option>
+            <option value="et">SHADOWBOX_LANGUAGE_ESTONIAN</option>
+            <option value="fi">SHADOWBOX_LANGUAGE_FINNISH</option>
+            <option value="fr">SHADOWBOX_LANGUAGE_FRENCH</option>
+            <option value="gl">SHADOWBOX_LANGUAGE_GALICIAN</option>
+            <option value="he">SHADOWBOX_LANGUAGE_HEBREW</option>
+            <option value="hu">SHADOWBOX_LANGUAGE_HUNGARIAN</option>
+            <option value="id">SHADOWBOX_LANGUAGE_INDONESIAN</option>
+            <option value="is">SHADOWBOX_LANGUAGE_ICELANDIC</option>
+            <option value="it">SHADOWBOX_LANGUAGE_ITALIAN</option>
+            <option value="ja">SHADOWBOX_LANGUAGE_JAPANESE</option>
+            <option value="ko">SHADOWBOX_LANGUAGE_KOREAN</option>
+            <option value="my">SHADOWBOX_LANGUAGE_BURMESE</option>
+            <option value="nl">SHADOWBOX_LANGUAGE_DUTCH</option>
+            <option value="no">SHADOWBOX_LANGUAGE_NORWEGIAN</option>
+            <option value="pl">SHADOWBOX_LANGUAGE_POLISH</option>
+            <option value="pt-BR">SHADOWBOX_LANGUAGE_PORTUGUESE_BRAZILIAN</option>
+            <option value="pt-PT">SHADOWBOX_LANGUAGE_PORTUGUESE</option>
+            <option value="ro">SHADOWBOX_LANGUAGE_ROMANIAN</option>
+            <option value="ru">SHADOWBOX_LANGUAGE_RUSSIAN</option>
+            <option value="sk">SHADOWBOX_LANGUAGE_SLOVAK</option>
+            <option value="sv">SHADOWBOX_LANGUAGE_SWEDISH</option>
+            <option value="tr">SHADOWBOX_LANGUAGE_TURKISH</option>
+            <option value="zh-CN">SHADOWBOX_LANGUAGE_CHINESE_SIMPLIFIED</option>
+            <option value="zh-TW">SHADOWBOX_LANGUAGE_CHINESE_TRADITIONAL</option>
+        </param> 
+		<param name="imgPlayer" type="radio" default="1" label="SHADOWBOX_IMGPLAYER_NAME" description="SHADOWBOX_IMGPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="swfPlayer" type="radio" default="0" label="SHADOWBOX_SWFPLAYER_NAME" description="SHADOWBOX_SWFPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="flvPlayer" type="radio" default="0" label="SHADOWBOX_FLVPLAYER_NAME" description="SHADOWBOX_FLVPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="qtPlayer" type="radio" default="0" label="SHADOWBOX_QTPLAYER_NAME" description="SHADOWBOX_QTPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="wmpPlayer" type="radio" default="0" label="SHADOWBOX_WMPPLAYER_NAME" description="SHADOWBOX_WMPPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="iframePlayer" type="radio" default="0" label="SHADOWBOX_IFRAMEPLAYER_NAME" description="SHADOWBOX_IFRAMEPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="htmlPlayer" type="radio" default="0" label="SHADOWBOX_HTMLPLAYER_NAME" description="SHADOWBOX_HTMLPLAYER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="jsCompress" type="radio" default="1" label="SHADOWBOX_COMPRESS_NAME" description="SHADOWBOX_COMPRESS_DESC">
+			<option value="1">SHADOWBOX_YES_COMPRESS</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="autoDimensions" type="radio" default="0" label="SHADOWBOX_AUTODIMENSIONS_NAME" description="SHADOWBOX_AUTODIMENSIONS_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="initialHeight" type="text" default="160" label="SHADOWBOX_INITIALHEIGHT_NAME" description="SHADOWBOX_INITIALHEIGHT_DESC" size="4" />
+		<param name="initialWidth" type="text" default="320" label="SHADOWBOX_INITIALWIDTH_NAME" description="SHADOWBOX_INITIALWIDTH_DESC" size="4" />
+		<param name="viewportPadding" type="text" default="20" label="SHADOWBOX_VIEWPORTPADDING_NAME" description="SHADOWBOX_VIEWPORTPADDING_DESC" size="3" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="showOverlay" type="radio" default="1" label="SHADOWBOX_SHOWOVERLAY_NAME" description="SHADOWBOX_SHOWOVERLAY_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="overlayColor" type="text" default="#000" label="SHADOWBOX_OVERLAYCOLOR_NAME" description="SHADOWBOX_OVERLAYCOLOR_DESC" size="7" />
+		<param name="overlayOpacity" type="text" default="0.8" label="SHADOWBOX_OVERLAYOPACITY_NAME" description="SHADOWBOX_OVERLAYOPACITY_DESC" size="4" />
+		<param name="modal" type="radio" default="1" label="SHADOWBOX_MODAL_NAME" description="SHADOWBOX_MODAL_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+	</params>
+	<params group="advanced">
+		<param name="handleOversize" type="radio" default="resize" label="SHADOWBOX_HANDLEOVERSIZE_NAME" description="SHADOWBOX_HANDLEOVERSIZE_DESC">
+			<option value="none">SHADOWBOX_HANDLEOVERSIZE_NONE</option>
+			<option value="resize">SHADOWBOX_HANDLEOVERSIZE_RESIZE</option>
+			<option value="drag">SHADOWBOX_HANDLEOVERSIZE_DRAG</option>
+		</param>
+		<param name="handleUnsupported" type="radio" default="link" label="SHADOWBOX_HANDLEUNSUPPORTED_NAME" description="SHADOWBOX_HANDLEUNSUPPORTED_DESC">
+			<option value="link">SHADOWBOX_HANDLEUNSUPPORTED_LINK</option>
+			<option value="remove">SHADOWBOX_HANDLEUNSUPPORTED_REMOVE</option>
+		</param>
+		<param name="continuous" type="radio" default="0" label="SHADOWBOX_CONTINUOUS_NAME" description="SHADOWBOX_CONTINUOUS_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="autoplayMovies" type="radio" default="1" label="SHADOWBOX_AUTOPLAYMOVIES_NAME" description="SHADOWBOX_AUTOPLAYMOVIES_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="showMovieControls" type="radio" default="1" label="SHADOWBOX_SHOWMOVIECONTROLS_NAME" description="SHADOWBOX_SHOWMOVIECONTROLS_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="enableKeys" type="radio" default="1" label="SHADOWBOX_ENABLEKEYS_NAME" description="SHADOWBOX_ENABLEKEYS_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="skipSetup" type="radio" default="1" label="SHADOWBOX_SKIPSETUP_NAME" description="SHADOWBOX_SKIPSETUP_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="useSizzle" type="radio" default="1" label="SHADOWBOX_USESIZZLE_NAME" description="SHADOWBOX_USESIZZLE_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="animate" type="radio" default="1" label="SHADOWBOX_ANIMATE_NAME" description="SHADOWBOX_ANIMATE_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="animSequence" type="list" default="sync" label="SHADOWBOX_ANIMSEQUENCE_NAME" description="SHADOWBOX_ANIMSEQUENCE_DESC">
+			<option value="wh">SHADOWBOX_ANIMSEQUENCE_WH</option>
+			<option value="hw">SHADOWBOX_ANIMSEQUENCE_HW</option>
+			<option value="sync">SHADOWBOX_ANIMSEQUENCE_SYNC</option>
+		</param>
+		<param name="animateFade" type="radio" default="1" label="SHADOWBOX_ANIMATEFADE_NAME" description="SHADOWBOX_ANIMATEFADE_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="fadeDuration" type="text" default="0.35" label="SHADOWBOX_FADEDURATION_NAME" description="SHADOWBOX_FADEDURATION_DESC" size="5" />
+		<param name="resizeDuration" type="text" default="0.35" label="SHADOWBOX_RESIZEDURATION_NAME" description="SHADOWBOX_RESIZEDURATION_DESC" size="5" />
+		<param name="slideshowDelay" type="text" default="0" label="SHADOWBOX_SLIDESHOWDELAY_NAME" description="SHADOWBOX_SLIDESHOWDELAY_DESC" size="5" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="displayNav" type="radio" default="1" label="SHADOWBOX_DISPLAYNAV_NAME" description="SHADOWBOX_DISPLAYNAV_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="displayCounter" type="radio" default="1" label="SHADOWBOX_DISPLAYCOUNTER_NAME" description="SHADOWBOX_DISPLAYCOUNTER_DESC">
+			<option value="1">SHADOWBOX_YES</option>
+			<option value="0">SHADOWBOX_NO</option>
+		</param>
+		<param name="counterType" type="radio" default="default" label="SHADOWBOX_COUNTERTYPE_NAME" description="SHADOWBOX_COUNTERTYPE_DESC">
+			<option value="default">SHADOWBOX_COUNTERTYPE_DEFAULT</option>
+			<option value="skip">SHADOWBOX_COUNTERTYPE_SKIP</option>
+		</param>
+		<param name="counterLimit" type="text" default="10" label="SHADOWBOX_COUNTERLIMIT_NAME" description="SHADOWBOX_COUNTERLIMIT_DESC" size="2" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="adapter" type="list" default="base" label="SHADOWBOX_ADAPTER_NAME" description="SHADOWBOX_ADAPTER_DESC">
+					<option value="base">SHADOWBOX_ADAPTER_BASE</option>
+					<option value="prototype">SHADOWBOX_ADAPTER_PROTOTYPE</option>
+					<option value="jquery">SHADOWBOX_ADAPTER_JQUERY</option>
+					<option value="mootools">SHADOWBOX_ADAPTER_MOOTOOLS</option>
+					<option value="dojo">SHADOWBOX_ADAPTER_DOJO</option>
+					<option value="yui">SHADOWBOX_ADAPTER_YUI</option>
+					<option value="ext">SHADOWBOX_ADAPTER_EXT</option>
+				</field>
+				<field name="language" type="list" default="en" label="SHADOWBOX_LANGUAGE_NAME" description="SHADOWBOX_LANGUAGE_DESC">
+					<option value="ar">SHADOWBOX_LANGUAGE_ARABIC</option>
+					<option value="ca">SHADOWBOX_LANGUAGE_CATALAN</option>
+					<option value="cs">SHADOWBOX_LANGUAGE_CZECH</option>
+					<option value="da">SHADOWBOX_LANGUAGE_DANISH</option>
+					<option value="de-CH">SHADOWBOX_LANGUAGE_GERMAN_SWISS</option>
+					<option value="de-DE">SHADOWBOX_LANGUAGE_GERMAN</option>
+					<option value="en">SHADOWBOX_LANGUAGE_ENGLISH</option>
+					<option value="es">SHADOWBOX_LANGUAGE_SPANISH</option>
+					<option value="et">SHADOWBOX_LANGUAGE_ESTONIAN</option>
+					<option value="fi">SHADOWBOX_LANGUAGE_FINNISH</option>
+					<option value="fr">SHADOWBOX_LANGUAGE_FRENCH</option>
+					<option value="gl">SHADOWBOX_LANGUAGE_GALICIAN</option>
+					<option value="he">SHADOWBOX_LANGUAGE_HEBREW</option>
+					<option value="hu">SHADOWBOX_LANGUAGE_HUNGARIAN</option>
+					<option value="id">SHADOWBOX_LANGUAGE_INDONESIAN</option>
+					<option value="is">SHADOWBOX_LANGUAGE_ICELANDIC</option>
+					<option value="it">SHADOWBOX_LANGUAGE_ITALIAN</option>
+					<option value="ja">SHADOWBOX_LANGUAGE_JAPANESE</option>
+					<option value="ko">SHADOWBOX_LANGUAGE_KOREAN</option>
+					<option value="my">SHADOWBOX_LANGUAGE_BURMESE</option>
+					<option value="nl">SHADOWBOX_LANGUAGE_DUTCH</option>
+					<option value="no">SHADOWBOX_LANGUAGE_NORWEGIAN</option>
+					<option value="pl">SHADOWBOX_LANGUAGE_POLISH</option>
+					<option value="pt-BR">SHADOWBOX_LANGUAGE_PORTUGUESE_BRAZILIAN</option>
+					<option value="pt-PT">SHADOWBOX_LANGUAGE_PORTUGUESE</option>
+					<option value="ro">SHADOWBOX_LANGUAGE_ROMANIAN</option>
+					<option value="ru">SHADOWBOX_LANGUAGE_RUSSIAN</option>
+					<option value="sk">SHADOWBOX_LANGUAGE_SLOVAK</option>
+					<option value="sv">SHADOWBOX_LANGUAGE_SWEDISH</option>
+					<option value="tr">SHADOWBOX_LANGUAGE_TURKISH</option>
+					<option value="zh-CN">SHADOWBOX_LANGUAGE_CHINESE_SIMPLIFIED</option>
+					<option value="zh-TW">SHADOWBOX_LANGUAGE_CHINESE_TRADITIONAL</option>
+				</field> 
+				<field name="imgPlayer" type="radio" default="1" label="SHADOWBOX_IMGPLAYER_NAME" description="SHADOWBOX_IMGPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="swfPlayer" type="radio" default="0" label="SHADOWBOX_SWFPLAYER_NAME" description="SHADOWBOX_SWFPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="flvPlayer" type="radio" default="0" label="SHADOWBOX_FLVPLAYER_NAME" description="SHADOWBOX_FLVPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="qtPlayer" type="radio" default="0" label="SHADOWBOX_QTPLAYER_NAME" description="SHADOWBOX_QTPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="wmpPlayer" type="radio" default="0" label="SHADOWBOX_WMPPLAYER_NAME" description="SHADOWBOX_WMPPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="iframePlayer" type="radio" default="0" label="SHADOWBOX_IFRAMEPLAYER_NAME" description="SHADOWBOX_IFRAMEPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="htmlPlayer" type="radio" default="0" label="SHADOWBOX_HTMLPLAYER_NAME" description="SHADOWBOX_HTMLPLAYER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="jsCompress" type="radio" default="1" label="SHADOWBOX_COMPRESS_NAME" description="SHADOWBOX_COMPRESS_DESC">
+					<option value="1">SHADOWBOX_YES_COMPRESS</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				
+				<field name="spacer1" type="spacer" hr="true" />
+				<field name="autoDimensions" type="radio" default="0" label="SHADOWBOX_AUTODIMENSIONS_NAME" description="SHADOWBOX_AUTODIMENSIONS_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="initialHeight" type="text" default="160" label="SHADOWBOX_INITIALHEIGHT_NAME" description="SHADOWBOX_INITIALHEIGHT_DESC" size="4" />
+				<field name="initialWidth" type="text" default="320" label="SHADOWBOX_INITIALWIDTH_NAME" description="SHADOWBOX_INITIALWIDTH_DESC" size="4" />
+				<field name="viewportPadding" type="text" default="20" label="SHADOWBOX_VIEWPORTPADDING_NAME" description="SHADOWBOX_VIEWPORTPADDING_DESC" size="3" />
+				
+				<field name="spacer2" type="spacer" hr="true" />
+				<field name="showOverlay" type="radio" default="1" label="SHADOWBOX_SHOWOVERLAY_NAME" description="SHADOWBOX_SHOWOVERLAY_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="overlayColor" type="text" default="#000" label="SHADOWBOX_OVERLAYCOLOR_NAME" description="SHADOWBOX_OVERLAYCOLOR_DESC" size="7" />
+				<field name="overlayOpacity" type="text" default="0.8" label="SHADOWBOX_OVERLAYOPACITY_NAME" description="SHADOWBOX_OVERLAYOPACITY_DESC" size="4" />
+				<field name="modal" type="radio" default="1" label="SHADOWBOX_MODAL_NAME" description="SHADOWBOX_MODAL_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="handleOversize" type="radio" default="resize" label="SHADOWBOX_HANDLEOVERSIZE_NAME" description="SHADOWBOX_HANDLEOVERSIZE_DESC">
+					<option value="none">SHADOWBOX_HANDLEOVERSIZE_NONE</option>
+					<option value="resize">SHADOWBOX_HANDLEOVERSIZE_RESIZE</option>
+					<option value="drag">SHADOWBOX_HANDLEOVERSIZE_DRAG</option>
+				</field>
+				<field name="handleUnsupported" type="radio" default="link" label="SHADOWBOX_HANDLEUNSUPPORTED_NAME" description="SHADOWBOX_HANDLEUNSUPPORTED_DESC">
+					<option value="link">SHADOWBOX_HANDLEUNSUPPORTED_LINK</option>
+					<option value="remove">SHADOWBOX_HANDLEUNSUPPORTED_REMOVE</option>
+				</field>
+				<field name="continuous" type="radio" default="0" label="SHADOWBOX_CONTINUOUS_NAME" description="SHADOWBOX_CONTINUOUS_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="autoplayMovies" type="radio" default="1" label="SHADOWBOX_AUTOPLAYMOVIES_NAME" description="SHADOWBOX_AUTOPLAYMOVIES_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="showMovieControls" type="radio" default="1" label="SHADOWBOX_SHOWMOVIECONTROLS_NAME" description="SHADOWBOX_SHOWMOVIECONTROLS_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="enableKeys" type="radio" default="1" label="SHADOWBOX_ENABLEKEYS_NAME" description="SHADOWBOX_ENABLEKEYS_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="skipSetup" type="radio" default="1" label="SHADOWBOX_SKIPSETUP_NAME" description="SHADOWBOX_SKIPSETUP_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="useSizzle" type="radio" default="1" label="SHADOWBOX_USESIZZLE_NAME" description="SHADOWBOX_USESIZZLE_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				
+				<field name="spacer3" type="spacer" hr="true" />
+				<field name="animate" type="radio" default="1" label="SHADOWBOX_ANIMATE_NAME" description="SHADOWBOX_ANIMATE_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="animSequence" type="list" default="sync" label="SHADOWBOX_ANIMSEQUENCE_NAME" description="SHADOWBOX_ANIMSEQUENCE_DESC">
+					<option value="wh">SHADOWBOX_ANIMSEQUENCE_WH</option>
+					<option value="hw">SHADOWBOX_ANIMSEQUENCE_HW</option>
+					<option value="sync">SHADOWBOX_ANIMSEQUENCE_SYNC</option>
+				</field>
+				<field name="animateFade" type="radio" default="1" label="SHADOWBOX_ANIMATEFADE_NAME" description="SHADOWBOX_ANIMATEFADE_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="fadeDuration" type="text" default="0.35" label="SHADOWBOX_FADEDURATION_NAME" description="SHADOWBOX_FADEDURATION_DESC" size="5" />
+				<field name="resizeDuration" type="text" default="0.35" label="SHADOWBOX_RESIZEDURATION_NAME" description="SHADOWBOX_RESIZEDURATION_DESC" size="5" />
+				<field name="slideshowDelay" type="text" default="0" label="SHADOWBOX_SLIDESHOWDELAY_NAME" description="SHADOWBOX_SLIDESHOWDELAY_DESC" size="5" />
+				
+				<field name="spacer4" type="spacer" hr="true" />
+				<field name="displayNav" type="radio" default="1" label="SHADOWBOX_DISPLAYNAV_NAME" description="SHADOWBOX_DISPLAYNAV_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="displayCounter" type="radio" default="1" label="SHADOWBOX_DISPLAYCOUNTER_NAME" description="SHADOWBOX_DISPLAYCOUNTER_DESC">
+					<option value="1">SHADOWBOX_YES</option>
+					<option value="0">SHADOWBOX_NO</option>
+				</field>
+				<field name="counterType" type="radio" default="default" label="SHADOWBOX_COUNTERTYPE_NAME" description="SHADOWBOX_COUNTERTYPE_DESC">
+					<option value="default">SHADOWBOX_COUNTERTYPE_DEFAULT</option>
+					<option value="skip">SHADOWBOX_COUNTERTYPE_SKIP</option>
+				</field>
+				<field name="counterLimit" type="text" default="10" label="SHADOWBOX_COUNTERLIMIT_NAME" description="SHADOWBOX_COUNTERLIMIT_DESC" size="2" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="Shadowbox Updates">http://www.softforge.co.uk/updates/shadowbox.xml</server>
+	</updateservers>
+</install>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>jNews Share Bot</name>
+	<author>Joobi Limited</author>
+	<creationDate>October 2011</creationDate>
+	<copyright>© 2012 Joobi Limited. All Rights Reserved</copyright>
+	<license>GPL license (http://www.gnu.org/licenses )</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+	<description>Insert social share links in newsletters. </description>
+	<files>
+		<filename plugin="jnewsshare">jnewsshare.php</filename>
+	</files>
+</install>

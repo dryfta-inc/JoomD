@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+	<install version="1.5" type="plugin" group="jnews" method="upgrade">
+		<name>jNews Content Bot</name>
+		<author>Joobi Limited</author>
+		<creationDate>February 2012</creationDate>
+		<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+		<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+		<authorEmail>support@joobi.co</authorEmail>
+		<authorUrl>http://www.joobi.co</authorUrl>
+		<version>2.5</version>
+		<description>jNews Bot Joomla to include content items into jNews mailings.</description>
+		<files>
+			<filename plugin="jnewsbot">jnewsbot.php</filename>
+			<filename plugin="jnewsbot">index.html</filename>
+		</files>
+
+		<params>
+			<param name="displaycontent" type="radio" default="1" label="Content Display" description="Select whether to display all of the content or just display the content created and published after the installation of jNews.">
+				<option value="1">All Content</option>
+				<option value="0">Latest Content</option>
+			</param>
+			<param name="content_limit" type="text" default="5000" label="Limit of Contents to Display" description="The number of articles to display on the jNews Content Selection" />
+			<!--<param name="class_contentpaneopen_nws" type="text" default="" label="Style for Content" description="jNews will replace your CSS class='contentpaneopen_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to include your Joomla content in a Newsletter" />-->
+			<!--<param name="class_contentheading_nws" type="text" default="" label="Style for Content Headings" description="jNews will replace your CSS class='contentheading_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for your Content Title" />-->
+			<!--<param name="class_eventpaneopen_nws" type="text" default="" label="Style for Event" description="jNews will replace your CSS class='eventpaneopen_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to include your events from jCalPro in a Newsletter" />-->
+			<!--<param name="class_eventheading_nws" type="text" default="" label="Style for Event Headings" description="jNews will replace your CSS class='eventheading_nws' (for events from jCalPro) by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for your Event Title" />-->
+			<!--<param name="class_readon_nws" type="text" default="" label="Style for Read more links" description="jNews will replace your CSS class='readon_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for the read more link in a Content or in an Event" />-->
+			<!--<param name="class_subscriptionlink_nws" type="text" default="" label="Style for the subscription links" description="jNews will replace your CSS class='subscriptionlink_nws' used for the subscription links in your Newsletter by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to customize the subscriptions links" />-->
+			<param name="content_order" type="list" default="0" label="Order of the contents" description="Select how you want the contents on the Content Selection Box when creating a newsletter to be ordered based on your preference">
+				<option value="0">By section</option>
+				<option value="1">By category</option>
+				<option value="2">By date</option>
+				<option value="3">By alphabetical order</option>
+			</param>
+		</params>
+
+		<config>
+			<fields name="params">
+				<fieldset name="basic">
+					<field name="displaycontent" type="radio" default="1" label="Content Display" description="Select whether to display all of the content or just display the content created and published after the installation of jNews.">
+						<option value="1">All Content</option>
+						<option value="0">Latest Content</option>
+					</field>
+					<field name="content_limit" type="text" default="5000" label="Limit of Contents to Display" description="The number of articles to display on the jNews Content Selection" />
+					<!--<field name="class_contentpaneopen_nws" type="text" default="" label="Style for Content" description="jNews will replace your CSS class='contentpaneopen_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to include your Joomla content in a Newsletter" />-->
+					<!--<field name="class_contentheading_nws" type="text" default="" label="Style for Content Headings" description="jNews will replace your CSS class='contentheading_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for your Content Title" />-->
+					<!--<field name="class_eventpaneopen_nws" type="text" default="" label="Style for Event" description="jNews will replace your CSS class='eventpaneopen_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to include your events from jCalPro in a Newsletter" />-->
+					<!--<field name="class_eventheading_nws" type="text" default="" label="Style for Event Headings" description="jNews will replace your CSS class='eventheading_nws' (for events from jCalPro) by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for your Event Title" />-->
+					<!--<field name="class_readon_nws" type="text" default="" label="Style for Read more links" description="jNews will replace your CSS class='readon_nws' by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used for the read more link in a Content or in an Event" />-->
+					<!--<field name="class_subscriptionlink_nws" type="text" default="" label="Style for the subscription links" description="jNews will replace your CSS class='subscriptionlink_nws' used for the subscription links in your Newsletter by the inline CSS style='YOUR FIELD'. If left blank, jNews won't replace it. This class is used to customize the subscriptions links" />-->
+					<field name="content_order" type="list" default="0" label="Order of the contents" description="Select how you want the contents on the Content Selection Box when creating a newsletter to be ordered based on your preference">
+						<option value="1">By category</option>
+						<option value="2">By date</option>
+						<option value="3">By alphabetical order</option>
+					</field>
+				</fieldset>
+			</fields>
+		</config>
+</install>

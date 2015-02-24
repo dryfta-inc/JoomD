@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>plg_content_joomd</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.3.0</version>
+	<description>PLG_CONTENT_JOOMD_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="joomd">joomd.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_joomd.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_joomd.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+		</fields>
+	</config>
+</extension>

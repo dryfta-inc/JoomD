@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install version="1.5" type="plugin" group="jnews" method="upgrade">
+	<name>jNews Forward to Friend</name>
+	<author>Joobi Limited</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_jlinks&amp;controller=redirect&amp;link=single-license</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+	<description>This plugin enables your subscriber to forward the mail to his/her friends.</description>
+	<files>
+		<filename plugin="forwardtofriend">forwardtofriend.php</filename>
+	</files>
+
+	<params>
+		<param name="viewtemplate" type="radio" default="notemplate" label="Display the forward to friend" description="Select if you want to display the forward to a friend (when the user clicks on the forward to friend link) without any Joomla module (no template) or inside your default Joomla Template">
+			<option value="standard">Standard template</option>
+			<option value="notemplate">No template</option>
+		</param>
+		<param name="numaddfriendfld" type="list" default="1" label="Number of forward to friends fields" description="Select as to how many forward to fields will show.">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="4">4</option>
+			<option value="6">6</option>
+			<option value="8">8</option>
+		</param>
+		<param name="pretext" type="textarea" cols="40" rows="5" default="Send this to a friend." label="Introduction text" description="The text that appears in the introduction. LEAVE BLANK TO NOT SHOW NOTHING." />
+		<param name="posttext" type="textarea" cols="40" rows="5" default="" label="Post text" description="The text that appears in the end. LEAVE BLANK TO NOT SHOW NOTHING." />
+		<param name="defaultmessage" label="Default Message" type="textarea" cols="40" rows="5" default="Hey, I found some interesting mailings here you might like to read for yourself." description="The default message the will be loaded in the forward to a friend form." />
+		<param name="fwdmessage" label="Forward Message" type="textarea" cols="40" rows="5" default="This email was forwarded to you by [FWDEMAIL]." description="The forward message that will be included in you forwarded newsletter. [FWDEMAIL] and [FWDNAME] will be replace by the email and name of the forwarder respectively." />
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="viewtemplate" type="radio" default="notemplate" label="Display the forward to friend" description="Select if you want to display the forward to a friend (when the user clicks on the forward to friend link) without any Joomla module (no template) or inside your default Joomla Template">
+					<option value="standard">Standard template</option>
+					<option value="notemplate">No template</option>
+				</field>
+				<field name="numaddfriendfld" type="list" default="1" label="Number of forward to friends fields" description="Select as to how many forward to fields will show.">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="4">4</option>
+					<option value="6">6</option>
+					<option value="8">8</option>
+				</field>
+				<field name="pretext" type="textarea" cols="40" rows="5" default="Send this to a friend." label="Introduction text" description="The text that appears in the introduction. LEAVE BLANK TO NOT SHOW NOTHING." />
+				<field name="posttext" type="textarea" cols="40" rows="5" default="" label="Post text" description="The text that appears in the end. LEAVE BLANK TO NOT SHOW NOTHING." />
+				<field name="defaultmessage" label="Default Message" type="textarea" cols="40" rows="5" default="Hey, I found some interesting mailings here you might like to read for yourself." description="The default message the will be loaded in the forward to a friend form." />
+				<field name="fwdmessage" label="Forward Message" type="textarea" cols="40" rows="5" default="This email was forwarded to you by [FWDEMAIL]." description="The forward message that will be included in you forwarded newsletter. [FWDEMAIL] and [FWDNAME] will be replace by the email and name of the forwarder respectively." />
+			</fieldset>
+		</fields>
+	</config>
+
+</install>
