@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="2" version="2.5.0" method="upgrade" label="REVIEWS">
+	<name>rnr</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>August 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>danish@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>APP_RNR_DESCR</description>
+
+	<!-- Site Main File Copy Section -->
+	<files>
+		
+		<app folder="site">
+			<filename>app_rnr.php</filename>
+			<filename>index.html</filename>
+			<filename>installrnr.sql</filename>
+			<filename>uninstallrnr.sql</filename>
+			<folder>includes</folder>
+		</app>
+			
+		<assets folder="site">
+		
+			<filename folder="css">rnr.css</filename>
+			<filename folder="images">transparent_star.gif</filename>
+			
+		</assets>
+			
+	</files>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.app_rnr.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">installrnr.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstallrnr.sql</file>
+		</sql>
+	</uninstall>	
+
+	<administration>
+		<!-- Administration Menu Section -->
+		
+		<!--<menu link="option=com_joomd&amp;view=rnr" img="icon-16-reviews.png">REVIEWS</menu>-->
+		
+		<files>
+			<!-- Site Main File Copy Section -->
+			<views folder="admin/rnr" name="rnr">
+				
+				<filename>controller.php</filename>
+				<filename>model.php</filename>
+				<filename>table.php</filename>
+				<filename>index.html</filename>
+				<filename>view.html.php</filename>
+				<folder>tmpl</folder>
+				
+			</views>
+			
+			<assets folder="admin">
+				<filename folder="css">rnr.css</filename>
+				<filename folder="images">icon-16-reviews.png</filename>
+				<filename folder="images">icon-48-reviews.png</filename>
+				
+			</assets>
+			
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.app_rnr.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.app_rnr.ini</language>
+		</languages>
+		
+	</administration>
+</extension>

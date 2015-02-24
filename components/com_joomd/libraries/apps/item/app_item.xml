@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="1" version="2.5.0" method="upgrade" label="ITEM">
+	<name>item</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>July 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright © 2008-2012 Joomla6teen</copyright>
+	<license>This is JoomD application released under the GNU/GPL License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>APP_ITEM_DESCR</description>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">installitem.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstallitem.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files>
+	
+		<app folder="site">
+			<filename>app_item.php</filename>
+			<filename>index.html</filename>
+		</app>
+	
+		<views folder="admin/item" name="item">
+					
+			<filename>controller.php</filename>
+			<filename>model.php</filename>
+			<filename>table.php</filename>
+			<filename>index.html</filename>
+			<filename>view.html.php</filename>
+			<folder>tmpl</folder>
+			
+		</views>
+		
+		<views folder="admin/itempanel" name="itempanel">
+					
+			<filename>controller.php</filename>
+			<filename>model.php</filename>
+			<filename>table.php</filename>
+			<filename>index.html</filename>
+			<filename>view.html.php</filename>
+			<folder>tmpl</folder>
+			
+		</views>
+	
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		
+		<files>
+			<!-- Site Main File Copy Section -->
+			<views folder="admin/item" name="item">
+				
+				<filename>controller.php</filename>
+				<filename>model.php</filename>
+				<filename>table.php</filename>
+				<filename>index.html</filename>
+				<filename>view.html.php</filename>
+				<folder>tmpl</folder>
+				
+			</views>
+			
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.app_item.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.app_item.ini</language>
+		</languages>
+		
+	</administration>
+</extension>

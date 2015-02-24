@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="2" version="2.5.0" method="upgrade" label="ITEM">
+	<name>searcher</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>July 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright © 2008-2012 Joomla6teen</copyright>
+	<license>This is JoomD application released under the GNU/GPL License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>APP_SEARCH_DESCR</description>
+	
+	<files>
+	
+		<app folder="">
+			<filename>app_search.php</filename>
+			<filename>index.html</filename>
+		</app>
+	
+		
+	
+	</files>
+	
+	
+</extension>

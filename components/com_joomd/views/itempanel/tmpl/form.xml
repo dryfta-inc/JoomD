@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="ITEM_ADD_LAYOUT_TITLE">
+		<message>
+			ITEM_ADD_LAYOUT_MSG
+		</message>
+	</layout>
+	
+	<fields name="request">
+		<fieldset name="request">
+			<field name="typeid" type="sql" default="1" label="TYPE" description="TYPE_DESCR" query="select id, name from #__joomd_types where published = 1 order by name asc" key_field="id" value_field="name" />
+		</fieldset>
+	</fields>
+	
+</metadata>

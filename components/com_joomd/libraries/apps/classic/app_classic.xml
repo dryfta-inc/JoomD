@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="4" version="2.5.0" method="upgrade" label="CLASSIC">
+	<name>classic</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>July 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>danish@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>APP_CLASSIC_DESCR</description>
+
+	<!-- Site Main File Copy Section -->
+	<files>
+		
+		<app>
+			<filename>app_classic.php</filename>
+			<filename>index.html</filename>
+		</app>
+		
+		<templates>
+			<folder>classic</folder>
+		</templates>
+			
+	</files>
+
+</extension>

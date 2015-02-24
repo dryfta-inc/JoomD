@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="CATEGORY_LAYOUT_TITLE">
+		<message>
+			CATEGORY_LAYOUT_DESCR
+		</message>
+	</layout>
+	
+	<fields name="request" addfieldpath="/components/com_joomd/libraries/elements">
+		<fieldset name="request">
+			<field name="typeid" type="sqlmultilistx" default="1" label="TYPE" description="TYPE_DESCR" query="select id, name from #__joomd_types where published = 1 order by name asc" key_field="id" value_field="name" onchange="loadcats();" class="category" script="components/com_joomd/assets/js/menuparams.js" />
+			<field name="catid" type="sqlmultilistx" query="select id, name from #__joomd_category where published = 1 order by name asc" key_field="id" value_field="name" 
+default="" label="SELECT_CATEGORY" description="CATEGORY_DESCR">
+				<option value="">TOP</option>
+			</field>
+			<field name="featured" type="radio" default="" label="FEATURED" description="FEATURED_DESCR">
+				<option value="1">YUP</option>
+				<option value="">NOPE</option>
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="orderby" type="list" default="ordering asc" label="ORDERING" description="ORDERING_DESCR">
+				<option value="i.ordering asc">ORDERING</option>
+				<option value="i.id desc">LATEST_CATEGORIES</option>
+				<option value="i.name asc">ALPHABETICALLY</option>
+				<option value="rand()">RANDOM</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

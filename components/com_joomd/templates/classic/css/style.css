@@ -1,0 +1,1764 @@
+#joomdpanel .cat_row {
+     margin-bottom: 15px;
+}
+
+.clr {
+     clear: both;
+}
+
+#joomdpanel ul {
+     list-style: none outside none;
+}
+
+.ui-widget {
+     font-family: inherit;
+}
+
+.htmlbox5 select {
+     max-width: 100px;
+}
+
+.ui-dialog ul li a {
+     font-size: 11px ! important;
+}
+
+#joomd_reviews .ui-widget-content {
+     border-color: #CCCCCC;
+}
+
+#joomd_reviews h3.ui-accordion-header {
+     background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.joomd_nl_signup .ui-multiselect-all span, .ui-multiselect-none span {
+     font-weight: normal;
+     text-transform: capitalize;
+}
+
+.joomd_nl_signup .ui-multiselect-menu li {
+     display: block;
+     margin: 0px 0px 1px;
+     padding: 0px;
+}
+
+.joomd_nl_signup .ui-multiselect-menu li label {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     border-bottom: 1px solid transparent ! important;
+     border-left: medium none;
+     border-right: medium none;
+     border-top: medium none;
+     margin: 0px;
+     padding: 0px;
+}
+
+.joomd_nl_signup .ui-multiselect-menu li label.ui-state-hover:hover {
+     background: none repeat scroll 0% 0% #CCCCCC;
+     border-bottom: 1px solid #FFFFFF ! important;
+}
+
+.joomd_nl_signup .ui-multiselect-menu li label.ui-state-active {
+     background: none repeat scroll 0% 0% #CCCCCC;
+     border-bottom: 1px solid #FFFFFF ! important;
+}
+
+.joomd_nl_signup .ui-multiselect {
+     background: -moz-linear-gradient(center top , #F9F9F9, #EEEEEE) repeat scroll 0px 0px #EEEEEE;
+     border-radius: 4px 4px 4px 4px;
+     border: 1px solid #C5C5C5 ! important;
+     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 1px 0px rgba(255, 255, 255, 0.9) inset;
+     margin-bottom: 5px;
+     padding: 3px 5px;
+}
+
+table.edittable {
+     margin: 10px 3% ! important;
+     width: 94% ! important;
+}
+
+.fltlft fieldset.adminform legend {
+     margin-top: -35px ! important;
+}
+
+.popoup fieldset.adminform {
+     background-color: #EEEEEE;
+     background-image: -moz-linear-gradient(center top , #F8F8F8, #EEEEEE);
+     border-radius: 0px 4px 4px 4px;
+     border: 1px solid #DBDBDB;
+     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2), 0px 0px 4px rgba(255, 255, 255, 0.3) inset;
+     margin-left: 0px;
+     margin-right: 22px;
+     margin-top: 34px;
+     overflow: hidden;
+     padding: 30px 20px 20px;
+     position: relative;
+}
+
+#joomdpanel .item_row_header, .cat_title {
+     background: none repeat scroll 0% 0% #F2F2F2;
+     border-bottom: 1px solid #CCCCCC;
+     color: #333333;
+     font-size: 16px;
+     padding: 5px 10px;
+}
+
+#joomdpanel .width-60 {
+     width: 100%;
+}
+
+#joomdpanel h1{
+     padding-bottom: 10px ! important;
+}
+
+.img_field {
+     float: right;
+     padding: 0px 10px 10px;
+     width: 250px;
+}
+
+.itemlist .img_field {
+     float: right;
+     overflow: hidden;
+     padding: 0px 10px 10px;
+     width: 150px;
+}
+
+.img_field ul li img {
+     background: none repeat scroll 0% 0% #F5F5F5;
+     border: 1px solid #ECECEC;
+     box-shadow: 0px 2px 2px #E8E8E8;
+     margin-bottom: 10px;
+     padding: 6px;
+     width: 230px;
+}
+
+#joomdpanel .itemlist .item_cell {
+     padding: 0px;
+}
+
+#joomdpanel .itemlist .main_field a {
+     color: #990000;
+     font-size: 17px;
+}
+
+.field_block h1 {
+     font-size: 22px;
+     padding-bottom: 10px;
+}
+
+#joomdpanel a:link {
+     color: #000000;
+}
+
+#joomdpanel .email_field, #joomdpanel .pdf_field, #joomdpanel .website_field, #joomdpanel .main_field {
+     width: 400px;
+}
+
+.search_col2 .email_field, .search_col2 .pdf_field, .search_col2 .website_field, .search_col2 .main_field {
+     width: 146px;
+}
+
+.joomdsearchpanel .clr {
+     height: 10px;
+}
+
+label.ui-corner-all input {
+     margin-right: 5px;
+}
+
+.email_field .field_label, .pdf_field .field_label, .website_field .field_label, .img_field .field_label, .main_field .field_label {
+     float: left;
+     width: 70px;
+}
+
+itemlist .item_row_bg {
+     background: none repeat scroll 0% 0% #FFFFFF;
+}
+
+.itemlist .item_row_bg, .itemlist .item_row {
+     background-color: whiteSmoke;
+     border: 1px solid gainsboro;
+     clear: both;
+     color: #444444;
+     text-align: left ! important;
+}
+
+.itemlist .img_field {
+     width: 80px ! important;
+}
+
+.more_info {
+     float: right ! important;
+     width: 80px ! important;
+}
+
+.more_info a, div.search_button input {
+     background: -moz-linear-gradient(center top , #900000, #BB0404) repeat scroll 0% 0% #BB0404 ! important;
+     border-radius: 4px 4px 4px 4px;
+     border: 1px solid #CCCCCC;
+     color: #FFFFFF ! important;
+     float: right;
+     padding: 4px 10px;
+     white-space: nowrap;
+}
+
+.subhead {
+     background-color: whiteSmoke;
+     background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+     border-radius: 4px 4px 4px 4px;
+     border: 1px solid gainsboro;
+     clear: both;
+     color: #444444;
+     font-weight: bold;
+     padding: 6px 15px;
+     text-align: left ! important;
+}
+
+.listchild {
+     clear: both;
+     display: block;
+     padding-top: 3px;
+}
+
+#joomdpanel .pagination {
+     background-color: whiteSmoke;
+     background-image: -moz-linear-gradient(center top , #F5F5F5, #F1F1F1);
+     border: 1px solid gainsboro;
+     color: #444444;
+     margin-top: 20px;
+     padding: 6px 0px;
+     text-align: center;
+}
+
+#joomdpanel .pagination .loadmore {
+     display: block;
+}
+
+#joomdpanel .pagination a {
+     padding: 2px 10px;
+     text-decoration: none;
+}
+
+#joomdpanel .cat_title a {
+     color: #333333;
+     font-size: 16px;
+     text-decoration: none;
+}
+
+#joomdpanel .item_row_header a, #joomdpanel .item_row_header .item_cell a, .cat_title a {
+     color: #999999;
+     font-size: 14px ! important;
+     font-weight: bold ! important;
+     text-transform: uppercase;
+}
+
+#joomdpanel .item_row_header a:hover, #joomdpanel .item_row_header .item_cell a:hover, .cat_title a:hover {
+     background: none repeat scroll 0% 0% transparent ! important;
+     color: #000000 ! important;
+}
+
+#joomdpanel .cat_data {
+     float: left;
+     padding: 10px;
+     width: 78%;
+}
+
+.item_row .email_field, .item_row_bg .email_field {
+     width: 200px ! important;
+}
+
+#joomdpanel .cat_child {
+     margin-top: 10px;
+}
+
+#joomdpanel .cat_child .listchild {
+     display: none;
+}
+
+#joomdpanel .showicon {
+     background: url("../../../assets/images/ui-icons_222222_256x240.png") repeat scroll 190px -194px transparent;
+     cursor: pointer;
+     float: right;
+     height: 16px;
+     width: 16px;
+}
+
+#joomdpanel .child_title {
+     float: left;
+     width: 50%;
+}
+
+#joomdpanel .cat_img {
+     float: right;
+     margin-top: 15px;
+     max-width: 40%;
+}
+
+#joomdpanel .cat_img img {
+     background: none repeat scroll 0% 0% #F2F2F2;
+     border: 1px solid #EBEBEB;
+     padding: 5px;
+}
+
+.subhead {
+     margin-bottom: 10px;
+}
+
+.child_title a {
+     color: #000000 ! important;
+     font-weight: bold;
+}
+
+.item_row_header .item_cell img {
+     padding-left: 5px;
+     width: 8px;
+}
+
+#joomdpanel .item_row_header {
+     background: none repeat scroll 0% 0% #F1F1F1;
+     color: #333333;
+     font-size: 16px;
+     padding: 5px 10px;
+}
+
+#joomdpanel .item_row, #joomdprint .item_row {
+     border-bottom: 1px dotted #DEDEDE;
+     padding: 10px;
+}
+
+#joomdpanel .item_row_bg {
+     background: none repeat scroll 0% 0% #FAFAFA;
+     border-bottom: 1px dotted #DEDEDE;
+     padding: 10px;
+}
+
+#joomdpanel .item_cell {
+     float: left;
+     margin-right: 10px;
+     overflow: hidden;
+}
+
+#joomdpanel .owner_icons {
+     float: right;
+}
+
+#joomdpanel .owner_icons a {
+     padding: 5px;
+}
+
+#joomdpanel .field_block {
+     margin-bottom: 10px;
+}
+
+#joomdpanel .field_label {
+     color: #333333;
+     font-size: 14px;
+}
+
+.field_block ul {
+     list-style: none outside none;
+     padding: 0px;
+}
+
+.search_col1 {
+     color: #666666;
+     float: left;
+     font-weight: bold;
+     line-height: 25px;
+     margin-bottom: 2px;
+     margin-right: 5px;
+     text-align: left;
+}
+
+.search_col2 {
+     float: left;
+     width: auto;
+}
+
+#joomdpanel .search_col2 input[type="text"] {
+     width: 209px;
+}
+
+#joomdpanel .search_col2 input[type="search"] {
+     padding: 3px;
+}
+
+.search_col2 ul li a {
+     font-size: 11px;
+}
+
+div.search_button {
+     padding-top: 15px;
+}
+
+div.header {
+     background-repeat: no-repeat;
+     color: #0B55C4;
+     font-size: 22px;
+     font-weight: bold;
+     line-height: 48px;
+     margin-left: 10px;
+     padding-left: 55px;
+}
+
+div.header span {
+     color: #666666;
+}
+
+div.configuration {
+     background-image: url("../../../assets/images/menu/icon-16-config.png");
+     background-repeat: no-repeat;
+     color: #0B55C4;
+     font-size: 14px;
+     font-weight: bold;
+     line-height: 16px;
+     margin-left: 10px;
+     padding-left: 30px;
+}
+
+div.toolbar {
+     float: right;
+     padding: 0px;
+     text-align: right;
+}
+
+table.toolbar {
+     border-collapse: collapse;
+     margin: 0px;
+     padding: 0px;
+}
+
+table.toolbar td {
+     color: #666666;
+     height: 48px;
+     padding: 1px 1px 1px 4px;
+     text-align: center;
+}
+
+table.toolbar td.spacer {
+     width: 10px;
+}
+
+table.toolbar td.divider {
+     border-right: 1px solid #EEEEEE;
+     width: 5px;
+}
+
+table.toolbar span {
+     display: block;
+     float: none;
+     height: 32px;
+     margin: 0px auto;
+     width: 32px;
+}
+
+table.toolbar a {
+     border: 1px solid #FBFBFB;
+     cursor: pointer;
+     display: block;
+     float: left;
+     padding: 1px 5px;
+     white-space: nowrap;
+}
+
+table.toolbar a:hover {
+     border-color: #EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+     border-left: 1px solid #EEEEEE;
+     border-style: solid;
+     border-width: 1px;
+     color: #0B55C4;
+     text-decoration: none;
+}
+
+table.toolbar span {
+     display: block;
+     float: none;
+     height: 32px;
+     margin: 0px auto;
+     width: 32px;
+}
+
+div.width-20 {
+     width: 20%;
+}
+
+div.width-30 {
+     width: 30%;
+}
+
+div.width-35 {
+     width: 35%;
+}
+
+div.width-40 {
+     width: 40%;
+}
+
+div.width-45 {
+     width: 45%;
+}
+
+div.width-50 {
+     width: 50%;
+}
+
+div.width-55 {
+     width: 55%;
+}
+
+div.width-60 {
+     width: 60%;
+}
+
+div.width-65 {
+     width: 65%;
+}
+
+div.width-70 {
+     width: 70%;
+}
+
+div.width-80 {
+     width: 80%;
+}
+
+div.width-100 {
+     width: 100%;
+}
+
+.clrlft {
+     clear: left;
+}
+
+.clrrt {
+     clear: right;
+}
+
+.fltlft {
+     float: left;
+}
+
+.fltrt {
+     float: right;
+}
+
+.fltnone {
+     float: none;
+}
+
+div.width-20 fieldset, div.width-30 fieldset, div.width-35 fieldset, div.width-40 fieldset, div.width-45 fieldset, div.width-50 fieldset, div.width-55 fieldset, div.width-60 fieldset, div.width-65 fieldset, div.width-70 fieldset, div.width-80 fieldset, div.width-100 fieldset {
+     background-color: #FFFFFF;
+}
+
+fieldset.panelform {
+     clear: both;
+     overflow: hidden;
+}
+
+fieldset.panelform label {
+     clear: left;
+     display: block;
+     float: left;
+     margin: 5px 0px;
+}
+
+fieldset.panelform input, fieldset.panelform textarea, fieldset.panelform select, fieldset.panelform img, fieldset.panelform button {
+     float: left;
+     margin: 5px 5px 5px 0px;
+     width: auto;
+}
+
+input.readonly {
+     background-color: #FFFFFF;
+     border: 0px none;
+     color: #666666;
+     font-size: 1.091em;
+     font-weight: bold;
+     padding-top: 1px;
+}
+
+fieldset.panelform label, fieldset.panelform div.paramrow label, fieldset.panelform span.faux-label {
+     max-width: 250px;
+     min-width: 145px;
+     padding: 0px 5px 0px 0px;
+}
+
+table.edittable td {
+     padding: 3px;
+}
+
+table.edittable td.key, table.edittable td.paramlist_key {
+     background-color: #F6F6F6;
+     border-bottom: 1px solid #E9E9E9;
+     border-right: 1px solid #E9E9E9;
+     color: #666666;
+     font-weight: bold;
+     text-align: right;
+     width: 140px;
+}
+
+.descr {
+     padding: 10px;
+}
+
+table.paramlist td.paramlist_description {
+     background-color: #F6F6F6;
+     border-bottom: 1px solid #E9E9E9;
+     border-right: 1px solid #E9E9E9;
+     color: #333333;
+     font-weight: normal;
+     text-align: left;
+     width: 170px;
+}
+
+table.edittable td.key.vtop {
+     vertical-align: top;
+}
+
+table.adminform {
+     background-color: #F9F9F9;
+     border-collapse: collapse;
+     border: 1px solid #D5D5D5;
+     margin: 8px 0px 15px;
+     width: 100%;
+}
+
+table.adminform.nospace {
+     margin-bottom: 0px;
+}
+
+table.adminform tr.row0 {
+     background-color: #F9F9F9;
+}
+
+table.adminform tr.row1 {
+     background-color: #EEEEEE;
+}
+
+table.adminform th {
+     background-repeat: repeat;
+     color: #000000;
+     font-size: 11px;
+     height: 25px;
+     padding: 6px 2px 4px 4px;
+     text-align: left;
+}
+
+table.adminform td {
+     padding: 3px;
+     text-align: left;
+}
+
+table.adminform td.filter {
+     text-align: left;
+}
+
+table.adminform td.helpMenu {
+     text-align: right;
+}
+
+fieldset.adminform {
+     border: 1px solid #CCCCCC;
+     margin: 0px 10px 10px;
+}
+
+table.adminlist {
+     background-color: #E7E7E7;
+     border-spacing: 1px;
+     color: #666666;
+     width: 100%;
+}
+
+table.adminlist td, table.adminlist th {
+     padding: 4px;
+}
+
+table.adminlist thead th {
+     background: none repeat scroll 0% 0% #F0F0F0;
+     border-bottom: 1px solid #999999;
+     border-left: 1px solid #FFFFFF;
+     color: #666666;
+     text-align: center;
+}
+
+table.adminlist thead a:hover {
+     text-decoration: none;
+}
+
+table.adminlist thead th img {
+     vertical-align: middle;
+}
+
+table.adminlist tbody th {
+     font-weight: bold;
+}
+
+table.adminlist tbody tr {
+     background-color: #FFFFFF;
+     text-align: left;
+}
+
+table.adminlist tbody tr.row1 {
+     background: none repeat scroll 0% 0% #F9F9F9;
+     border-top: 1px solid #FFFFFF;
+}
+
+table.adminlist tbody tr.row0:hover td, table.adminlist tbody tr.row1:hover td {
+     background-color: #FFFFDD;
+}
+
+table.adminlist tbody tr td {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border: 1px solid #FFFFFF;
+     height: 25px;
+}
+
+table.adminlist tbody tr.row1 td {
+     background: none repeat scroll 0% 0% #F9F9F9;
+     border-top: 1px solid #FFFFFF;
+}
+
+table.adminlist tfoot tr {
+     color: #333333;
+     text-align: center;
+}
+
+table.adminlist tfoot td, table.adminlist tfoot th {
+     background-color: #F3F3F3;
+     border-top: 1px solid #999999;
+     text-align: center;
+}
+
+table.adminlist td.order {
+     text-align: center;
+     white-space: nowrap;
+}
+
+table.adminlist td.order span {
+     display: block;
+     float: left;
+     text-align: center;
+     width: 20px;
+}
+
+.item_info_bar {
+     border-radius: 5px 5px 5px 5px;
+     border: 1px solid #DEDEDE;
+     margin: 10px 0px;
+     padding: 5px 15px;
+     text-align: right;
+}
+
+.item_info_bar div.hit_pan, .item_info_bar div.author_pan, .item_info_bar div.created_pan, .item_info_bar div.modified_by_pan, .item_info_bar div.modified_pan, .item_info_bar div.report_pan, .item_info_bar div.contact_pan, .item_info_bar div.save_pan, .item_info_bar div.share_pan, .item_info_bar div.print_pan {
+     float: left;
+     padding: 0px 10px;
+}
+
+div.save_pan {
+     background: url("../../../assets/images/filesave.png") no-repeat scroll left top transparent;
+     padding-left: 20px ! important;
+}
+
+div.contact_pan {
+     background: url("../../../assets/images/icon-contact.png") no-repeat scroll left top transparent;
+     padding-left: 20px ! important;
+}
+
+div.report_pan {
+     background: url("../../../assets/images/report.png") no-repeat scroll left top transparent;
+     padding-left: 20px ! important;
+}
+
+#report_item .report_row {
+     margin-bottom: 10px;
+}
+
+.clr {
+     clear: both;
+}
+
+.itemrow_type2 .more_info, .itemrow_type17 .more_info {
+     bottom: 63px;
+     margin-right: 11px ! important;
+}
+
+#joomdpanel .itemlist .itemrow_type1, #joomdpanel .itemlist .itemrow_type4, #joomdpanel .itemlist .itemrow_type5, #joomdpanel .itemlist .itemrow_type2, #joomdpanel .itemlist .itemrow_type15, #joomdpanel .itemlist .itemrow_type16, #joomdpanel .itemlist .itemrow_type6, #joomdpanel .itemlist .itemrow_type17 {
+     -moz-border-bottom-colors: none;
+     -moz-border-image: none;
+     -moz-border-left-colors: none;
+     -moz-border-right-colors: none;
+     -moz-border-top-colors: none;
+     background: none repeat scroll 0% 0% transparent;
+     border-bottom: 1px solid #DCDCDC ! important;
+     border-left: medium none;
+     border-right: medium none;
+     border-top: medium none;
+     box-shadow: 0px 1px 0px #FFFFFF;
+     padding: 10px 10px 10px 0px;
+     position: relative;
+}
+
+#joomdpanel .itemlist .itemrow_type1, #joomdpanel .itemlist .itemrow_type6 {
+     clear: right;
+     float: left;
+     width: 351px;
+}
+
+#joomdpanel .itemlist .main_field {
+     left: 115px;
+     position: absolute;
+     width: 230px;
+}
+
+#joomdpanel .itemlist .sname, #joomdpanel .itemlist .btitle {
+     left: 250px;
+     position: absolute;
+     width: auto;
+}
+
+#joomdpanel .itemlist .re-title {
+     left: 240px;
+     position: absolute;
+     width: auto;
+}
+
+#joomdpanel .itemlist .etitle {
+     left: 350px;
+     position: absolute;
+     width: auto;
+}
+
+#joomdpanel .itemlist .rtitle {
+     left: 250px;
+     position: absolute;
+     width: auto;
+}
+
+#joomdpanel .itemlist .cname {
+     left: 170px;
+     position: absolute;
+     width: 180px;
+}
+
+#joomdpanel .itemlist .discription {
+     left: 115px;
+     position: absolute;
+     top: 35px;
+     width: 230px;
+}
+
+#joomdpanel .itemlist .sdetail, #joomdpanel .itemlist .bdes {
+     left: 250px;
+     position: absolute;
+     top: 36px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .re-des {
+     left: 240px;
+     position: absolute;
+     top: 36px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .edetail {
+     left: 350px;
+     position: absolute;
+     top: 36px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .rdescription {
+     left: 250px;
+     position: absolute;
+     top: 36px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .eaddress {
+     box-shadow: none;
+     left: 350px;
+     position: absolute;
+     top: 90px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .rmap {
+     box-shadow: none;
+     left: 250px;
+     margin: 0px;
+     position: absolute;
+     top: 80px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .etelephone {
+     left: 350px;
+     position: absolute;
+     top: 110px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .rfacing {
+     left: 250px;
+     position: absolute;
+     top: 100px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .ealternative {
+     left: 350px;
+     position: absolute;
+     top: 130px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .remail {
+     left: 250px;
+     position: absolute;
+     top: 130px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .eprice {
+     left: 350px;
+     position: absolute;
+     top: 150px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .eopen {
+     left: 350px;
+     position: absolute;
+     top: 170px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .cdes {
+     left: 170px;
+     position: absolute;
+     text-transform: lowercase;
+     top: 35px;
+     width: 180px;
+}
+
+#joomdpanel .itemlist .sadd {
+     background: none repeat scroll 0% 0% transparent ! important;
+     box-shadow: none ! important;
+     clear: both;
+     left: 250px;
+     position: absolute;
+     top: 100px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .re-add {
+     background: none repeat scroll 0% 0% transparent ! important;
+     border: medium none;
+     box-shadow: none ! important;
+     clear: both;
+     color: #999999;
+     left: 240px;
+     position: absolute;
+     top: 90px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .re-web {
+     clear: both;
+     left: 240px;
+     position: absolute;
+     top: 110px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .semail {
+     clear: both;
+     left: 250px;
+     position: absolute;
+     top: 120px;
+     width: auto;
+}
+
+#joomdpanel .itemlist .images_fashion {
+     width: 125px;
+}
+
+#joomdpanel .itemlist .sphoto, #joomdpanel .itemlist .bphoto, #joomdpanel .itemlist .cphoto, #joomdpanel .itemlist .re-image {
+     width: auto;
+}
+
+#joomdpanel .itemlist .re-image img {
+     height: 125px;
+     width: 200px;
+}
+
+.more_info {
+     bottom: 15px;
+     position: absolute;
+     right: 0px;
+     z-index: 1;
+}
+
+#joomdpanel .itemlist .images_fashion img {
+     border: 1px solid #DCDCDC;
+     height: 120px;
+     padding: 5px;
+     width: 80px;
+}
+
+#joomdpanel .itemlist .sphoto img {
+     height: 200px;
+     width: 200px;
+}
+
+#joomdpanel .itemlist .bphoto img, #joomdpanel .itemlist .cphoto img {
+     height: 100px;
+     width: 200px;
+}
+
+#joomdpanel .itemlist .cphoto img {
+     height: 85px;
+     width: 140px;
+}
+
+#joomdpanel .itemlist .eimage, #joomdpanel .itemlist .rimages {
+     width: auto;
+}
+
+#joomdpanel .itemlist .eimage img {
+     height: 200px;
+     width: 300px;
+}
+
+#joomdpanel .itemlist .rimages img {
+     height: 100px;
+     width: 200px;
+}
+
+#joomdpanel .rimages .sliding li {
+     height: 300px ! important;
+     width: 700px ! important;
+}
+
+.cphoto .joomdslides #nextBtn, .cphoto .joomdslides #prevBtn, .images_fashion .joomdslides #prevBtn, .images_fashion .joomdslides #nextBtn {
+     display: none;
+}
+
+.rimages .joomdslides #nextBtn {
+     left: 670px;
+     margin-top: 60px;
+}
+
+.rimages .joomdslides #prevBtn {
+     left: 6px;
+     margin-top: 60px;
+}
+
+.readmore a, .more_info a, div.search_button input {
+     background: none repeat scroll 0px 0px #AC0000 ! important;
+     border-radius: 0px 0px 0px 0px;
+     border: medium none;
+     color: #FFFFFF;
+     font-family: inherit;
+     font-weight: normal;
+     padding: 0px 4px 1px ! important;
+}
+
+#joomdpanel .sphoto img, #joomdpanel .bphoto img, #joomdpanel .cphoto img, .entry_row_bg, #joomdpanel .eimage img, #joomdpanel .re-image img {
+     border: 1px solid #DCDCDC;
+     margin-right: 10px;
+     padding: 10px;
+}
+
+#joomdpanel .rimages img {
+     border: 1px solid #DCDCDC;
+     padding: 10px;
+}
+
+.eimage .joomdslides ul, .rimages .joomdslides ul, .sphoto .joomdslides ul {
+     margin: 0px;
+     padding: 0px;
+}
+
+.joomdslides ul li {
+     line-height: 0em ! important;
+}
+
+.sphoto, .eimage {
+     float: left ! important;
+     margin: 0px ! important;
+}
+
+#joomdpanel .discription {
+     float: none ! important;
+     margin: 0px ! important;
+     padding: 0px;
+     text-align: justify;
+}
+
+#joomdpanel .discription p {
+     margin: 0px;
+     padding-bottom: 5px;
+}
+
+#joomdpanel .entry_cell {
+     float: left ! important;
+}
+
+#joomdpanel li {
+     list-style: none outside none;
+}
+
+.componentheading {
+     display: block;
+     font-weight: bold;
+     margin-bottom: 15px;
+}
+
+.joomd_nl_signup, .joomdsearchpanel {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border: 1px solid #DCDCDC;
+     padding: 10px;
+}
+
+.jnewsletter .ui-widget, .joomdsearchpanel .ui-widget {
+     width: 179px ! important;
+}
+
+.joomdsearchpanel .search_button {
+     padding: 0px;
+}
+
+.jnewsletter #jd_nl_email, .search_col2 input {
+     background: none repeat scroll 0% 0% transparent;
+     border: 1px solid #CCC;
+     padding: 3px;
+     width: 171px;
+	 border-radius:4px;
+	 box-shadow:0 2px 2px rgba(0, 0, 0, 0.1) inset;
+}
+
+.jnewsletter p {
+     color: #666666;
+     font-weight: bold;
+     margin: 0px;
+}
+
+.jnewsletter input {
+     background: none repeat scroll 0px 0px #AC0000;
+     border: medium none;
+     color: #FFFFFF;
+     font-family: "Segoe UI","Segoe UI Light","Segoe UI Semibold","Book Antiqua",Palatino,"Times New Roman",Times,serif;
+     margin-top: 0px ! important;
+     padding: 2px 5px 3px;
+}
+
+.joomd_nl_signup input[type="text"] {
+     margin-bottom: 6px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+     top: -27px ! important;
+}
+
+.joomd_nl_signup .ui-multiselect-filter input[type="search"], .joomd_nl_signup input[type="text"] {
+     background: none repeat scroll 0px 0px #FFFFFF;
+     border-radius: 4px 4px 4px 4px;
+     border: 1px solid #CCCCCC ! important;
+     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1) inset;
+     color: #000000;
+     padding: 3px;
+     width: 160px;
+}
+
+#joomdpanel input#filter_search[type="text"] {
+     margin-bottom: 10px;
+     width: 180px ! important;
+}
+
+.ui-multiselect-menu ul {
+     padding: 0px ! important;
+}
+
+.joomd_nl_signup ul li a {
+     background: none repeat scroll 0% 0% transparent ! important;
+     display: inline ! important;
+     font-size: 11px ! important;
+     padding: 0px ! important;
+}
+
+.ui-multiselect-filter {
+     padding-bottom: 6px;
+}
+
+.ui-multiselect-close .ui-icon-circle-close {
+     float: none ! important;
+}
+
+.ui-multiselect-checkboxes label {
+     font-weight: normal;
+     padding: 3px ! important;
+}
+
+.search_button #reset, .search_button #submit {
+     background: none repeat scroll 0px 0px #AC0000;
+     border: medium none;
+     color: #FFFFFF;
+     margin: 0px 0px 0px 5px;
+     padding: 2px 5px ! important;
+}
+
+.post_row input {
+     background: none repeat scroll 0px 0px #AC0000;
+     border: medium none;
+     color: #FFFFFF;
+     padding: 2px 5px ! important;
+}
+
+.toolbaricon a {
+     background: none repeat scroll 0px 0px #AC0000;
+     border: medium none;
+     color: #FFFFFF;
+     font-weight: bold;
+     margin-left: 13px;
+     padding: 5px;
+}
+
+.post_row #review_title, .post_row #review_comment {
+     background: none repeat scroll 0% 0% transparent;
+     border: 1px solid #DCDCDC;
+     color: #333333;
+}
+
+#joomdpanel .images_fashion, #joomdpanel .sphoto, #joomdpanel .bphoto {
+     margin: 0px;
+     padding: 0px;
+}
+
+#joomdpanel .images_fashion, #joomdpanel .re-image {
+     float: left;
+     margin: 0px 10px 0px 0px;
+}
+
+#joomdpanel .re-image .joomdslides {
+     border: 7px solid #DFDFDF;
+}
+
+#joomdpanel .re-image .joomdslides .sliding {
+     border: medium none;
+     box-shadow: none;
+     height: 187.5px ! important;
+     width: 300px ! important;
+}
+
+#joomdpanel .re-image .joomdslides .sliding li {
+     height: 187.5px ! important;
+     width: 300px ! important;
+}
+
+#joomdpanel .re-image .joomdslides #nextBtn {
+     height: 187.5px ! important;
+     left: 288px;
+     top: 67px;
+     width: 25px;
+}
+
+#joomdpanel .re-image .joomdslides #nextBtn a, #joomdpanel .re-image .joomdslides #prevBtn a {
+     height: 187.5px ! important;
+     width: 25px;
+}
+
+#joomdpanel .re-image .joomdslides #prevBtn {
+     height: 187.5px ! important;
+     left: 13px;
+     top: 67px;
+     width: 25px;
+}
+
+#joomdpanel .re-image .joomdslides .sliding li img {
+     border: medium none;
+     height: 187.5px ! important;
+     width: 300px ! important;
+}
+
+#joomdpanel .re-add {
+     border: 1px solid #CCCCCC;
+     float: left;
+}
+
+#joomdpanel .bphoto {
+     height: auto;
+}
+
+.re-des {
+     padding-bottom: 20px;
+}
+
+.re-service span {
+     padding: 0px 7.5px;
+}
+
+.re-payment span {
+     padding: 0px 7.5px;
+}
+
+.re-payment {
+     padding: 0px 0px 10px;
+}
+
+.re-video {
+     border: 7px solid #B60101;
+     float: left;
+     margin-right: 20px;
+}
+
+.item_info_bar {
+     clear: both;
+}
+
+.pdate, .sadd, .sweb a, .sphone, .sfax, .semail a, .semail, .sprovider, .snum, .cprice, .cyear, .cmake, .cmodel, .ctrim, .cengine, .ctrans, .cfuel, .ccolor, .cinterior, .cmiles, .cvin, .cstock, .cbstyle, .ccondition, .ccategory, .eaddress, .etelephone, .ealternative, .eprice, .eopen, .eaddresses, .rlocations, .rtelephone, .remail, .rprice, .rbathrooms, .rnumber, .eopen, .ealternative, .etelephone, .eaddresses, .rcontact, .rcity, .rcountry, .rseller, .re-adds, .re-phone, .re-fax, .re-cusine, .re-seats, .re-email a, .re-web a {
+     color: #999999 ! important;
+}
+
+.pdate {
+     clear: both;
+     margin: 0px ! important;
+     padding: 0px 0px 10px;
+}
+
+.sweb {
+     padding-bottom: 20px;
+}
+
+.sprovider .field_label, .snum .field_label, .eaddresses .field_label, .etelephone .field_label, .ealternative .field_label, .eprice .field_label, .eopen .field_label, .rnumber .field_label, .rbathrooms .field_label, .rprice .field_label, .rcity .field_label, .rcountry .field_label, .rseller .field_label, .rcontact .field_label, .rtelephone .field_label {
+     border-top: 1px solid #DCDCDC;
+     display: inline ! important;
+     float: left;
+     font-size: 11px ! important;
+     padding: 10px 0px;
+     width: 150px;
+}
+
+.remail .field_label, .re-adds .field_label, .re-phone .field_label, .re-fax .field_label, .re-web .field_label, .re-cusine .field_label, .re-seats .field_label, .re-email .field_label {
+     border-top: 1px solid #DCDCDC;
+     display: inline ! important;
+     float: left;
+     font-size: 11px ! important;
+     padding: 10px 0px;
+     width: 100px;
+}
+
+.sphone .field_label, .sfax .field_label, .semail .field_label, .sweb .field_label {
+     display: inline ! important;
+     float: left;
+     font-size: 11px ! important;
+     padding: 10px 0px;
+     width: 50px;
+}
+
+.pdate .field_label {
+     display: inline ! important;
+     font-size: 11px ! important;
+}
+
+.sprovider .field_value, .snum .field_value, .eaddresses .field_value, .etelephone .field_value, .ealternative .field_value, .eprice .field_value, .eopen .field_value, .rnumber .field_value, .rbathrooms .field_value, .rprice .field_value, .rcity .field_value, .rcountry .field_value, .rseller .field_value, .rcontact .field_value {
+     border-top: 1px solid #DCDCDC;
+     float: left;
+     padding: 10px 0px;
+     width: 132px;
+}
+
+.remail .field_value, .re-adds .field_value, .re-phone .field_value, .re-fax .field_value, .re-web .field_value, .re-cusine .field_value, .re-seats .field_value, .re-email .field_value {
+     border-top: 1px solid #DCDCDC;
+     float: left;
+     padding: 10px 0px;
+     width: 188px;
+}
+
+.sphone .field_value, .sfax .field_value, .semail .field_value, .sweb .field_value {
+     float: left;
+     padding: 10px 0px;
+     width: 222px;
+}
+
+.item_info_bar {
+     clear: both;
+}
+
+.pdate .field_label {
+     font-weight: normal ! important;
+}
+
+#joomdpanel .itemlist .sname a, #joomdpanel .itemlist .btitle a, #joomdpanel .itemlist .etitle a, #joomdpanel .itemlist .re-title a {
+     color: #B60101;
+     font-size: 17px;
+}
+
+#joomdpanel .itemlist .rtitle a {
+     color: #B60101;
+     font-size: 16px;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+     margin-bottom: -26px;
+}
+
+#joomdprint .discription {
+     clear: both;
+     display: block;
+}
+
+#joomdprint .joomdslides .sliding li {
+     background-color: #FFFFFF;
+     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+     float: left;
+     height: 150px;
+     margin-bottom: 10px;
+     margin-right: 10px;
+     padding: 7px;
+     width: 180px;
+}
+
+#joomdprint .joomdslides .sliding li img {
+     height: 100%;
+     width: 100%;
+}
+
+#joomdprint .joomdslides .sliding {
+     background: none repeat scroll 0% 0% transparent;
+     box-shadow: none;
+}
+
+#joomdprint .joomdslides .sliding {
+     background: none repeat scroll 0% 0% transparent;
+     box-shadow: none;
+}
+
+#joomdpanel .search_col1 {
+     width: 70px ! important;
+}
+
+#joomdpanel .itemlist .main_field a, #joomdpanel .itemlist .cname a {
+     color: #B60101 ! important;
+     font-size: 12px;
+     text-transform: uppercase;
+}
+
+.sdetail, .cdes, .edetail {
+     padding-bottom: 20px;
+     text-align: justify;
+}
+
+.rdescription {
+     padding: 20px 0px;
+     text-align: justify;
+}
+
+.edetail {
+     min-height: 225px;
+}
+
+.bdes {
+     text-align: justify;
+}
+
+.sliding ul {
+     margin: 0px;
+     padding: 0px 0px 0px 5px;
+}
+
+.smap .rt-block {
+     margin: 15px 30px 15px 0px ! important;
+}
+
+#rt-mainbottom .rt-container .rt-alpha {
+     padding: 0px ! important;
+}
+
+.sadd, .eaddress, .rlocations, .rmap {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+     float: left;
+     margin-right: 20px;
+     padding: 10px;
+}
+
+.review_form h3 {
+     color: #DA0000;
+}
+
+ul.item_rating_list {
+     margin: 1px 0px 0px;
+     padding: 0px;
+}
+
+.componentheading h1 {
+     padding-left: 0px;
+}
+
+.componentheading h1 span {
+     color: #B60101;
+}
+
+ul.tag_cloud_items li a {
+     background: none repeat scroll 0% 0% transparent ! important;
+     color: #DA0000 ! important;
+}
+
+ul.tag_cloud_items li a:hover {
+     color: #000000 ! important;
+}
+
+#joomdpanel .joomdslides .sliding img {
+     background: none repeat scroll 0% 0% transparent;
+     box-shadow: none;
+     padding: 0px;
+}
+
+#joomdpanel .cphoto .joomdslides .sliding img {
+     border: medium none;
+     padding: 0px 0px 20px;
+}
+
+#joomdpanel .cphoto .joomdslides .sliding ul {
+     padding: 0px;
+}
+
+.cprice, .cmake, .ctrim, .ctrans, .ccolor, .cmiles, .cstock, .ccondition {
+     float: left;
+     margin: 0px 0px 5px 430px ! important;
+     width: 115px;
+}
+#joomdprint .cprice, #joomdprint .cmake, #joomdprint .ctrim, #joomdprint .ctrans, #joomdprint .ccolor, #joomdprint .cmiles, #joomdprint .cstock, #joomdprint .ccondition {
+     float: left;
+     margin:0 0 0 14px ! important;
+     width: 200px;
+}
+
+.cyear, .cmodel, .cengine, .cfuel, .cinterior, .cvin, .cbstyle, .ccategory {
+     float: right;
+     margin: 0px 0px 5px ! important;
+     width: 125px;
+}
+
+#joomdprint .cyear, #joomdprint .cmodel, #joomdprint .cengine, #joomdprint .cfuel, #joomdprint .cinterior, #joomdprint .cvin, #joomdprint .cbstyle, #joomdprint .ccategory {
+     float: right;
+     margin:0 0 0 14px ! important;
+     width: 200px;
+}
+
+.cdes {
+     clear: both;
+     padding-top: 20px;
+}
+
+.cdes h4 {
+     margin: 0px;
+     padding: 0px 0px 5px;
+}
+
+.cdes p {
+     margin: 0px;
+     padding: 0px 0px 10px;
+}
+
+.cyou {
+     float: left;
+     padding-top: 4px;
+     position: absolute;
+}
+
+#joomdpanel .field_value {
+     display: inline;
+}
+
+#joomdpanel .field_label {
+     color: #555555;
+     font-size: 11px;
+     font-weight: bold;
+}
+
+#joomdpanel .cphoto .sliding {
+     border: medium none;
+     box-shadow: none;
+     height: 400px ! important;
+     padding-bottom: 25px;
+     width: 720px ! important;
+}
+
+#joomdpanel .cphoto #nextBtn {
+     left: 670px ! important;
+}
+
+#joomdpanel #prevBtn a, #joomdpanel #nextBtn a, #joomdpanel .sliding1next a, #joomdpanel .sliding1prev a {
+     height: 314px ! important;
+}
+
+#joomdpanel .images_fashion #prevBtn a, #joomdpanel .images_fashion #nextBtn a {
+     height: 487px ! important;
+}
+
+#joomdpanel .images_fashion #nextBtn {
+     left: 284px;
+}
+
+#joomdpanel .cphoto .sliding li {
+     height: 400px ! important;
+     width: 720px ! important;
+}
+
+.review_creator {
+     padding-top: 5px;
+}
+
+.review_comment {
+     padding: 0px 0px 5px;
+}
+
+#joomdpanel .joomdslides {
+     margin-bottom: 0px ! important;
+}
+
+#joomdpanel ul {
+     margin: 0px;
+}
+
+#joomdpanel .bphoto img {
+     float: right;
+     margin: 0px 0px 0px 10px;
+}
+
+#joomdpanel .rimage img {
+     float: right;
+}
+
+.rimage .joomdslides img {
+     margin: 5px 0px 0px 10px;
+}
+
+#joomdpanel .itemlist .bphoto img {
+     margin: 0px 20px 0px 0px;
+}
+
+#joomdpanel .sliding li {
+     height: 480px ! important;
+     width: 320px ! important;
+}
+
+#joomdprint .joomdslides img {
+     margin-right: 15px;
+}
+
+.ui-dialog-content input[type="button"] {
+     background: none repeat scroll 0% 0% #666666;
+     border-radius: 3px 3px 3px 3px;
+     border: 1px solid #333333;
+     color: #FFFFFF;
+     margin-top: 10px;
+     padding: 4px 5px;
+}
+
+.ui-dialog-content input[type="text"], .ui-dialog-content textarea {
+     background: none repeat scroll 0% 0% #F5F5F5;
+     border: 1px solid #CCCCCC;
+     padding: 4px 5px;
+     width: 90%;
+}
+
+#ui-dialog-title-report_item, #ui-dialog-title-contact_owner, #ui-dialog-title-share_item {
+     left: 0px ! important;
+     position: relative ! important;
+     top: 0px ! important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+     height: 18px;
+     margin: -20px -25px 0px 0px ! important;
+     top: 0px ! important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+     right: 0px ! important;
+     top: 0px ! important;
+}
+
+.ui-dialog .ui-dialog-titlebar, .ui-dialog .ui-dialog-titlebar {
+     margin: 0px;
+     padding: 0px;
+}
+
+.itemrow_type16 .more_info {
+     bottom: 65px;
+}
+
+.rbedroom, .rbathroom, .rcovered, .rplot, .rfurnished, .rfloor, .rfacing, .rtransaction {
+     border-top: 1px solid #DCDCDC;
+     float: left;
+     margin: 0px ! important;
+     padding: 5px 0px;
+     width: 241px;
+}
+
+#joomdprint .rbedroom, #joomdprint .rbalconies, #joomdprint .rplot,#joomdprint .rcarpet, #joomdprint .rtransaction, #joomdprint .rfurnished, #joomdprint .rtotal, #joomdprint .rconstruction, #joomdprint .rtransaction {
+     border-top:none;
+     float: left;
+     margin:0 0 0 14px !important;
+     padding: 5px 0px;
+     width: 241px;
+}
+
+.rbalconies, .rcarpet, .rtotal, .rconstruction {
+     border-top: 1px solid #DCDCDC;
+     float: right;
+     margin: 0px ! important;
+     padding: 5px 0px;
+     width: 240px;
+}
+
+#joomdprint .rbathroom, #joomdprint .rcovered, #joomdprint .rfloor, #joomdprint .rfacing {
+     border-top:none;
+     float: right;
+     margin:0 0 0 14px !important;
+     padding: 5px 0px;
+     width: 240px;
+}
+
+.rmap {
+     clear: both;
+     margin-top: 30px;
+}
+
+.itemrow_type16 .rfacing {
+     border: medium none;
+}
+
+.rdescription .field_label {
+     font-size: 16px ! important;
+     padding-bottom: 5px;
+}
+
+.rbedroom .field_value {
+     text-align: center;
+}
+
+.rbedroom, .rbathroom, .rcovered, .rplot, .rfurnished, .rfloor, .rfacing, .rtransaction, .rbalconies, .rcarpet, .rtotal, .rconstruction , .rmap, .rfacing {
+     color: #999999;
+}
+
+.re-service {
+     clear: both;
+}
+
+.re-service .field_label, .re-payment .field_label {
+     font-size: 15px ! important;
+     padding: 10px 0px;
+}
+#joomdprint .field_label {padding:0;color:#333333;border:none;}
+#joomdprint .sphoto .joomdslides img {margin:0 10px 0 0;}
+#joomdprint .bphoto .joomdslides li {float:right;}
+#joomdprint .bphoto  .joomdslides img {margin:0 0 0 10px;}
+#joomdprint .eimage  .joomdslides img {margin:0 10px 0 0;}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="1" version="2.5.0" method="upgrade" label="ITEM">
+	<name>search</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>July 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright © 2008-2012 Joomla6teen</copyright>
+	<license>This is JoomD application released under the GNU/GPL License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>APP_SEARCH_DESCR</description>
+	
+	<files>
+	
+		<app folder="site">
+			<filename>app_search.php</filename>
+			<filename>index.html</filename>
+		</app>
+	
+		<views folder="site/search" name="search">
+					
+			<filename>controller.php</filename>
+			<filename>model.php</filename>
+			<filename>table.php</filename>
+			<filename>index.html</filename>
+			<filename>view.html.php</filename>
+			<folder>tmpl</folder>
+			
+		</views>
+	
+	</files>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.app_search.ini</language>
+	</languages>
+	
+</extension>

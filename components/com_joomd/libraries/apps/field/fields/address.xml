@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="3" version="2.5.0" method="upgrade" label="ADDRESS">
+	<name>address</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>July 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright © 2008-2012 Joomla6teen</copyright>
+	<license>This is JoomD application released under the GNU/GPL License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Address Custom Field lets you create a Google Map Address Field</description>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">installaddress.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstalladdress.sql</file>
+		</sql>
+	</uninstall>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.field_address.ini</language>
+	</languages>
+	
+	<files>
+	
+		<filename>address.php</filename>
+	
+	</files>
+
+	<administration>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.field_address.ini</language>
+		</languages>
+		
+	</administration>
+	
+</extension>

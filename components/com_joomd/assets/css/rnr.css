@@ -1,0 +1,120 @@
+#joomd_reviews	{
+	margin:10px 0px;
+}
+
+#joomd_reviews .review_list	{
+	margin:10px 0px;
+}
+
+#joomd_reviews .review_rowlist	{
+	margin-top:10px;
+	padding-bottom:5px;
+	border-bottom:1px dashed #dedede;
+}
+
+#joomd_reviews .post_row	{
+	clear:both;
+	margin-bottom:10px;
+}
+
+#joomd_reviews span.create_date	{
+	float:right;
+}
+
+#joomd_reviews .review_title	{
+	margin:5px 0px;
+	font-weight:bold;
+}
+
+#joomd_reviews .review_creator	{
+	margin:5px 0px;
+	clear:both;
+}
+
+#joomd_reviews .review_form	{
+	margin:10px 0px;
+	line-height:20px;
+	border-bottom:1px dashed #dedede;
+}
+
+.review_form .field_label	{
+	float:left;
+}
+
+.item_rating_stars	{
+	display:inline;
+}
+
+.item_rating_list, .item_rating_list a:hover, .item_rating_list .item_current_rating {
+	background:transparent url(../images/transparent_star.gif) left -1000px repeat-x;
+}
+
+.item_rating_list {
+	position:relative;
+	float:left;
+	width:100px;
+	height:20px;
+	overflow:hidden;
+	list-style:none;
+	margin:0!important;
+	padding:0!important;
+	background-position:left top;
+}
+.item_rating_list li {
+	display:inline;
+	background:none;
+	padding:0;
+}
+.item_rating_list a, .item_rating_list .item_current_rating {
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000px;
+	height:20px;
+	line-height:20px;
+	outline:none;
+	overflow:hidden;
+	border:none;
+	cursor:pointer;
+}
+.item_rating_list a:hover {
+	background-position:left bottom;
+}
+.item_rating_list a.one-star {
+	width:20%;
+	z-index:6;
+}
+.item_rating_list a.two-stars {
+	width:40%;
+	z-index:5;
+}
+.item_rating_list a.three-stars {
+	width:60%;
+	z-index:4;
+}
+.item_rating_list a.four-stars {
+	width:80%;
+	z-index:3;
+}
+.item_rating_list a.five-stars {
+	width:100%;
+	z-index:2;
+}
+.item_rating_list .item_current_rating {
+	z-index:1;
+	background-position:0 center;
+	margin:0;
+	padding:0;
+}
+
+div.itemRatingBlock {
+	padding:3px 0 8px;
+}
+
+div.itemRatingBlock span {
+	display:block;
+	float:left;
+	font-style:normal;
+	padding:0 4px 0 0;
+	margin:0;
+}

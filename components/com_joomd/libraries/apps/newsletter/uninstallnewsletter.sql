@@ -1,0 +1,1 @@
+DROP TABLE `#__joomd_newsletter`, `#__joomd_newstemp`;

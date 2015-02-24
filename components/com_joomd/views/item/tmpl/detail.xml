@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="ITEM_DETAIL_LAYOUT_TITLE">
+		<message>
+			ITEM_DETAIL_LAYOUT_MSG
+		</message>
+	</layout>
+	
+	<fields name="request">
+		<fieldset name="request">
+			<field name="id" type="text" default="0" label="ITEMID_TITLE" description="ITEMID_DESCR"></field>
+		</fieldset>
+	</fields>
+
+</metadata>

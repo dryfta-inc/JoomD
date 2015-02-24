@@ -1,0 +1,54 @@
+; com_joomd - JoomD
+; author    Danish Babu - Joomla6Teen Inc
+; copyright Copyright (C) 2012 joomla6teen.com. All Rights Reserved.
+; @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+; Websites: http://www.joomla6teen.com
+; Technical Support:  Forum - http://www.joomla6teen.com/Discussions/latest/joomd.html
+
+
+From 2.2.5 to 2.3.0
++ New Custom field types can also be installed using Applications
++ Templates are now Type dependant. You can assign different template for different types.
++ Now One can assign all the categories and fields to a particular type at once using Type manager.
++ Now One can assign all the fields to a category at once using category manager.
+^ Now Every Application has a separate language file can be installed using Application Manager
+^ Control Panel is now Dashboard
+^ Plugin Manager is now Application Manager
+# Many Bug Fixes
+
+
+From 2.2.4 to 2.2.5
+# fixed Contact Owner, Publish end date and others
+
+From 2.2.3 to 2.2.4
+# fixed author bug and others in Item listing view in back end
+
+From 2.2.2 to 2.2.3
+
+# fixed a limit bug in print items.
+# fixed google chart stats bug in back end control panel
+^ change add button property to display in all pages.
+
+
+From 2.2.1 to 2.2.2
+
+# Several Bug fixes
+
+From v2.2.0 to v2.2.1
+
+$ Corrected few JText keywords
+# Corrected broken css issue in Back end
+# Corrected Character set issue
+^ Modified template directory structure
+
+
+From v2.1.0 to v2.2.0
+
++ Added Multilingual support
++ Added Automatic Update
++ Included ACL for items
++ Included SEO options in items form layout
++ Added various parameters in Item list layout
+^ Removed core field option from field manager.
+! entry is renamed to item
+# fixed default image display in front end and several other Bugs

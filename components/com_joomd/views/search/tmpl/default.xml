@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="SEARCH_LAYOUT_TITLE">
+		<message>
+			SEARCH_LAYOUT_MSG
+		</message>
+	</layout>
+	
+	<fields name="request" addfieldpath="/components/com_joomd/libraries/elements">
+		<fieldset name="request">
+			<field name="typeid" type="sqlmultilistx" default="1" label="TYPE" description="TYPE_DESCR" query="select id, name from #__joomd_types where published = 1 order by name asc" key_field="id" value_field="name">
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="cat" type="radio" default="1" label="DISPLAY_CATEGORY" description="DISPLAY_CATEGORY_MSG">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+		</fieldset>
+	</fields>
+	
+</metadata>

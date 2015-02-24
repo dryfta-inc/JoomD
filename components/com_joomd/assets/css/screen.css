@@ -1,0 +1,100 @@
+/* Easy Slider */
+
+.joomdslides .joomdslides {position:relative;margin:10px 0px;}
+
+.joomdslides .sliding	{
+    border: 7px solid #FFFFFF;
+    box-shadow: 0 0 2px #999;
+}
+#joomdprint .images_fashion .joomdslides .sliding	{
+    border:none;
+    box-shadow:none;
+	width:auto !important;
+	height:auto !important;
+}
+
+#joomdprint .images_fashion .joomdslides .sliding li {width:200px;height:300px;float:left;margin:0 5px 20px;padding:0;box-shadow:none;}
+#joomdprint .images_fashion .joomdslides .sliding img {width:200px;height:300px;} 
+#joomdprint .cphoto .joomdslides .sliding li {width:412px;height:250px;float:left;margin:0 5px 20px;padding:0;box-shadow:none;}
+#joomdprint .cphoto .joomdslides .sliding img {width:412px;height:250px;} 
+#joomdprint .rimages .joomdslides .sliding li {width:412px;height:auto;float:left;margin:0 5px 20px;padding:0;box-shadow:none;}
+#joomdprint .rimages .joomdslides .sliding img {width:412px;height:auto;} 
+#joomdprint .re-image .joomdslides .sliding li {width:270px;height:auto;float:left;margin:0 5px 20px;padding:0;box-shadow:none;}
+#joomdprint .re-image .joomdslides .sliding img {width:270px;height:auto;}
+
+.joomdslides .sliding ul, .joomdslides .sliding li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		text-align:center;
+		}
+.joomdslides .sliding li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:600px;
+		height:300px;
+		overflow:hidden; 
+		}
+.joomdslides #prevBtn{left:0;}
+.joomdslides #nextBtn{left:564px;}
+.joomdslides #prevBtn, .joomdslides #nextBtn,
+.joomdslides .sliding1next, .sliding1prev{ 
+		height: 314px;
+		position: absolute;
+		top: 0;
+		width: 50px;
+		z-index: 10;
+		text-indent:-9999px;
+		}	
+.joomdslides #prevBtn a, .joomdslides .sliding1prev a	{
+		background:url(../images/btn_prev.gif) no-repeat 0 0;
+	}
+.joomdslides #nextBtn a, .joomdslides .sliding1next a{ 
+		background:url(../images/btn_next.gif) no-repeat 0 0;	
+	}
+.joomdslides #prevBtn a, .joomdslides #nextBtn a,
+	.joomdslides .sliding1next a, .joomdslides .sliding1prev a{  
+		background-color: #FFFFFF;
+		background-position: center center;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		display: block;
+		height: 314px;
+		opacity: 0.6;
+		width: 50px;
+		}	
+		
+	/* numeric controls */	
+
+.joomdslides ol#controls{
+		margin:1em 0;
+		padding:0;
+		height:28px;	
+		}
+.joomdslides ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+.joomdslides ol#controls li a{
+		float:left;
+		height:28px;
+		line-height:28px;
+		border:1px solid #ccc;
+		background:#DAF3F8;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		}
+.joomdslides ol#controls li.current a{
+		background:#5DC9E1;
+		color:#fff;
+		}
+.joomdslides ol#controls li a:focus, .joomdslides #prevBtn a:focus, .joomdslides #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */

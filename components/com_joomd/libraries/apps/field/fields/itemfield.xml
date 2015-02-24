@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="joomdapp" apptype="3" version="2.5.0" method="upgrade" label="ITEMFIELD">
+	<name>itemfield</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>August 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teeen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright © 2008-2012 Joomla6teen</copyright>
+	<license>This is JoomD application released under the GNU/GPL License</license>
+	<!--  The version string is recorded in the components table -->
+	<version>2.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Item Custom Field lets you create a Drop down of all the items of another type</description>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.field_itemfield.ini</language>
+	</languages>
+	
+	<files>
+	
+		<filename>itemfield.php</filename>
+	
+	</files>
+
+	<administration>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.field_itemfield.ini</language>
+		</languages>
+		
+	</administration>
+	
+</extension>

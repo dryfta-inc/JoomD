@@ -1,0 +1,1 @@
+DROP TABLE `#__joomd_orders`, `#__joomd_package`, `#__joomd_packagesconfig`, `#__joomd_pusers`;
