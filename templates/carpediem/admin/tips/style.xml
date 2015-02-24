@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="CSS Style" id="cssstyle"><![CDATA[The <strong>CSS Style</strong> setting allows you to easily change the whole look of your site. The different CSS styles are a selection of preset settings such as background colors and font settings. A little preview thumbnail can be seen in the <strong>Overview</strong> tab.]]></tip>
+	
+	<tip label="Background Color" id="bgcolor"><![CDATA[<strong>The Background Color</strong> setting provides the ability to easily change the color used as the background. Colors can be inputted via the <strong>Colorchooser</strong> popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip label="Header Color" id="headercolor"><![CDATA[<strong>The Header Color</strong> setting provides the ability to easily change the color used as the background. Colors can be inputted via the <strong>Colorchooser</strong> popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip label="Bottom Color" id="bottomcolor"><![CDATA[<strong>The Bottom Color</strong> setting provides the ability to easily change the color used as the background. Colors can be inputted via the <strong>Colorchooser</strong> popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip label="Footer Color" id="footercolor"><![CDATA[<strong>The Footer Color</strong> setting provides the ability to easily change the color used as the background. Colors can be inputted via the <strong>Colorchooser</strong> popup selector or manually using a hex code in the input field.]]></tip>
+	
+	<tip label="Link Color" id="linkcolor"><![CDATA[<strong>The Link Color</strong> setting provides the ability to easily change the color used to highlight links. Colors can be inputted via the <strong>Colorchooser</strong> popup selector or manually using a hex code in the input field.]]></tip>
+		
+	<tip label="WebFonts" id="webfonts"><![CDATA[This setting allows you to use <strong>3rd party WebFonts</strong> from providers such as Google. You must first set WebFonts to show and then save your changes, then the available WebFonts will appear in the Font Settings dropdown from where they can be selected.]]></tip>
+	
+	<tip label="Font Settings" id="font"><![CDATA[A selection of fonts to be applied to your site's frontend is available from the <strong>Font Settings</strong> dropdown. It is also possible to set the <strong>Font Size</strong> according to your preference.]]></tip>
+
+	
+</gantrytips>

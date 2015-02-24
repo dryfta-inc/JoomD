@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <config>
+        <fields name="params">
+            <fieldset name="suckerfish" label="Suckerfish Menu Options" addfieldpath="/modules/mod_roknavmenu/fields">
+		        <param name="suckerfish_item_subtext" type="text" default="" label="Subtext Line" description="You can put a second line here"></param>
+            </fieldset>
+        </fields>
+    </config>
+</form>

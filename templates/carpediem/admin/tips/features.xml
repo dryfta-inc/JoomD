@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+
+	<tip label="Logo" id="logo"><![CDATA[With this setting you can choose whether or not to display the Logo and pick a position for the Logo to display in.  The auto-size toggle enables the Logo feature to automatically set the logo dimensions based on the size of the logo image.<br /><br />By default the Logo feaure uses the image located in <strong>{template_name}/images/logo/logo.png</strong>, so replacing this image is the simplest way to update the logo.]]></tip>
+
+	<tip label="Date" id="date"><![CDATA[With this setting you can choose whether or not to display the Date, pick a position for the Date to display in and decide on which format to use for the display. There is also a toggle to enable/disable the ability for the date to use the client-side data rather than the server date.]]></tip>
+
+	<tip label="Font-Sizer" id="fontsizer"><![CDATA[The Font-Sizer allows your users to increase or decrease the font-size according to their preference. This is a handy usability aid that can be quite helpful to people who have difficulty reading smaller text.]]></tip>
+
+	<tip label="Copyright" id="copyright"><![CDATA[With this setting you can choose whether or not to display the Copyright information and pick a position for it to display in. You can change the copyright text by simply modifying the text field.]]></tip>
+
+	<tip label="SmartLoad" id="smartload"><![CDATA[<strong>The SmartLoad functionality</strong> allows to load images only in the viewport of the browser. As you scroll the page up or down it will start loading the needed images. Extremely useful to save some bandwidth, especially on pages with many images. A comma separated list of css rules can be provided under XPath Ignores where SmartLoad should not be used.]]></tip>
+
+	<tip label="To-Top Scroller" id="totop"><![CDATA[The To-Top Scroller allows for smooth scrolling from the bottom of the template back to the top. You can also select your own text to be displayed on the link.]]></tip>
+
+	<tip label="System Messages" id="systemmessages"><![CDATA[Joomla outputs System Messages, such as an error message when trying to log in with an invalid user/password combination, saving from the front-end, reset your password, etc. With this setting you can choose whether or not to display these messages and in which position they should show.]]></tip>
+
+	<tip label="Reset Settings" id="resetsettings"><![CDATA[The Reset Settings link allows to clear all cookies and settings set by the frontend user during their session. An example would be if the user has used the font-sizer or changed the preset via a URL, and wants to return to the default settings.]]></tip>
+
+	<tip label="IE6 Warning" id="ie6warn"><![CDATA[Choose whether or not to display the <strong>Internet Explorer 6 Warning</strong> to the visitors of your site whenever Internet Explorer 6 is detected as the browser in use. Through this warning you are able to recommend the use of a saver and better browser to those visitors. Choose the delay (in milliseconds) to determine how long the IE6 Warning should be shown.]]></tip>
+
+	<tip label="Google Analytics" id="analytics"><![CDATA[Google Analytics is a web analytics solution that gives you insights into your website traffic and marketing effectiveness. Several features let you see and analyze your traffic data. Use this setting to enable or disable Google Analytics, when enabling make sure to enter a valid API.]]></tip>
+	
+</gantrytips>

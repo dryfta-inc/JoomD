@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="template-options">
+    <fieldset name="toolbar-panel" label="TOOLBAR">
+        <field name="presets" type="preset" mode="scroller" default="preset1" setbyurl="true" setinoverride="false" panel_position="left" show_label="false"/>
+    </fieldset>
+
+    <fieldset name="overview" label="OVERVIEW">
+    	<!--<param name="versioncheck" type="versioncheck" panel_position="right" show_label="false" />-->
+    	<!--<field name="diagnostics" type="diagnostics" panel_position="right" show_label="false" />-->
+		<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false" />
+
+        <!--<field name="presets" type="preset" mode="scroller" default="preset10" label="STYLE_PRESETS"  setbyurl="true" setinoverride="false" panel_position="right" />-->
+
+        <!--<field name="menuids" type="menuitemhead" default="1" label="" />-->
+        <field name="overview" type="file" path="/template-overview.php" show_label="false"/>
+    </fieldset>
+    <fieldset name="style" label="STYLE">
+        <field name="master" type="hidden" value="false" default="true"/>
+        <field name="current_id" type="hidden" value="false" default="true"/>
+        <field name="gantry" type="gantry" value="" panel_position="hiddens"/>
+        <field name="template_full_name" type="hidden" default="Gantry"/>
+        <!--<field name="updater" type="updater" panel_position="right" show_label="false" />-->
+        <!--<field name="diagnostic" type="diagnostic" panel_position="right" show_label="false" />-->
+        <!--<field name="overviewtips" type="tips" tab="overview" panel_position="right" show_label="false"/>-->
+        <field name="grid_system" type="hidden" default="16"/>
+        <field name="template_prefix" type="hidden" default="gantry-"/>
+        <field name="cookie_time" type="hidden" default="31536000"/>
+
+        <field name="copy_lang_files_if_diff" type="hidden" default="1"/>
+        <field name="stylesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Style Settings</h2>
+
+            <p>The Style Settings panel in the Gantry based theme administration interface provides several options for configuring the main stylistic aspects of the template. While the default Gantry theme includes several options, you can easily add and configure many more based on your template&apos;s needs.</p>
+            ]]></html>
+        </field>
+        <field name="styletips" type="tips" tab="style" panel_position="right" show_label="false"/>
+        <field name="cssstyle" type="selectbox" default="style1" label="CSS_STYLE" isbodyclass="true" setbyurl="true"
+               setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+            <option value="style1">Style 1</option>
+            <option value="style2">Style 2</option>
+            <option value="style3">Style 3</option>
+            <option value="style4">Style 4</option>
+        </field>
+        <field name="bgcolor" type="colorchooser" default="#dddddd" label="BG_COLOR" setinsession="true"
+               setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="headercolor" type="colorchooser" default="#111111" label="HEADER_COLOR" setinsession="true"
+               setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="bottomcolor" type="colorchooser" default="#111111" label="BOTTOM_COLOR" setinsession="true"
+               setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="footercolor" type="colorchooser" default="#666666" label="FOOTER_COLOR" setinsession="true"
+               setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <field name="linkcolor" type="colorchooser" default="#cc0000" label="LINK_COLOR" setinsession="true"
+               setbysession="true" setincookie="true" setbycookie="true"/>
+
+        <fields name="webfonts" type="chain" label="WEBFONTS">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="source" type="selectbox" default="google" label="WEBFONTS_SOURCE">
+                <option value="google">Google Font Directory</option>
+            </field>
+        </fields>
+        <fields name="font" type="chain" label="FONT_SETTINGS">
+            <field name="family" type="fonts" default="helvetica" label="FONT_FAMILY" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true">
+                <option value="geneva">Gill Sans MT</option>
+                <option value="georgia">Georgia</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="lucida">Lucida</option>
+                <option value="optima">Optima</option>
+                <option value="palatino">Palatino</option>
+                <option value="trebuchet">Trebuchet</option>
+            </field>
+            <field name="size" type="hidden" default="default" setbyurl="true"/>
+            <field name="size-is" type="selectbox" default="default" label="FONT_SIZE" setinsession="true"
+                   setbysession="true" setincookie="true" setbycookie="true" isbodyclass="true">
+                <option value="xsmall">F_XSMALL</option>
+                <option value="small">F_SMALL</option>
+                <option value="default">F_DEFAULT</option>
+                <option value="large">F_LARGE</option>
+                <option value="xlarge">F_XLARGE</option>
+            </field>
+        </fields>
+
+    </fieldset>
+    <fieldset name="features" label="FEATURES">
+
+        <field name="viewswitcher-priority" type="hidden" default="1"/>
+        <field name="logo-priority" type="hidden" default="2"/>
+        <field name="copyright-priority" type="hidden" default="3"/>
+        <field name="styledeclaration-priority" type="hidden" default="4"/>
+        <field name="fontsizer-priority" type="hidden" default="5"/>
+        <field name="iphonegradients-priority" type="hidden" default="6"/>
+        <field name="date-priority" type="hidden" default="7"/>
+        <field name="totop-priority" type="hidden" default="8"/>
+        <field name="systemmessages-priority" type="hidden" default="9"/>
+        <field name="inactive-priority" type="hidden" default="10"/>
+        <field name="iphoneimages-priority" type="hidden" default="11"/>
+        <field name="morearticles-priority" type="hidden" default="12"/>
+        <field name="smartload-priority" type="hidden" default="13"/>
+        <field name="pagesuffix-priority" type="hidden" default="14"/>
+        <field name="resetsettings-priority" type="hidden" default="15"/>
+        <field name="analytics-priority" type="hidden" default="16"/>
+        <field name="belatedpng-priority" type="hidden" default="17"/>
+        <field name="fusionmenu-priority" type="hidden" default="18"/>
+        <field name="ie6menu-priority" type="hidden" default="19"/>
+        <field name="ie6warn-priority" type="hidden" default="20"/>
+        <field name="jstools-priority" type="hidden" default="21"/>
+        <field name="moduleoverlays-priority" type="hidden" default="22"/>
+        <field name="rtl-priority" type="hidden" default="23"/>
+        <field name="splitmenu-priority" type="hidden" default="24"/>
+        <field name="suckerfishmenu-priority" type="hidden" default="25"/>
+        <field name="touchmenu-priority" type="hidden" default="26"/>
+        <field name="webfonts-priority" type="hidden" default="27"/>
+
+
+        <field name="styledeclaration-enabled" type="hidden" default="1"/>
+        <field name="featuressettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Feature Settings</h2>
+
+            <p>The Features Settings allow you to control the built-in functionality available in this theme. Checkout the help information below to find out all the details on what each feature provides and how to configure or setup the gizmo.</p>
+            ]]></html>
+        </field>
+        <field name="featurestips" type="tips" tab="features" panel_position="right" show_label="false"/>
+        <fields name="logo" type="chain" label="LOGO">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="position" type="position" default="header-a" label="POSITION"/>
+            <field name="autosize" type="toggle" default="0" label="AUTO_SIZE"/>
+            <field name="perstyle" type="hidden" default="0"/>
+            <field name="css" type="hidden" default="body #rt-logo"/>
+        </fields>
+
+        <fields name="date" type="chain" label="DATE">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="position" type="position" default="top-d" label="POSITION"/>
+            <field name="clientside" type="toggle" default="0" label="DATE_CLIENTSIDE"/>
+            <field name="formats" type="dateformats" default="%A, %B %d, %Y" label=" ">
+                <option value="%A, %B %d, %Y"/>
+                <option value="%B %d, %Y"/>
+                <option value="%d %h, %Y"/>
+                <option value="%d %h, %y"/>
+                <option value="%a, %h %d, %Y"/>
+                <option value="%a, %h %d, %y"/>
+                <option value="%A, %d %m %Y"/>
+                <option value="%A %e %B %Y"/>
+            </field>
+        </fields>
+
+        <fields name="fontsizer" type="chain" label="FONT_SIZER">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="position" type="position" default="feature-b" label="POSITION"/>
+        </fields>
+
+        <fields name="copyright" type="chain" label="COPYRIGHT">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="position" type="position" default="copyright" label="POSITION"/>
+            <field name="text" type="text" default="Designed by RocketTheme" label="" class="text-long"/>
+        </fields>
+
+        <fields name="smartload" type="chain" labeel="SMARTLOAD">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="text" type="text" default="50" label="Y_OFFSET" class="text-short"/>
+            <field name="ignores" type="text" default="com_contact" label="COMPONENT_IGNORES" class="text-medium"/>
+            <field name="exclusion" type="text" default="" label="XPATH_IGNORES" class="text-medium"/>
+        </fields>
+
+        <fields name="totop" type="chain" label="TOTOP">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="position" type="position" default="copyright" label="POSITION"/>
+            <field name="text" type="text" default="Scroll to Top" label="" class="text-long"/>
+        </fields>
+
+        <fields name="systemmessages" type="chain" label="SYSMESSAGE">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="position" type="position" default="feature-a" label="POSITION"/>
+        </fields>
+
+        <fields name="resetsettings" type="chain" label="RESETSETTINGS">
+            <field name="enabled" type="toggle" default="0" label="SHOW"/>
+            <field name="position" type="position" default="copyright" label="POSITION"/>
+            <field name="text" type="text" default="Reset Settings" label="" class="text-long"/>
+        </fields>
+
+        <fields name="ie6warn" type="chain" label="IE6WARN">
+            <field name="enabled" type="toggle" default="1" label="SHOW"/>
+            <field name="delay" type="text" default="2000" label="DELAY" class="text-short"/>
+        </fields>
+
+        <fields name="analytics" type="chain" label="ANALYTICS">
+            <field name="enabled" type="toggle" default="0" label="ANALYTICS_ENABLE"/>
+            <field name="code" type="text" default="" label="ANALYTICS_CODE" class="text-long"/>
+        </fields>
+    </fieldset>
+    <fieldset name="menu" label="MENU">
+        <field name="menusettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+					<h2>Menu Settings</h2>
+
+					<p>The iPhone settings available in this interface allow you to control the style and functionality of the iPhone costum theme which is a powerful feature included in the Gantry Framework. For more detailed information on each settings and how it is being used, please refer to the help information below.</p>
+					]]></html>
+        </field>
+		<field name="menutips" type="tips" tab="menu" panel_position="right" show_label="false"/>
+        <fields name="menu" type="selectedset" label="MENU_CTRL">
+            <field name="enabled" type="toggle" default="1" label="SHOW" />
+            <field name="type" type="selectbox" selector="true" default="fusionmenu" label="TYPE" isbodyclass="true" setbyurl="true" setinsession="true" setbysession="true" setincookie="true" setbycookie="true"/>
+            <fields type="set" name="fusionmenu" label="FUSION">
+                <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
+                <field name="position" type="position" default="header-b" label="POSITION" />
+                <field name="enable_js" type="toggle" default="1" label="ENABLE_JS" />
+                <field name="opacity" type="text" default="1" label="MENU_OPACITY" class="text-short" />
+                <field name="effect" type="selectbox" default="slidefade" label="MENU_EFFECT">
+                    <option value="slide">SLIDE</option>
+                    <option value="slidefade">SLIDEFADE</option>
+                </field>
+                <field name="hidedelay" type="text" default="500" label="MENU_DELAY" class="text-short" />
+                <field name="menu-animation" type="animation" default="Circ.easeOut" label="MENU_ANIMATION" />
+                <field name="menu-duration" type="text" default="300" label="MENU_DURATION" class="text-short" />
+                <field name="centered-offset" type="hidden" default="0" label="CENTERED_DROPDOWN" />
+                <field name="tweak-initial-x" type="hidden" default="-10" label="X_OFFSET" class="text-short" />
+                <field name="tweak-initial-y" type="hidden" default="-13" label="Y_OFFSET" class="text-short" />
+                <field name="tweak-subsequent-x" type="hidden" default="0" label="X_OFFSET" class="text-short" />
+                <field name="tweak-subsequent-y" type="hidden" default="0" label="Y_OFFSET" class="text-short" />
+                <field name="tweak-width" type="hidden" default="20" />
+                <field name="tweak-height" type="hidden" default="20" />
+
+                <field name="enable-current-id" type="toggle" default="0" label="ENABLE_ID" />
+                <field name="theme" type="hidden" default="gantry-fusion"/>
+                <field name="limit_levels" type="hidden" default="0"/>
+                <field name="startLevel" type="hidden" default="0"/>
+                <field name="showAllChildren" type="hidden" default="1"/>
+                <field name="class_sfx" type="hidden" default="top"/>
+                <field name="cache" type="hidden" default="0"/>
+                <field name="module_cache" type="hidden" default="1"/>
+            </fields>
+            <fields type="set" name="splitmenu" label="SPLITMENU">
+                <field name="roknavmenu_fusion_enable-current-id" type="toggle" default="0" label="ENABLE_ID" />
+                <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT" />
+                <field name="theme" type="hidden" default="gantry-splitmenu"/>
+                <field name="cache" type="hidden" default="0"/>
+                <field name="module_cache" type="hidden" default="1"/>
+
+                <field name="mainmenu-position" type="position" default="header-b" label="MAINMENU_POS" />
+                <field name="mainmenu-limit_levels" type="hidden" default="1"/>
+                <field name="mainmenu-startLevel" type="hidden" default="0"/>
+                <field name="mainmenu-endLevel" type="hidden" default="0"/>
+                <field name="mainmenu-class_sfx" type="hidden" default="top"/>
+
+                <field name="submenu-position" type="position" default="sidebar-a" label="SUBMENU_POS" />
+                <field name="submenu-limit_levels" type="hidden" default="1"/>
+                <field name="submenu-startLevel" type="hidden" default="1"/>
+                <field name="submenu-endLevel" type="hidden" default="9"/>
+                <field name="submenu-class_sfx" type="text" default="" label="SIDEMENU_CLASS_SFX" class="text-short" />
+            </fields>
+        </fields>
+    </fieldset>
+    <fieldset name="layouts" label="LAYOUTS">
+
+        <field name="layoutsettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+					<h2>Layouts Settings</h2>
+
+					<p>Through the power of the Gantry Framework, you have complete control over the layout of your pages. Each position element can be configured for the number of sets of published widgets in that position.  If you have 3 sets of widgets (i.e. widgets separated by 2 dividers), click the number <b>3</b> and then move the slider to the desired ratio for the layout you are trying to achieve.</p>
+					]]></html>
+        </field>
+        <field name="layoutstips" type="tips" tab="layouts" panel_position="right" show_label="false"/>
+
+        <fields name="top" type="position" label="TOP_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="header" type="position" label="HEADER_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="showcase" type="position" label="SHOWCASE_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="feature" type="position" label="FEATURE_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="utility" type="position" label="UTILITY_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="maintop" type="position" label="MAINTOP_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <field name="mainbodyPosition" type="positions" default="8,4,4" label="MAINBODY_POS">
+            <schemas>1,2,3,4</schemas>
+            <words>sa,sb,sc,mb</words>
+            <type>custom</type>
+        </field>
+
+        <fields name="mainbottom" type="position" label="MAINBOTTOM_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="bottom" type="position" label="BOTTOM_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+
+        <fields name="footer" type="position" label="FOOTER_POS">
+            <field name="layout" type="positions" default="4,4,4,4" label="">
+                <schemas>1,2,3,4,5,6</schemas>
+                <words>2,3,4,5,6,7,8,9,10,11,12,13</words>
+            </field>
+            <field name="showall" type="toggle" default="0" label="FORCE_POS"/>
+            <field name="showmax" type="showmax" default="6" label="POS_COUNT"/>
+        </fields>
+    </fieldset>
+    <fieldset name="iphone" label="IPHONE">
+
+        <field name="iphonesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+					<h2>iPhone Settings</h2>
+
+					<p>The iPhone settings available in this interface allow you to control the style and functionality of the iPhone costum theme which is a powerful feature included in the Gantry Framework. For more detailed information on each settings and how it is being used, please refer to the help information below.</p>
+					]]></html>
+        </field>
+        <field name="iphonetips" type="tips" tab="iphone" panel_position="right" show_label="false"/>
+
+        <field name="iphone-enabled" type="toggle" default="1" label="IPHONE_ENABLED"/>
+        <field name="iphone-scalable" type="toggle" default="0" label="IPHONE_SCALABLE"/>
+
+        <fields name="touchmenu" type="chain" label="IPHONE_MENU">
+            <field name="menutype" type="menus" default="mainmenu" label="MENU_SELECT"/>
+            <field name="enabled" type="hidden" default="1"/>
+            <field name="position" type="hidden" default="mobile-navigation"/>
+            <field name="theme" default="touch" type="hidden"/>
+            <field name="animation" type="selectbox" default="cube" label="IPHONE_TOUCHANIMATION">
+                <option value="slide">Slide</option>
+                <option value="fade">Fade</option>
+                <option value="dissolve">Dissolve</option>
+                <option value="flip">Flip</option>
+                <option value="vflip">Vertical Flip</option>
+                <option value="slideup">Slide</option>
+                <option value="swap">Swap</option>
+                <option value="cube">Cube</option>
+                <option value="pop">Pop</option>
+            </field>
+            <field name="cache" type="hidden" default="0"/>
+            <field name="module_cache" type="hidden" default="1"/>
+            <field name="startLevel" type="hidden" default="0"/>
+            <field name="endLevel" type="hidden" default="20"/>
+            <field name="showAllChildren" type="hidden" default="1"/>
+        </fields>
+
+        <fields name="iphoneimages" type="chain" default="" label="IPHONE_IMAGES">
+            <field name="enabled" type="toggle" default="1" label="ENABLED"/>
+            <field name="minWidth" default="80" type="text" class="text-short" label="MIN_WIDTH"/>
+            <field name="percentage" default="33" type="selectbox" label="PERCENTAGE_RESIZE">
+                <option value="75">75%</option>
+                <option value="50">50%</option>
+                <option value="33">33%</option>
+                <option value="25">25%</option>
+            </field>
+        </fields>
+        <fields name="iphone-header-gradient" type="columns" label="IPHONE_HEADERGRADIENT" class="gradient-container">
+            <field name="from" type="colorchooser" default="#545353" label="GRADIENT_FROM" show_label="true" position="left"/>
+            <field name="to" type="colorchooser" default="#262626" label="GRADIENT_TO" show_label="true" position="left"/>
+            <field name="fromopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="toopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="direction_start" type="selectbox" default="left-top" label="START" show_label="true"
+                   position="left">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="direction_end" type="selectbox" default="left-bottom" label="END" show_label="true"
+                   position="right">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="preview" type="gradient" label="PREVIEW" show_label="false" position="none"/>
+        </fields>
+        <fields name="iphone-showcase-gradient" type="columns" label="IPHONE_SHOWCASEGRADIENT" class="gradient-container">
+            <field name="from" type="colorchooser" default="#ededed" label="GRADIENT_FROM" show_label="true" position="left"/>
+            <field name="to" type="colorchooser" default="#fff" label="GRADIENT_TO" show_label="true" position="left"/>
+            <field name="fromopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="toopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="direction_start" type="selectbox" default="left-top" label="START" show_label="true"
+                   position="left">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="direction_end" type="selectbox" default="left-bottom" label="END" show_label="true"
+                   position="right">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="preview" type="gradient" label="PREVIEW" show_label="false" position="none"/>
+        </fields>
+        <fields name="iphone-copyright-gradient" type="columns" label="IPHONE_COPYRIGHTGRADIENT" class="gradient-container">
+            <field name="from" type="colorchooser" default="#545353" label="GRADIENT_FROM" show_label="true" position="left"/>
+            <field name="to" type="colorchooser" default="#262626" label="GRADIENT_TO" show_label="true" position="left"/>
+            <field name="fromopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="toopacity" default="1" type="slider" class="" label="OPACITY" show_label="false"
+                   position="right">
+                <option>0</option>
+                <option>0.1</option>
+                <option>0.2</option>
+                <option>0.3</option>
+                <option>0.4</option>
+                <option>0.5</option>
+                <option>0.6</option>
+                <option>0.7</option>
+                <option>0.8</option>
+                <option>0.9</option>
+                <option>1</option>
+            </field>
+            <field name="direction_start" type="selectbox" default="left-top" label="START" show_label="true"
+                   position="left">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="direction_end" type="selectbox" default="left-bottom" label="END" show_label="true"
+                   position="right">
+                <option value="left-top">left top</option>
+                <option value="left-bottom">left bottom</option>
+                <option value="right-top">right top</option>
+                <option value="right-bottom">right bottom</option>
+            </field>
+            <field name="preview" type="gradient" label="PREVIEW" show_label="false" position="none"/>
+        </fields>
+        <fields name="mobile" type="columns" label="IPHONE_ALIASES">
+            <field name="drawer" type="alias" default="drawer" label="DRAWER" show_label="false" position="left"/>
+            <field name="top" type="alias" default="top-a" label="TOP" show_label="false" position="left"/>
+            <field name="header" type="alias" default="header-a" label="HEADER" show_label="false" position="left"/>
+            <field name="navigation" type="alias" default="mobile-navigation" label="NAVIGATION" show_label="false"
+                   position="left"/>
+            <field name="showcase" type="alias" default="mobile-showcase" label="SHOWCASE" show_label="false"
+                   position="left"/>
+            <field name="footer" type="alias" default="footer-a" label="FOOTER" show_label="false" position="left"/>
+            <field name="copyright" type="alias" default="copyright" label="COPYRIGHT" show_label="false"
+                   position="left"/>
+        </fields>
+    </fieldset>
+
+
+    <fieldset name="advanced" label="ADVANCED">
+
+        <field name="advancedsettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+					<h2>Advanced Settings</h2>
+
+					<p>The Advanced Settings panel in the Gantry based theme administration interface includes a variety of powerful features that you can take advantage off within your WordPress site. Please refer to the help information below to find out further details on what every setting is used for.</p>
+					]]></html>
+        </field>
+        <field name="advancedtips" type="tips" tab="advanced" panel_position="right" show_label="false"/>
+
+        <fields name="cache" type="chain" label="GANTRY_CACHE" setinoverride="false">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="time" type="text" default="900" label="CACHE_TIME" class="text-short" setinoverride="false"/>
+        </fields>
+
+        <fields name="gzipper" type="chain" label="GANTRY_GZIPPER" setinoverride="false">
+            <field name="enabled" type="toggle" default="0" label="ENABLED" setinoverride="false"/>
+            <field name="time" type="text" default="600" label="CACHE_TIME" class="text-short" setinoverride="false"/>
+            <field name="expirestime" type="text" default="1440" label="EXPIRES_TIME" class="text-short"
+                   setinoverride="false"/>
+            <field name="stripwhitespace" type="toggle" default="1" label="STRIP_WHITESPACE"
+                   setinoverride="false"/>
+        </fields>
+
+        <fields name="inputstyling" type="chain" label="INPUT_STYLING">
+            <field name="enabled" type="toggle" default="0" label="ENABLED"/>
+            <field name="exclusions" type="text" default="'.content_vote'" label="EXCLUSIONS"
+                   class="text-long"/>
+        </fields>
+
+        <!--<field name="file-inline-js-enabled" type="toggle" default="1" label="FILE_INLINE_JS" />-->
+
+        <field name="component-enabled" type="toggle" default="1" label="COMPONENT_ENABLED"/>
+
+        <field name="rtl-enabled" type="toggle" default="1" label="RTL" setinoverride="false"/>
+
+        <field name="buildspans-enabled" type="toggle" default="1" label="TITLESPANS"/>
+
+        <field name="pagesuffix-enabled" type="toggle" default="0" label="PAGESUFFIX"/>
+
+        <fields name="inactive" type="chain" label="INACTIVE" setinoverride="false">
+            <field name="enabled" type="toggle" default="1" label="ENABLED" setinoverride="false"/>
+            <field name="menuitem" type="menuitem" label="SELECT_MENU_ITEM" setinoverride="false"/>
+        </fields>
+
+    </fieldset>
+    <fieldset name="assignment" label="ASSIGNMENTS">
+        <field name="assignments" type="assignments" panel_position="left" setinoverride="false"/>
+        <field name="stylesettings" type="html" panel_position="right" show_label="false">
+            <html><![CDATA[
+            <h2>Menu Assignments</h2>
+
+            <p>If a particular template style is set to <b>"Default"</b> in the <b>Template Manager: Styles</b>, you will see that style throughout the site.  However if you have another template style that you wish to display on certain pages, you can do so by selecting the relevant menu items in this tab.<br /><br />
+
+            The <b>Toggle Selection</b> button will invert the current menu item selection.</p>
+            ]]></html>
+        </field>
+    </fieldset>
+</form>

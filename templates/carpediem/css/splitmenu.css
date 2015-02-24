@@ -1,0 +1,27 @@
+/**
+ * @package   Gantry Template - RocketTheme
+ * @version   3.2.16 February 8, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/* Global */
+.menutop li {height: auto;margin: 0;padding: 0;position: relative;list-style: none;}
+.menutop em {font-size: 80%;font-weight: normal;display: block;font-style: normal;}
+.menutop li .item .menutop li.active .item {display: block;margin: 0;text-decoration: none;float: none;width: auto;}
+
+/* Root Items */
+.menutop {list-style: none;margin: 0;padding: 0 10px;position: relative;line-height: 1em;display: inline-block;}
+.menutop li {float: left;}
+.menutop li .item {white-space: nowrap;display: block;padding: 0;font-size: 1em;z-index: 100;cursor: pointer;position: relative;margin: 0;outline: none;height: 3em;}
+.menutop li .item span {display: block;margin: 0;outline: none;padding: 0 15px;width: auto;line-height: 3em;}
+.menutop li .item em {font-size: 10px;display: block;text-transform: lowercase;line-height: 0.3em;}
+.menutop li.parent .item span {padding-right: 20px;}
+.menutop li .subtext span {line-height: 1.9em;}
+.menutop li .item img {margin: 0 4px 0 0;vertical-align: text-bottom;}
+
+/* RTL */
+body.rtl .menutop li {float: right;}
+body.rtl .menutop li.parent .item span {padding-right: 15px;padding-left: 20px;}
+body.rtl .menutop li .item img {margin: 0 0 0 4px;}
+body.rtl .menutop li.parent > .item span {background-position: 8px 50%;}

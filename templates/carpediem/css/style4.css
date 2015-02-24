@@ -1,0 +1,36 @@
+/**
+ * @version   3.2.16 February 8, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+
+/* Core */
+body {color: #444;}
+#rt-header {color: #ddd;}
+#rt-bottom {color: #444;}
+.rt-container {background: #fff;} 
+a:hover {color: #000;}
+#rt-footer, #rt-copyright {color: #ddd;}
+#rt-sidebar-a {background-color: #eeeeee;}
+#rt-sidebar-b {background-color: #D4DEE3;}
+#rt-sidebar-c {background-color: #cccccc;}
+#gantry-viewswitcher {margin: 5px auto;position: relative;top:auto;right:0;}
+
+/* Navigation - Core */
+#rt-menu ul.menu li a, .menutop li.root > .item, .menu-type-splitmenu .menutop li .item {color: #fff;}
+.menutop li.parent.root > .item span, .menu-type-splitmenu .menutop li.parent .item span {background: url(../images/menus/menutop-daddy.png) 100% 50% no-repeat;}
+
+/* Navigation - Hovers */
+#rt-menu ul.menu li a:hover, .menutop li.root > .item:hover, .menutop li.active.root.f-mainparent-itemfocus > .item, .menutop li.root.f-mainparent-itemfocus > .item, .menu-type-splitmenu .menutop li:hover > .item {background: #555;color: #fff;}
+
+/* Navigation - Active */
+#rt-menu ul.menu li.active a, #rt-menu ul.menu li.active a:hover, .menutop li.root.active > .item, .menutop li.root.active > .item:hover, .menu-type-splitmenu .menutop li.active .item {background: #fff;color: #000;}
+
+/* Navigation - Dropdowns */
+.menutop .fusion-submenu-wrapper {background: #555;}
+.menutop .fusion-submenu-wrapper.level3, .menutop .fusion-submenu-wrapper.level4, .menutop .fusion-submenu-wrapper.level5, .menutop .fusion-submenu-wrapper.level6 {background: #616161;}
+.menutop ul li > .item {color: #fff;}
+.menutop ul li > .item:hover, .menutop ul li.f-menuparent-itemfocus > .item {background: #444;color: #ccc;}
+.menutop ul li > .daddy span {background: url(../images/menus/dropdown-daddy.png) 100% 50% no-repeat;}
+.menutop .fusion-grouped ol li > .item {background: url(../images/menus/menu-arrow.png) 5px 50% no-repeat;}

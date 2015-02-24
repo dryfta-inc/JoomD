@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<gantrytips>
+	
+	<tip label="iPhone Custom Theme" id="iphone-enabled"><![CDATA[You can enable or disable the custom iPhone and iPod Touch automatic theme support.]]></tip>
+	
+	<tip label="Android Custom Theme" id="android-enabled"><![CDATA[You can enable or disable the custom Android automatic theme support.]]></tip>
+	
+	<tip label="Scalable Content" id="iphone-scalable"><![CDATA[You can enable or disable the zooming feature on your website when viewed via a supported mobile device.]]></tip>
+	
+	<tip label="Mobile Menu" id="touchmenu"><![CDATA[Select a menu and the associated menu animation for the mobile theme.]]></tip>
+	
+	<tip label="Image Resize" id="iphoneimages"><![CDATA[You can enable the <strong>Images Resize</strong> setting which allows you to automatically have your website's images resized for iPhone viewers. Images that exceed the minimum width will be resized to the set percentage. Even with this option disabled, an autoresize of all the images bigger than the viewport is built-in.]]></tip>
+	
+	<tip label="Header Background" id="iphone-header-gradient"><![CDATA[Using the Color-chooser you can select two different colors to configure a gradient background which will be displayed in the Header position. These Gradients will be automatically generated thanks to the powerful CSS3 supported by the mobile device and a preview can be seen.]]></tip>
+	
+	<tip label="Showcase Background" id="iphone-showcase-gradient"><![CDATA[Using the Color-chooser you can select two different colors to configure a gradient background which will be displayed in the Showcase position. These Gradients will be automatically generated thanks to the powerful CSS3 supported by the mobile device and a preview can be seen.]]></tip>
+	
+	<tip label="Copyright Background" id="iphone-copyright-gradient"><![CDATA[Using the Color-chooser you can select two different colors to configure a gradient background which will be displayed in the Copyright position. These Gradients will be automatically generated thanks to the powerful CSS3 supported by the mobile device and a preview can be seen.]]></tip>
+
+    <tip label="Positions Aliases" id="mobile"><![CDATA[Allows to 'redirect' an mobile device custom position to a different one. Useful if you want to show some content you already have and don't want to update twice.]]></tip>
+
+</gantrytips>

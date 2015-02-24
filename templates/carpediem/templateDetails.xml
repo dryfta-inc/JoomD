@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6.0" type="template" method="upgrade" client="site">
+  <name>Carpe Diem</name>
+  <author>Syed Shujayat</author>
+  <creationDate>April 2012</creationDate>
+  <copyright>(C) 2005 - 2012 Joomla6teen, Inc. All rights reserved.</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>support@joomla6teen.com</authorEmail>
+  <authorUrl>http://www.joomla6teen.com</authorUrl>
+  <version>3.2.16</version>
+  <description>Carpe Diem is the April 2012 Joomla Template for Joomla 1.7 and 2.5. It is a highly flexible, multi-purpose Joomla template powered by Gantry framework. Use it to build your News portal, High-end blogs, Magazines portal, Directory Listings, Coupons portal and anything you can think of! Possibilities are endless with Carpe Diem.</description>
+  <files>
+    <filename>index.php</filename>
+    <filename>component.php</filename>
+    <filename>debugbody.php</filename>
+    <filename>gantry.config.php</filename>
+    <filename>htaccess.txt</filename>
+    <filename>template_thumbnail.png</filename>
+    <filename>template-options.12.xml</filename>
+    <filename>template-options.16.xml</filename>
+    <filename>template-options.xml</filename>
+    <filename>templateDetails.xml</filename>
+    <filename>template-overview.php</filename>
+    <filename>tests.php</filename>
+    <folder>admin</folder>
+    <folder>css</folder>
+    <folder>custom</folder>
+    <folder>features</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>js</folder>
+    <folder>lib</folder>
+  </files>
+  <positions>
+    <position>analytics</position>
+    <position>drawer</position>
+    <position>top-a</position>
+    <position>top-b</position>
+    <position>top-c</position>
+    <position>top-d</position>
+    <position>top-e</position>
+    <position>top-f</position>
+    <position>header-a</position>
+    <position>header-b</position>
+    <position>header-c</position>
+    <position>header-d</position>
+    <position>header-e</position>
+    <position>header-f</position>
+    <position>navigation</position>
+    <position>showcase-a</position>
+    <position>showcase-b</position>
+    <position>showcase-c</position>
+    <position>showcase-d</position>
+    <position>showcase-e</position>
+    <position>showcase-f</position>
+    <position>feature-a</position>
+    <position>feature-b</position>
+    <position>feature-c</position>
+    <position>feature-d</position>
+    <position>feature-e</position>
+    <position>feature-f</position>
+    <position>utility-a</position>
+    <position>utility-b</position>
+    <position>utility-c</position>
+    <position>utility-d</position>
+    <position>utility-e</position>
+    <position>utility-f</position>
+    <position>maintop-a</position>
+    <position>maintop-b</position>
+    <position>maintop-c</position>
+    <position>maintop-d</position>
+    <position>maintop-e</position>
+    <position>maintop-f</position>
+    <position>breadcrumb</position>
+    <position>sidebar-a</position>
+    <position>sidebar-b</position>
+    <position>sidebar-c</position>
+    <position>content-top-a</position>
+    <position>content-top-b</position>
+    <position>content-top-c</position>
+    <position>content-bottom-a</position>
+    <position>content-bottom-b</position>
+    <position>content-bottom-c</position>
+    <position>mainbottom-a</position>
+    <position>mainbottom-b</position>
+    <position>mainbottom-c</position>
+    <position>mainbottom-d</position>
+    <position>mainbottom-e</position>
+    <position>mainbottom-f</position>
+    <position>bottom-a</position>
+    <position>bottom-b</position>
+    <position>bottom-c</position>
+    <position>bottom-d</position>
+    <position>bottom-e</position>
+    <position>bottom-f</position>
+	<position>cont-bottom-a</position>
+	<position>cont-bottom-b</position>
+	<position>cont-bottom-c</position>
+	<position>cont-bottom-d</position>
+	<position>cont-bottom-e</position>
+	<position>cont-bottom-f</position>
+    <position>footer-a</position>
+    <position>footer-b</position>
+    <position>footer-c</position>
+    <position>footer-d</position>
+    <position>footer-e</position>
+    <position>footer-f</position>
+    <position>banner-coupon-a</position>
+    <position>banner-coupon-b</position>
+    <position>banner-coupon-c</position>
+    <position>banner-coupon-d</position>
+    <position>banner-coupon-e</position>
+	<position>seconcontentBottom-a</position>
+	<position>seconcontentBottom-b</position>
+	<position>seconcontentBottom-c</position>
+	<position>seconcontentBottom-b</position>
+	<position>seconcontentBottom-e</position>
+	<position>seconcontentBottom-f</position>
+     <position>copyright</position>
+    <position mobile="true">mobile-drawer</position>
+    <position mobile="true">mobile-top</position>
+    <position mobile="true">mobile-header</position>
+    <position mobile="true">mobile-navigation</position>
+    <position mobile="true">mobile-showcase</position>
+    <position mobile="true">mobile-footer</position>
+    <position mobile="true">mobile-copyright</position>
+    <position>debug</position>
+  </positions>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_carpediem.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="base" addfieldpath="/templates/carpediem/fields">
+        <field name="master" type="hidden" value="true" default="true"/>
+        <field type="spacer" label="This template needs the &lt;a href='http://www.gantry-framework.org'&gt;Gantry Template Framework&lt;/a&gt;.  Please download and install from &lt;a href='http://www.gantry-framework.org'&gt;here&lt;/a&gt;"/>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
