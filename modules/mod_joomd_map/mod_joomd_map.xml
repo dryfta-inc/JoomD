@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_map</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.0.1</version>
+	<description>JOOMDITEMSONMAPMODULEDESCR</description>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_joomd_map.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_map.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_map">mod_joomd_map.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/components/com_joomd/libraries/elements">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="Select Type" description="Select Type to display the Entries from">
+			</field>
+			<field name="cats" type="sqlmultilistx" query="select id, name from #__joomd_category where published = 1 order by name asc" key_field="id" value_field="name" 
+default="0" multiple="multiple" label="Select Categories" description="Select categories to display the entries from or Leave it if you want to display from all the categories." size="5">
+			</field>
+			<field name="fieldid" type="sql" query="select id, name from #__joomd_field where published = 1 and type = 14 order by name asc" key_field="id" value_field="name" 
+default="1" label="Address Field" description="Select Field to get the address from. You need at least one address type field to get this module working.">
+        	</field>
+			<field name="featured" type="radio" default="" label="Featured" description="Select Yes if you want to display only Featured Entries">
+				<option value="1">Yes</option>
+				<option value="">No</option>
+			</field>
+			<field name="fields" type="sqlmultilistx" query="select id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" multiple="multiple" label="Display Fields" description="Select Fields to display." size="5">
+			</field>
+			<field name="zoom" type="text" default="13" label="Map zoom" description="Please enter the zoom index" size="10" />
+			<field name="lat" type="text" default="34.124" label="Map Center Lat" description="Please enter the Latitude of the Center Point" size="50" />
+			<field name="lng" type="text" default="-118.249" label="Map Center Long" description="Please enter the Longitude of the Center Point" size="50" />
+			<field name="getdir" type="radio" default="1" label="Enable Directions" description="If yes, you'll be able to get the directions to any item location from your current location. An icon will be shown on map for your location">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="resize" type="radio" default="1" label="Map Resize" description="If yes, you'll be able to resize the map">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</field>
+			<field name="width" type="text" default="600" label="Google Map Width" description="Please enter google map width in pixels" size="3" />
+			<field name="height" type="text" default="350" label="Google Map Height" description="Please enter google map height in pixels" size="3" />
+			<field name="maxwidth" type="text" default="900" label="Maximum Width" description="Please enter maximum width in pixels after resize" size="3" />
+			<field name="maxheight" type="text" default="500" label="Maximum Height" description="Please enter Maximum height in pixels after resize" size="3" />
+			<field name="limit" type="text" default="50" label="Limit" description="Enter how many entries you want to display." />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

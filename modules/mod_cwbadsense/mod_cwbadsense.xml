@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site">
+	<name>CWB Google Adsense</name>
+	<author>Chaweeban</author>
+	<creationDate>Apr 2011</creationDate>
+	<copyright>Copyright (C) 2011 Chaweeban. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>chaweeban@yahoo.com</authorEmail>
+	<authorUrl>www.chaweeban.com</authorUrl>
+	<version>1.6.0</version>
+	<description>This module for Joomla 1.6 displays Google Adsense advertising.</description>
+	<files>
+		<filename module="mod_cwbadsense">mod_cwbadsense.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_cwbadsense.ini</language>
+		<language tag="en-GB">en-GB.mod_cwbadsense.sys.ini</language>
+		<language tag="de-DE">de-DE.mod_cwbadsense.ini</language>
+		<language tag="de-DE">de-DE.mod_cwbadsense.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+			<field
+					name="client"
+					type="text"
+					label="MOD_CWBADSENSE_FIELD_PUBLISHERID_LABEL"
+					description="MOD_CWBADSENSE_FIELD_PUBLISHERID_DESC" />			
+			
+			<field
+					name="slot"
+					type="text"
+					label="MOD_CWBADSENSE_FIELD_ADSLOT_LABEL"
+					description="MOD_CWBADSENSE_FIELD_ADSLOT_DESC" />			
+		    <field
+                    name="format" 
+					type="list" 
+					default="" 
+					label="MOD_CWBADSENSE_FIELD_ADFORMAT_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_ADFORMAT_DESC">
+					<option value=""> --- </option> 
+			        <option value="468x60"> 468 x 60 Banner </option> 
+			        <option value="234x60"> 234 x 60 Half Banner </option> 
+			        <option value="120x600"> 120 x 600 Skyscraper </option> 
+			        <option value="160x600"> 160 x 600 Wide Skyscraper </option> 
+			        <option value="120x240"> 120 x 240 Vertical Banner </option> 
+					<option value="336x280"> 336 x 280 Large Rectangle </option>
+			        <option value="300x250"> 300 x 250 Medium rectangle </option> 
+			        <option value="250x250"> 250 x 250 Square </option> 
+			        <option value="200x200"> 200 x 200 Small Square </option>
+			        <option value="180x150"> 180 x 150 Small Rectangle </option>
+			        <option value="125x125"> 125 x 125 Button </option>
+			        <option value="728x90"> 728 x 90 Leaderboard </option>
+					<option value="728x15">728 x 15 Link-Block</option>
+			        <option value="468x15">468 x 15 Link-Block</option>
+			        <option value="120x90">120 x 90 Link-Block</option>
+			        <option value="160x90">160 x 90 Link-Block</option>
+			        <option value="180x90">180 x 90 Link-Block</option>
+			        <option value="200x90">200 x 90 Link-Blocky</option>
+		     </field>
+			 
+			 <field
+			        name="margin-top" 
+					type="text" 
+					default="0"
+					size="2"
+					label="MOD_CWBADSENSE_FIELD_MARGIN_TOP_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_MARGIN_TOP_DESC" />
+
+		    <field
+		            name="margin-right" 
+					type="text" 
+					default="0"
+					size="2"
+					label="MOD_CWBADSENSE_FIELD_MARGIN_RIGHT_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_MARGIN_RIGHT_DESC" />			 
+
+			 <field
+			        name="margin-bottom" 
+					type="text" 
+					default="0"
+					size="2" 
+					label="MOD_CWBADSENSE_FIELD_MARGIN_BOTTOM_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_MARGIN_BOTTOM_DESC" /> 
+			
+		    <field
+			        name="margin-left"
+					type="text" 
+					default="0"
+					size="2"
+					label="MOD_CWBADSENSE_FIELD_MARGIN_LEFT_LABEL"
+					description="MOD_CWBADSENSE_FIELD_MARGIN_LEFT_DESC" />
+					
+           	<field 
+			        name="align"
+					type="list" 
+					default="none" 
+					label="MOD_CWBADSENSE_FIELD_ALIGN_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_ALIGN_DESC">
+				    <option value="center"> MOD_CWBADSENSE_FIELD_CENTER_OPTION </option> 
+				    <option value="left"> MOD_CWBADSENSE_FIELD_LEFT_OPTION </option> 
+				    <option value="right"> MOD_CWBADSENSE_FIELD_RIGHT_OPTION </option> 
+                    <option value="none">  MOD_CWBADSENSE_FIELD_NONE_OPTION  </option> 
+		    </field>
+			
+			 <field
+			        name="custom-styles" 
+					type="textarea" 
+					default="" 
+					rows="4"
+					label="MOD_CWBADSENSE_FIELD_CUSTOM_STYLES_LABEL" 
+					description="MOD_CWBADSENSE_FIELD_CUSTOM_STYLES_DESC" />
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

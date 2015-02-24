@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>MOD_NEWSSCROLLER_SELF_DHTML</name>
+    <author>Viktor Vogel</author>
+    <creationDate>02-Feb-2012</creationDate>
+    <copyright>This module its released under GPL/GNU License</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>admin@kubik-rubik.de</authorEmail>
+    <authorUrl>www.kubik-rubik.de</authorUrl>
+    <version>2.5-1</version>
+    <description>MOD_NEWSSCROLLER_SELF_DHTML_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_newsscroller_self_dhtml">mod_newsscroller_self_dhtml.php</filename>
+        <filename module="mod_newsscroller_self_dhtml">helper.php</filename>
+        <filename module="mod_newsscroller_self_dhtml">index.html</filename>
+        <filename module="mod_newsscroller_self_dhtml">tmpl/default.php</filename>
+        <filename module="mod_newsscroller_self_dhtml">tmpl/index.html</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_newsscroller_self_dhtml.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_newsscroller_self_dhtml.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_newsscroller_self_dhtml.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.mod_newsscroller_self_dhtml.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="nonews" type="text" size="40" default="NS-DHTML - Version 2.5-1" label="MOD_NEWSSCROLLER_SELF_DHTML_NONEWS" description="MOD_NEWSSCROLLER_SELF_DHTML_NONEWSDESC" />
+                <field type="spacer" name="News 1" />
+                <field name="linenews1status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASK" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="linenews1" type="text" size="40" default="" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTION" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONDESC" />
+                <field name="news1" type="textarea" cols="40" rows="5" default="" filter="raw" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTDESC" />
+                <field name="urlnews1status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKASK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="urlnews1" type="text" size="40" default="http://" label="MOD_NEWSSCROLLER_SELF_DHTML_LINK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKDESC" />
+                <field name="urlnews1name" type="text" size="40" default="Link" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAME" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAMEDESC" />
+                <field name="urlnews1newwindow" type="radio" default="_blank" label="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOW" description="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOWDESC">
+                    <option value="_blank">JYES</option>
+                    <option value="_self">JNO</option>
+                </field>
+                <field type="spacer" name="News 2" />
+                <field name="linenews2status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASK" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="linenews2" type="text" size="40" default="" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTION" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONDESC" />
+                <field name="news2" type="textarea" cols="40" rows="5" default="" filter="raw" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTDESC" />
+                <field name="urlnews2status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKASK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="urlnews2" type="text" size="40" default="http://" label="MOD_NEWSSCROLLER_SELF_DHTML_LINK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKDESC" />
+                <field name="urlnews2name" type="text" size="40" default="Link" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAME" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAMEDESC" />
+                <field name="urlnews2newwindow" type="radio" default="_blank" label="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOW" description="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOWDESC">
+                    <option value="_blank">JYES</option>
+                    <option value="_self">JNO</option>
+                </field>
+                <field type="spacer" name="News 3" />
+                <field name="linenews3status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASK" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="linenews3" type="text" size="40" default="" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTION" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONDESC" />
+                <field name="news3" type="textarea" cols="40" rows="5" default="" filter="raw" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTDESC" />
+                <field name="urlnews3status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKASK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="urlnews3" type="text" size="40" default="http://" label="MOD_NEWSSCROLLER_SELF_DHTML_LINK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKDESC" />
+                <field name="urlnews3name" type="text" size="40" default="Link" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAME" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAMEDESC" />
+                <field name="urlnews3newwindow" type="radio" default="_blank" label="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOW" description="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOWDESC">
+                    <option value="_blank">JYES</option>
+                    <option value="_self">JNO</option>
+                </field>
+                <field type="spacer" name="News 4" />
+                <field name="linenews4status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASK" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="linenews4" type="text" size="40" default="" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTION" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONDESC" />
+                <field name="news4" type="textarea" cols="40" rows="5" default="" filter="raw" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTDESC" />
+                <field name="urlnews4status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKASK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="urlnews4" type="text" size="40" default="http://" label="MOD_NEWSSCROLLER_SELF_DHTML_LINK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKDESC" />
+                <field name="urlnews4name" type="text" size="40" default="Link" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAME" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAMEDESC" />
+                <field name="urlnews4newwindow" type="radio" default="_blank" label="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOW" description="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOWDESC">
+                    <option value="_blank">JYES</option>
+                    <option value="_self">JNO</option>
+                </field>
+                <field type="spacer" name="News 5" />
+                <field name="linenews5status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASK" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="linenews5" type="text" size="40" default="" label="MOD_NEWSSCROLLER_SELF_DHTML_CAPTION" description="MOD_NEWSSCROLLER_SELF_DHTML_CAPTIONDESC" />
+                <field name="news5" type="textarea" cols="40" rows="5" default="" filter="raw" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTDESC" />
+                <field name="urlnews5status" type="radio" default="no" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKASK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKASKDESC">
+                    <option value="yes">JYES</option>
+                    <option value="no">JNO</option>
+                </field>
+                <field name="urlnews5" type="text" size="40" default="http://" label="MOD_NEWSSCROLLER_SELF_DHTML_LINK" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKDESC" />
+                <field name="urlnews5name" type="text" size="40" default="Link" label="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAME" description="MOD_NEWSSCROLLER_SELF_DHTML_LINKNAMEDESC" />
+                <field name="urlnews5newwindow" type="radio" default="_blank" label="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOW" description="MOD_NEWSSCROLLER_SELF_DHTML_NEWWINDOWDESC">
+                    <option value="_blank">JYES</option>
+                    <option value="_self">JNO</option>
+                </field>
+                <field name="sort" type="radio" default="0" label="MOD_NEWSSCROLLER_SELF_DHTML_SORT" description="MOD_NEWSSCROLLER_SELF_DHTML_SORTDESC">
+                    <option value="0">MOD_NEWSSCROLLER_SELF_DHTML_ASC</option>
+                    <option value="1">MOD_NEWSSCROLLER_SELF_DHTML_DESC</option>
+                    <option value="2">MOD_NEWSSCROLLER_SELF_DHTML_RANDOM</option>
+                    <option value="3">MOD_NEWSSCROLLER_SELF_DHTML_MANUAL</option>
+                </field>
+                <field name="manualsorting" type="text" default="1,2,3,4,5" label="MOD_NEWSSCROLLER_SELF_DHTML_MANUALSORTING" description="MOD_NEWSSCROLLER_SELF_DHTML_MANUALSORTINGDESC" />
+                <field name="color" type="text" default="#000000" label="MOD_NEWSSCROLLER_SELF_DHTML_COLOR" description="MOD_NEWSSCROLLER_SELF_DHTML_COLORDESC" />
+                <field name="colortext" type="text" default="#3F3F3F" label="MOD_NEWSSCROLLER_SELF_DHTML_COLORTEXT" description="MOD_NEWSSCROLLER_SELF_DHTML_COLORTEXTDESC" />
+                <field name="colorlink" type="text" default="#6F2222" label="MOD_NEWSSCROLLER_SELF_DHTML_COLORLINK" description="MOD_NEWSSCROLLER_SELF_DHTML_COLORLINKDESC" />
+                <field name="bgcolor" type="text" default="transparent" label="MOD_NEWSSCROLLER_SELF_DHTML_BGCOLOR" description="MOD_NEWSSCROLLER_SELF_DHTML_BGCOLORDESC" />
+                <field name="textsize" type="list" default="14" label="MOD_NEWSSCROLLER_SELF_DHTML_SIZE" description="MOD_NEWSSCROLLER_SELF_DHTML_SIZEDESC" >
+                    <option value="7">7 px</option>
+                    <option value="8">8 px</option>
+                    <option value="9">9 px</option>
+                    <option value="10">10 px</option>
+                    <option value="11">11 px</option>
+                    <option value="12">12 px</option>
+                    <option value="13">13 px</option>
+                    <option value="14">14 px</option>
+                    <option value="15">15 px</option>
+                    <option value="16">16 px</option>
+                    <option value="17">17 px</option>
+                    <option value="18">18 px</option>
+                </field>
+                <field name="textweight" type="list" default="normal" label="MOD_NEWSSCROLLER_SELF_DHTML_FONTWEIGHT" description="MOD_NEWSSCROLLER_SELF_DHTML_FONTWEIGHTDESC" >
+                    <option value="normal">MOD_NEWSSCROLLER_SELF_DHTML_NORMAL</option>
+                    <option value="bold">MOD_NEWSSCROLLER_SELF_DHTML_BOLD</option>
+                    <option value="bolder">MOD_NEWSSCROLLER_SELF_DHTML_BOLDER</option>
+                    <option value="lighter">MOD_NEWSSCROLLER_SELF_DHTML_LIGHTER</option>
+                </field>
+                <field name="fontstyle" type="radio" default="normal" label="MOD_NEWSSCROLLER_SELF_DHTML_FONTSTYLE" description="MOD_NEWSSCROLLER_SELF_DHTML_FONTSTYLEDESC">
+                    <option value="normal">MOD_NEWSSCROLLER_SELF_DHTML_NORMAL</option>
+                    <option value="italic">MOD_NEWSSCROLLER_SELF_DHTML_ITALIC</option>
+                </field>
+                <field name="textalign" type="radio" default="center" label="MOD_NEWSSCROLLER_SELF_DHTML_TEXTALIGN" description="MOD_NEWSSCROLLER_SELF_DHTML_TEXTALIGNDESC">
+                    <option value="center">MOD_NEWSSCROLLER_SELF_DHTML_CENTER</option>
+                    <option value="left">MOD_NEWSSCROLLER_SELF_DHTML_LEFT</option>
+                    <option value="right">MOD_NEWSSCROLLER_SELF_DHTML_RIGHT</option>
+                </field>
+                <field name="hor" type="radio" default="1" label="MOD_NEWSSCROLLER_SELF_DHTML_HOR" description="MOD_NEWSSCROLLER_SELF_DHTML_HORDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="height" type="text" default="200" label="MOD_NEWSSCROLLER_SELF_DHTML_HEIGHT" description="MOD_NEWSSCROLLER_SELF_DHTML_HEIGHTDESC" />
+                <field name="width" type="text" default="100" label="MOD_NEWSSCROLLER_SELF_DHTML_WIDTH" description="MOD_NEWSSCROLLER_SELF_DHTML_WIDTHDESC" />
+                <field name="marqueespeed" type="list" default="2" label="MOD_NEWSSCROLLER_SELF_DHTML_MARQUEESPEED" description="MOD_NEWSSCROLLER_SELF_DHTML_MARQUEESPEEDDESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+                <field name="intervaltime" type="text" default="60" label="MOD_NEWSSCROLLER_SELF_DHTML_INTERVALTIME" description="MOD_NEWSSCROLLER_SELF_DHTML_INTERVALTIMEDESC" />
+                <field name="scrolldelay" type="text" default="2" label="MOD_NEWSSCROLLER_SELF_DHTML_SCROLLDELAY" description="MOD_NEWSSCROLLER_SELF_DHTML_SCROLLDELAYDESC" />
+                <field name="pauseit" type="radio" default="1" label="MOD_NEWSSCROLLER_SELF_DHTML_PAUSEIT" description="MOD_NEWSSCROLLER_SELF_DHTML_PAUSEITDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="consecutive" type="radio" default="1" label="MOD_NEWSSCROLLER_SELF_DHTML_CONSECUTIVE" description="MOD_NEWSSCROLLER_SELF_DHTML_CONSECUTIVEDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="copy" type="radio" default="1" label="MOD_NEWSSCROLLER_SELF_DHTML_POWERED" description="MOD_NEWSSCROLLER_SELF_DHTML_POWEREDDESC">
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

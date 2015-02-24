@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>BT Content Slider</name>
+	<creationDate>Sep 2011</creationDate>
+	<author>www.bowthemes.com</author>
+	<copyright>http://www.gnu.org/licenses/gpl-2.0.html</copyright>
+	<authorEmail>support@bowthemes.com</authorEmail>
+	<authorUrl>http://www.bowthemes.com</authorUrl>
+	<version>1.4</version>
+	<description><![CDATA[<style>.bt_description h3{	text-transform: uppercase;	margin: 20px 0px 10px 0px;	}	.bt_description img{	float:left;	margin:5px 10px 5px 0px;	}	.bt_description p,.bt_description li{	padding: 5px 5px 5px 30px;		list-style: none outside none;					}		.bt_description ul.list-style li{	background:url(../modules/mod_bt_contentslider/admin/images/tick.png) 0px 6px no-repeat;	padding-left:30px;	line-height:15px;	}</style><div class="bt_description"><h3>BT content slider Module Version 1.4</h3>			<a href="http://bowthemes.com" target="_blank"><img src="../modules/mod_bt_contentslider/admin/images/bt-slider.png"></a><p>Helps to slide your articles from Joomla! categories with cool effects, rich backend configs covering layout, animation control, auto thumbnail creating, images resizing, numbering articles, sorting ect...</p><br clear="both" /><h3>Features</h3><ul class="list-style"><li>Compatibility with Joomla 1.5, 1.6, 1.7 and Joomla 2.5</li><li>Content control display from any section, category or article ID's</li><li>Support for K2 component</li><li>Scalable size of the module</li><li>Horizontal and vertical news presentation (columns and rows configuration).</li><li>Show text, image, author, date, section/category name and button "read more" option, with order customization.</li><li>Image Cropping</li><li>On/Off front page articles display in modules</li><li>Easy and friendly back-end administration.</li><li>Used Javascript Framework:  Jquery latest version</li><li>Fully compatible: Firefox, IE7+, Opera 9.5, Safari, Netscape, Google Chrome, Camino, Flock 0.7+.</li>		</ul><h3>UPgrade versions</h3><p>Your current versions is 1.4. <a target="_blank" href="http://bowthemes.com">Find our latest versions now</a></p><h3>Userful links</h3><ul><li>Video tutorials</li><li>Report bug</li><li>Forum support</li></ul><h3>About bow themes & copyright</h3>	<p>Bow Themes is Professional Joomla template provider. We are focused on creating unique, attractive and clean templates without loosing flexibility and simplicity of customization</p>Copyright 2004 - 2011 <a target="_blank" href="http://bowthemes.com">http://bowthemes.com</a>	</div>]]></description>
+	<files>
+		<filename module="mod_bt_contentslider">mod_bt_contentslider.php</filename>
+		<filename module="mod_bt_contentslider">index.html</filename>
+		<folder module="mod_bt_contentslider">images</folder>
+		<folder module="mod_bt_contentslider">classes</folder>
+		<folder module="mod_bt_contentslider">elements</folder>
+		<folder module="mod_bt_contentslider">tmpl</folder>
+		<folder module="mod_bt_contentslider">admin</folder>
+		<folder module="mod_bt_contentslider">helpers</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_bt_contentslider.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="Basic" label="GLOBALSETTING">
+				<field name="moduleclass_sfx" type="text" default=""
+					label="MODULE_CLASS_SUFFIX" description="MODULE_CLASS_SUFFIX_DESC" />
+				<field name="content_title" type="text" default=""
+					label="CONTENT_TITLE" description="CONTENT_TITLE_DESC" />
+				<field type="spacer" name="NAVIGATION_SETTING" default="NAVIGATION_SETTING" />
+				<field name="butlet" type="list" default="1" class="bt_switch"
+					label="BUTLET" description="BUTLET_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="next_back" class="bt_switch" type="list" default="1"
+					label="NEXT_BACK" description="NEXT_BACK_DESC">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="navigation_top" type="text" default="0"
+					label="NAVIGATION_TOP" description="NAVIGATION_TOP_DESC" />
+				<field name="navigation_right" type="text" default="0"
+					label="NAVIGATION_RIGHT" description="NAVIGATION_RIGHT_DESC" />
+				<field type="spacer" name="GIRD_SETTING" default="GIRD_SETTING" />
+				<field name="module_width" type="text" default="640" label="MODULE_WIDTH"
+					description="MODULE_WIDTH_DESC" />
+				<field name="auto_height" type="list" default="1" class="bt_switch"
+					label="Auto adjust height" description="Auto adjust height effect">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="items_per_cols" type="text" default="1"
+					label="ITEMS_PER_COLS" description="ITEMS_PER_COLS_DESC" />
+				<field name="items_per_rows" type="text" default="3"
+					label="ITEMS_PER_ROWS" description="ITEMS_PER_ROWS_DESC" />
+			</fieldset>
+			<fieldset name="source_setting" label="SOURCE_SETTING"
+				addfieldpath="/modules/mod_bt_contentslider/elements">
+				<field name="source" type="list" default="category" label="SOURCE_FROM"
+					description="SOURCE_FROM_DESC">
+					<option value="category">CATEGORY</option>
+					<option value="article_ids">ARTICLES_IDS</option>
+					<option value="k2_category">K2_CATEGORY</option>
+					<option value="k2_article_ids">K2_ARTICLES_IDS</option>
+					<option value="btportfolio_category">BT_PORTFOLIO_CATEGORY</option>
+					<option value="btportfolio_article_ids">BT_PORTFOLIO_ARTICLE</option>
+					<option value="coupons_cat">Coupons Category</option>
+				</field>
+				<field name="article_ids" type="text" default="" label="ARTICLES_IDS"
+					description="ARTICLES_IDS_DESC" />
+				<field name="k2_article_ids" type="text" default=""
+					label="K2_ARTICLES_IDS" description="K2_ARTICLES_IDS_DESC" />
+				<field name="btportfolio_article_ids" type="text" default=""
+					label="BT_PORTFOLIO_ARTICLE" />
+				<field name="category" show_root="true" type="category"
+					extension="com_content" multiple="true" size="10" label="CONTENT_CATEGORY"
+					description="CONTENT_CATEGORY_DESC" />
+				<field name="k2_category" type="k2multicategories" extension="k2multicategories"
+					default="" size="10" multiple="multiple" label="K2_CATEGORIES"
+					description="K2CATEGORIES_DESC" />
+				<field name="btportfolio_category" type="portfoliocategory"
+					default="" size="10" multiple="multiple" label="BT_PORTFOLIO_CATEGORY" />
+				<field name="limit_items" type="text" default="12" label="LIMIT_ITEMS"
+					description="LIMIT_ITEMS_DESC" />
+				<field name="user_id" type="list" default="0" label="USER_FILTER"
+					description="USER_FILTER_DESC">
+					<option value="0">USER_ANYONE</option>
+					<option value="by_me">USER_ADDED_BY_ME</option>
+					<option value="not_me">USER_NOTADDED_BY_ME</option>
+				</field>
+				<field name="show_featured" type="list" default="1"
+					label="SHOW_FEATURED" description="SHOW_FEATURED_DESC">
+					<option value="1">JSHOW</option>
+					<option value="2">JHIDE</option>
+					<option value="3">ONLY_SHOW_FEATURED</option>
+				</field>
+				<field name="ordering" type="list" default="created-asc"
+					label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+					<option value="id-asc">ID_ASCENDING</option>
+					<option value="id-desc">ID_DESCENDING</option>
+					<option value="ordering-asc">ORDERING_ASCENDING</option>
+					<option value="ordering-desc">ORDERING_DESCENDING</option>
+					<option value="hits-asc">HIT_ASCENDING</option>
+					<option value="hits-desc">HIT_DESCENDING</option>
+					<option value="created-asc">DATE_ASCENDING</option>
+					<option value="created-desc">DATE_DESCENDING</option>
+					<option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+					<option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+					<option value="rand-">RANDOM</option>
+				</field>
+				<field name="itemid" type="menuitem" description="SELECTED_ITEMID_DESC"
+					label="SELECTED_ITEMID_LABEL" />
+			</fieldset>
+			<fieldset name="itemlayoutsetting" label="Item Layout Setting">
+				<field type="spacer" name="title_option" default="TITLE_OPTION" />
+				<field name="show_title" type="list" default="1" class="bt_switch"
+					label="SHOW_TITLE" description="SHOW_TITLE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="limit_title_by" type="list" default="word"
+					label="LIMIT_TITLE_BY" description="LIMIT_TITLE_BY_DESC">
+					<option value="word">WORD</option>
+					<option value="char">CHARACTER</option>
+				</field>
+				<field name="title_max_chars" type="text" default="8"
+					label="TITLE_MAX_CHARS" description="TITLE_MAX_CHARS_DESC" />
+				<field type="spacer" name="intro_text_option" default="INTRO_TEXT_OPTION" />
+				<field name="show_intro" type="list" default="1" class="bt_switch"
+					label="SHOW_INTRO" description="SHOW_INTRO_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="limit_description_by" type="list" default="char"
+					label="LIMIT_DESCRIPTION_BY" description="LIMIT_DESCRIPTION_BY_DESC">
+					<option value="word">WORD</option>
+					<option value="char">CHARACTER</option>
+				</field>
+				<field name="description_max_chars" type="text" default="100"
+					label="DESCRIPTION_MAX_CHARS" description="DESCRIPTION_MAX_CHARS_DESC" />
+				<field name="show_category_name" type="list" default="1"
+					class="bt_switch" label="SHOW_CATEGORY_NAME" description="SHOW_CATEGORY_NAME_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_category_name_as_link" type="list" default="1"
+					class="bt_switch" label="SHOW_CATEGORY_NAME_AS_LINK" description="SHOW_CATEGORY_NAME_AS_LINK_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_readmore" type="list" default="1" class="bt_switch"
+					label="SHOW_READ_MORE" description="SHOW_READ_MORE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_date" type="list" default="0" class="bt_switch"
+					label="SHOW_DATE" description="SHOW_DATE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="show_author" type="list" default="0" class="bt_switch"
+					label="SHOW_AUTHOR" description="SHOW_AUTHOR_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field type="spacer" name="image_option" default="IMAGE_OPTION" />
+				<field name="show_image" type="list" default="1" class="bt_switch"
+					label="SHOW_IMAGE" description="SHOW_IMAGE_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="check_image_exist" type="list" default="1" class="bt_switch"
+					label="CHECK_IMAGE_EXIST" description="CHECK_IMAGE_EXIST_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="image_align" type="list" default="center" label="IMAGE_ALIGN"
+					description="IMAGE_ALIGN_DESC">
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+					<option value="center">Center</option>
+				</field>
+				<field name="image_thumb" type="list" default="1" class="bt_switch"
+					label="IMAGE_THUMB" description="IMAGE_THUMB_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="thumbnail_width" type="text" default="180"
+					label="THUMBNAIL_WIDTH" description="THUMBNAIL_WIDTH_DESC" />
+				<field name="thumbnail_height" type="text" default="120"
+					label="THUMBNAIL_HEIGHT" description="THUMBNAIL_HEIGHT_DESC" />
+					<field name="default_thumb" type="list" default="1" class="bt_switch"
+					label="DEFAULT_THUMB" description="DEFAULT_THUMB_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+					
+			</fieldset>
+			<fieldset name="effectsetting" label="Effect Setting">
+				<field name="hovereffect" type="list" default="1" class="bt_switch"
+					label="IMAGE_THUMB_EFFECT" description="IMAGE_THUMB_EFFECT_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="next_back_effect" type="list" default="slide"
+					label="NEXT_BACK_EFFECT_LABEL" description="NEXT_BACK_EFFECT_DESC">
+					<option value="slide">Slide</option>
+					<option value="fade">Fade</option>
+				</field>
+				<field name="bullet_effect" type="list" default="slide"
+					label="BULLET_EFFECT_LABEL" description="BULLET_EFFECT_DESC">
+					<option value="slide">Slide</option>
+					<option value="fade">Fade</option>
+				</field>
+				<field name="pause_hover" class="bt_switch" type="list"
+					default="1" label="PAUSE_HOVER_LABEL" description="PAUSE_HOVER_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="interval" type="text" default="5000" label="INTERVAL"
+					description="INTERVAL_DESC" />
+				<field name="duration" type="text" default="500"
+					label="ANIMATION_DURATION" description="ANIMATION_DURATION_DESC" />
+				<field name="effect" type="list" default="easeInQuad"
+					label="PAGE_ANIMATION_TRANSITION" description="PAGE_ANIMATION_TRANSITION_DESC">
+					<option value="jswing">jswing</option>
+					<option value="def">def</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				<field name="auto_start" type="list" class="bt_switch"
+					default="1" label="AUTO_START" description="AUTO_START_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field class="bt_switch" name="auto_strip_tags" type="list"
+					default="1" label="STRIP_TAGS" description="STRIP_TAGS_DESC">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="allow_tags" type="list" default="" multiple="multiple"
+					label="ALLOW_TAGS" description="ALLOW_TAGS_DESC">
+					<option value="a">Link</option>
+					<option value="img">Image</option>
+					<option value="b">Bold</option>
+					<option value="i">Italic</option>
+					<option value="font">Font</option>
+					<option value="br">Newline</option>					
+				</field>
+				<field name="open_target" type="list" default="_parent"
+					label="CLICK_LINK_OPEN_IN" description="CLICK_LINK_OPEN_IN_DESC">
+					<option value="_blank">New window</option>
+					<option value="_parent">Parent window</option>
+				</field>
+				<field name="loadJquery" type="list" default="auto" label="BT_LOADJQUERY"
+					description="BT_LOADJQUERY_DESC">
+					<option value="auto">Auto</option>
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="cache" type="list" default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field name="cache_time" type="text" default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+			<fieldset addfieldpath="/modules/mod_bt_contentslider/admin/formfield"
+				name="about" label="BT_ABOUT">
+				<field type="asset" name="asset" path="modules/mod_bt_contentslider/admin/" />
+				<field type="about" name="about"
+					path="modules/mod_bt_contentslider/admin/images" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

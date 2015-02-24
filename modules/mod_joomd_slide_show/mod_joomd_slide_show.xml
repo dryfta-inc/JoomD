@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_slide_show</name>
+	<author>Syed Shujayat</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.2.1</version>
+	<description>MOD_JOOMD_SLIDE_SHOW_XML_DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_slide_show.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_slide_show.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_slide_show">mod_joomd_slide_show.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>img</folder>
+		<folder>js_css</folder>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/components/com_joomd/libraries/elements">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="SELECTTYPELABEL" description="SELECTTYPEDESCR">
+			</field>
+			<field name="cats" type="sqlmultilistx" query="select id, name from #__joomd_category where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" multiple="multiple" label="SELECTCATEGORYLABEL" description="SELECTCATEGORYDESCR" size="5">
+			</field>
+				<field name="titlefield" type="sql" query="select id, name from #__joomd_field where published = 1 and type = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTTITLEFIELDLABEL" description="SELECTTITLEFIELDDESCR">
+			</field>
+			<field name="imagefield" type="sql" query="select id, name from #__joomd_field where published = 1 and type = 10 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTIMAGEFIELDLABEL" description="SELECTIMAGEFIELDDESCR">
+			</field>
+			<field name="descrfield" type="sql" query="select id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTDESCRFIELDLABEL" description="SELECTDESCRFIELDDESCR">
+			</field>
+			<field name="featured" type="radio" default="" label="FEATUREDLABEL" description="FEATUREDDESCR">
+				<option value="1">YUP</option>
+				<option value="">NOPE</option>
+			</field>
+			<field name="orderby" type="sqlmultilistx" default="i.ordering asc" query="select concat('t.field_', id, ' asc') as id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" label="ORDERBYLABEL" description="ORDERBYDESCR">
+				<option value="i.ordering asc">ORDERING</option>
+				<option value="i.id desc">LATEST</option>
+				<option value="i.hits desc">MOST_VIEWED</option>
+				<option value="rand()">RANDOM</option>
+			</field>
+			<field name="limit" type="text" default="5" label="LIMITLABEL" description="LIMITDESCR" />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

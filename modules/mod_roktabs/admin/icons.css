@@ -1,0 +1,7 @@
+.icons {clear:both;margin: 5px 0;}
+.icons_previews {float:left;margin-right:5px;min-width:21px;min-height:21px;}
+.icons select {float:left;}
+.icons .tab_label {float: left;margin: 7px 5px 0 0;color:#aaa;font-weight:bold;}
+.icons .controls span {float:left;margin-left:2px;margin-top:5px;width:16px;height:16px;cursor:pointer;}
+.icons .controls .add {background:url(images/add.png) no-repeat;}
+.icons .controls .remove {background:url(images/delete.png) no-repeat;}

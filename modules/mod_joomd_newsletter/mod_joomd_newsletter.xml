@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_newsletter</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.0.0</version>
+	<description>JOOMDNEWSLETTERMODULEDESCR</description>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_joomd_newsletter.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_newsletter.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_newsletter">mod_joomd_newsletter.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="Select Type" description="Select Type to display the Categories from">
+			</field>
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

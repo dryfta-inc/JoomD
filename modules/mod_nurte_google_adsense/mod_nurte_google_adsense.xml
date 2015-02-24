@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Nurte Google AdSense Module</name>
+	<author>Nurte</author>
+	<creationDate>01.07.2011</creationDate>
+	<copyright>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</copyright>
+	<authorEmail>nurtepl@gmail.com</authorEmail>
+	<authorUrl>www.nurte.pl</authorUrl>
+	<version>1.2.0.0</version>
+	<description>NURTE_GOOGLE_ADSENSE_MODULE_DESC</description>
+	<files>
+		<filename>mod_nurte_google_adsense.xml</filename>
+		<filename module="mod_nurte_google_adsense">mod_nurte_google_adsense.php</filename>
+		<filename module="mod_nurte_google_adsense">helper.php</filename>
+		<filename module="mod_nurte_google_adsense">index.html</filename>
+	</files>
+	<languages>
+    		<language tag="en-GB">language/en-GB/en-GB.mod_nurte_google_adsense.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="nga_adscode" type="textarea" filter="raw" rows="15" cols="40" default="" label="AdSense unit code" description="Specify AdSense unit code" />
+				<field type="spacer" default="To create and manage your Google ads visit &lt;a href=&quot;http://www.google.com/adsense&quot; target=&quot;_blank&quot; title=&quot;www.google.com/adsense&quot;&gt;Google AdSense web page.&lt;/a&gt;" />
+				<field name="nga_ip_list" type="textarea" filter="raw" rows="4" cols="40" default="" label="Blocked IP address list" description="Add the IP address you want to block. Use semicolon (;) to separate each IP address." />
+				<field name="nga_alternate_content" type="textarea" filter="raw" rows="4" cols="40" default="Your IP address is blocked by Nurte Google AdSense Module." label="Alternate Content" description="Specify alternate content for blocked IP addresses." />
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+			</fieldset>
+			<fieldset name="advanced">
+			</fieldset>
+		</fields>
+	</config>
+</extension>

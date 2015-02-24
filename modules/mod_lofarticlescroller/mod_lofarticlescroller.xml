@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension
+	type="module"
+	version="2.5.0"
+	client="site"
+	method="upgrade">
+    <name>Lof Article Scroller Module</name>
+    <creationDate>Jan 2012</creationDate>
+    <author>LandOfCoder</author>
+    <copyright>GNU / GPL2 http://www.gnu.org/licenses/gpl-2.0.html</copyright>
+    <authorEmail>landofcoder@gmail.com</authorEmail>
+    <authorUrl>http://www.landofcoder.com</authorUrl>
+    <version>2.3</version>
+	<description>
+		<![CDATA[<div style="font-size:11px;">
+			<a target="_blank" href="http://landofcoder.com/joomla/f33/lof-articlesscroller-module">. <b>Lof ArticleScroller module  Module</b></a> <br><i>Are you looking for a solution to show list of article as featured news, lastest news or something else in the most catching eyes and the most attractively? so this module will be one of best solutions to complete the ideas. Now  you let see demos and get the module to use on your site - you will feel its power in managing about how to display image, description, choose position of navigator, position of controlling buttons to display, and creating many nice styles with list of effects included and the module allows displaying the list of articles in rows and coloums, Also you can make your customizations via CSS of the theme and re-override module's layout easy in the current template. </i><br/><br/><b>Support:</b><br><ul><li><a href="http://landofcoder.com/supports.html" target="_blank">Forum Support</a></li><li><a href="http://landofcoder.com/submit-request.html" target="_blank">Submit Request</a></li></ul><p><img src="../modules/mod_lofarticlescroller/assets/preview.png"></p><div style="clear:both"><b>Copyright:</b> <a target="_blank" href="http://landofcoder.com">LandOfCoder.Com</a></div></div>
+		]]>
+	</description>
+    <files>
+		<filename module="mod_lofarticlescroller">mod_lofarticlescroller.php</filename>
+		<filename module="mod_lofarticlescroller">helper.php</filename>
+		<filename module="mod_lofarticlescroller">index.html</filename>
+		<folder module="mod_lofarticlescroller">libs</folder>
+		<folder module="mod_lofarticlescroller">assets</folder>
+		<folder module="mod_lofarticlescroller">tmpl</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_lofarticlescroller.ini</language>
+	</languages>
+	<config>
+		<fields 
+			name="params" 
+			addfieldpath="modules/mod_lofarticlescroller/libs/elements">
+			<fieldset name="navigator_form" title="NAVIGATOR_FORM_F">
+					<field  type="loftoolbar" name="loftoolbar">
+						<option>Global</option>
+						<option>Item Layout</option>
+			 
+							<option>Source</option>
+						<option>Effects</option>
+						<option>Advanded</option>
+					</field>
+			</fieldset>
+		
+			<fieldset 
+				name="Basic" label="GLOBALSETTING">
+				<field 
+					name="moduleclass_sfx" 
+					type="text" 
+					default="" 
+					label="MODULE_CLASS_SUFFIX" 
+					description="MODULE_CLASS_SUFFIX_DESC" 
+					/>	
+						<field 
+					name="sploadjscss" 
+					type="lofspacer" />
+				<field 
+					name="item_layout" type="filelist" hide_none="true" hide_default="true" description="ITEM_LAYOUT_DESC" default="mixed" label="ITEM_LAYOUT" directory="modules/mod_lofarticlescroller/tmpl/_item" filter="\.php" stripext=".php"
+					 /> 	
+
+				<field 
+					name="display_button" 
+					type="radio" 
+					default="horizontal" 
+					label="DISPLAY_BUTTON"
+					description="DISPLAY_BUTTON_DESC">
+						<option value="0">DISABLE</option>
+						<option value="horizontal">HORIZONTAL</option>
+						<option value="vertical">VERTICAL</option>
+				</field>	
+				
+				<field
+					name="navigator_pos"
+					type="list" 
+					default="bottom" 
+					label="NAVIGATOR_POSITION" 
+					description="NAVIGATOR_POSITION_DESC">
+						<option value="0">DISABLE</option>
+						<option value="left">LEFT</option>
+						<option value="right">RIGHT</option>
+						<option value="top">TOP</option>
+						<option value="bottom">BOTTOM</option>
+				</field>
+ 				 <field type="spacer" name="COLUMN_SETTING" default="COLUMN_SETTING" />	
+				<field
+					name="module_width" 
+					type="text"
+					default="940"
+					label="MODULE_WIDTH"
+					description="MODULE_WIDTH_DESC">
+				</field>	
+				
+				<field 
+					name="module_height"
+					type="text" 
+					default="560" 
+					label="MODULE_HEIGHT" 
+					description="MODULE_HEIGHT_DESC">
+				</field>
+				
+				<field 
+					name="max_items_per_page" 
+					type="text" 
+					default="6" 
+					label="MAX_ITEM_PAGE" 
+					description="MAX_ITEM_PAGE_DESC">
+				</field>
+				
+				<field
+					name="max_items_per_row"
+					type="text" 
+					default="3" 
+					label="MAX_ITEMS_PER_ROWS" 
+					description="MAX_ITEMS_PER_ROWS_DESC">
+				</field>
+				
+                <field name="custom_style" type="list" class="lofswitch" default="0" label="Enable Hover Effect" description="Enable Hover Effect">
+				   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+				</field>
+				<field name="mouseover_bg" type="lofcolorpicker" default="E8E8E8" label="MOUSEHOVER_BG" description="MOUSEHOVER_BG_DESC" />
+				<field name="mouseout_bg" type="lofcolorpicker" default="F0F0F0" label="MOUSEOUT_BG" description="MOUSEOUT_BG_DESC" />
+                <field name="colorItemText" type="lofcolorpicker" default="FFFFFF" label="Item Text Color" description="Item Text Color" />
+				<field name="colorItemLink" type="lofcolorpicker" default="333333" label="Item Link Color" description="Item Link Color" />
+			</fieldset>
+			
+			<fieldset name="itemlayoutsetting" label="Item Layout Setting">
+
+			<field name="limit_description_by" type="list" default="char" label="LIMIT_DESCRIPTION_BY" description="LIMIT_DESCRIPTION_BY_DESC">
+					<option value="word">WORD</option>
+					<option value="char">CHARACTER</option>
+				</field>  
+				<field name="description_max_chars" type="text" default="100" label="DESCIPTION_MAX_CHARS" description="DESCIPTION_MAX_CHARS_DESC" />
+					
+				<field
+					name="show_readmore"
+					type="list" class="lofswitch" 
+					default="1"
+					label="SHOW_READ_MORE" 
+					description="SHOW_READ_MORE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="show_date"
+					type="list" class="lofswitch" 
+					default="0"
+					label="SHOW_DATE"
+					description="SHOW_DATE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+				
+				<field
+					name="show_title"
+					type="list" class="lofswitch" 
+					default="1"
+					label="SHOW_TITLE"
+					description="SHOW_TITLE_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+
+				<field 
+					name="auto_renderthumb" 
+					type="list" class="lofswitch" 
+					default="1" 
+					label="RENDER_THUMBNAIL" 
+					description="RENDER_THUMBNAIL_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>	
+				
+				<field 
+					name="thumbnail_width" 
+					type="text" 
+					default="280" 
+					label="THUMBNAIL_WIDTH" 
+					description="THUMBNAIL_WIDTH_DESC" />
+					
+				<field
+					name="thumbnail_height"
+					type="text" 
+					default="150"
+					label="THUMBNAIL_HEIGHT"
+					description="THUMBNAIL_HEIGHT_DESC" />
+			</fieldset>
+			
+ 
+			
+			<fieldset name="contentsetting" label="COM_MODULES_SOURCESETTING_FIELDSET_LABEL">
+					<field name="source" type="list" default="category"  label="SOURCE_FROM"  description="SOURCE_FROM_DESC" >
+						<option value="category">CATEGORY</option>
+						<option value="article_ids">ARTICLES_IDS</option>
+					</field>
+					<field name="article_ids" type="text" default="" label="ARTICLES_IDS"  description="ARTICLES_IDS_DESC" size="40" />
+						
+					<field name="category" show_root="true" type="category"
+									extension="com_content"
+									multiple="true"
+									size="10"
+									label="JCATEGORY"
+									description="MOD_ARTICLES_NEWS_FIELD_CATEGORY_DESC" />
+					 <field
+          name="user_id"
+          type="list"
+          default="0"
+          label="MOD_LATEST_NEWS_FIELD_USER_LABEL"
+          description="MOD_LATEST_NEWS_FIELD_USER_DESC">
+          <option
+            value="0">MOD_LATEST_NEWS_VALUE_ANYONE</option>
+          <option
+            value="by_me">MOD_LATEST_NEWS_VALUE_ADDED_BY_ME</option>
+          <option
+            value="not_me">MOD_LATEST_NEWS_VALUE_NOTADDED_BY_ME</option>
+        </field>
+        <field
+          name="show_featured"
+          type="list"
+          default=""
+          label="MOD_LATEST_NEWS_FIELD_FEATURED_LABEL"
+          description="MOD_LATEST_NEWS_FIELD_FEATURED_DESC">
+          <option
+            value="">JSHOW</option>
+          <option
+            value="0">JHIDE</option>
+          <option
+            value="1">MOD_LATEST_NEWS_VALUE_ONLY_SHOW_FEATURED</option>
+        </field>
+					<field name="ordering" type="list" default="created-asc" label="ARTCILES_SORTED_BY" description="ARTCILES_SORTED_BY_DESC">
+					  <option value="id-asc">ID_ASCENDING</option>
+					  <option value="id-desc">ID_DESCENDING</option>
+						<option value="ordering-asc">ORDERING_ASCENDING</option>
+						<option value="ordering-desc">ORDERING_DESCENDING</option>
+						<option value="hits-asc">HIT_ASCENDING</option>
+						<option value="hits-desc">HIT_DESCENDING</option>
+						<option value="created-desc">DATE_ASCENDING</option>
+						<option value="created-asc">DATE_DESCENDING</option>
+						<option value="publish_up-asc">PUBLISHED_DATE_ASCENDING</option>
+						<option value="publish_up-desc">PUBLISHED_DATE_DESCENDING</option>
+						<option value="rand-">RANDOM</option>
+					</field>					
+					<field name="limit_items" type="text" default="12" label="LIMIT_ITEMS" description="LIMIT_ITEMS_DESC" />
+			</fieldset>	
+			
+
+			<fieldset name="effectsetting" label="Page Effect Setting">
+				
+				<field 
+					name="layout_style"
+					type="list"
+					default="hrright" 
+					label="PLAY_STYLE" 
+					description="PLAY_STYLE_DESC">
+						<option value="hrleft">HORIZONTAL_RIGHT_TO_LEFT</option>
+						<option value="hrright">HORIZONTAL_LEFT_TO_RIGHT</option>
+						<option value="vrup">VERTICAL_DOWN_TO_UP</option>
+						<option value="vrdown">VERTICAL_UP_TO_DOWN</option>
+						<option value="opacity">OPACITY</option>
+				</field>
+
+				<field
+					name="interval"
+					type="text" 
+					default="5000" 
+					label="INTERVAL" 
+					description="INTERVAL DESC" />
+					
+				<field 
+					name="duration"
+					type="text"
+					default="500" 
+					label="ANIMATION_DURATION" 
+					description="ANIMATION_DURATION_DESC" />
+
+
+				<field 
+					name="effect"
+					type="list"
+					default="Fx.Transitions.Quad.easeInOut" 
+					label="PAGE_ANIMATION_TRANSITION" 
+					description="PAGE_ANIMATION_TRANSITION_DESC">
+						<option value="Fx.Transitions.linear">linear</option>
+						<option value="Fx.Transitions.quartOut">QuartOut</option>
+						<option value="Fx.Transitions.Quad.easeIn">Quad.easeIn</option>
+						<option value="Fx.Transitions.Quad.easeOut">Quad.easeOut</option>
+						<option value="Fx.Transitions.Quad.easeInOut">Quad.easeInOut</option>
+						<option value="Fx.Transitions.Cubic.easeIn">Cubic.easeIn</option>
+						<option value="Fx.Transitions.Cubic.easeOut">Cubic.easeOut</option>
+						<option value="Fx.Transitions.Cubic.easeInOut">Cubic.easeInOut</option>
+						<option value="Fx.Transitions.Quart.easeIn">Quart.easeIn</option>
+						<option value="Fx.Transitions.Quart.easeOut">Quart.easeOut</option>
+						<option value="Fx.Transitions.Quart.easeInOut">Quart.easeInOut</option>
+						<option value="Fx.Transitions.Quint.easeIn">Quint.easeIn</option>
+						<option value="Fx.Transitions.Quint.easeOut">Quint.easeOut</option>
+						<option value="Fx.Transitions.Quint.easeInOut">Quint.easeInOut</option>
+						<option value="Fx.Transitions.Pow.easeIn">Pow.easeIn</option>
+						<option value="Fx.Transitions.Pow.easeOut">Pow.easeOut</option>
+						<option value="Fx.Transitions.Pow.easeInOut">Pow.easeInOut</option>
+						<option value="Fx.Transitions.Expo.easeIn">Expo.easeIn</option>
+						<option value="Fx.Transitions.Expo.easeOut">Expo.easeOut</option>
+						<option value="Fx.Transitions.Expo.easeInOut">Expo.easeInOut</option>
+						<option value="Fx.Transitions.Circ.easeIn">Circ.easeIn</option>
+						<option value="Fx.Transitions.Circ.easeOut">Circ.easeOut</option>
+						<option value="Fx.Transitions.Circ.easeInOut">Circ.easeInOut</option>
+						<option value="Fx.Transitions.Sine.easeIn">Sine.easeIn</option>
+						<option value="Fx.Transitions.Sine.easeOut">Sine.easeOut</option>
+						<option value="Fx.Transitions.Sine.easeInOut">Sine.easeInOut</option>
+						<option value="Fx.Transitions.Back.easeIn">Back.easeIn</option>
+						<option value="Fx.Transitions.Back.easeOut">Back.easeOut</option>
+						<option value="Fx.Transitions.Back.easeInOut">Back.easeInOut</option>
+						<option value="Fx.Transitions.Bounce.easeIn">Bounce.easeIn</option>
+						<option value="Fx.Transitions.Bounce.easeOut">Bounce.easeOut</option>
+						<option value="Fx.Transitions.Bounce.easeInOut">Bounce.easeInOut</option>
+						<option value="Fx.Transitions.Elastic.easeIn">Elastic.easeIn</option>
+						<option value="Fx.Transitions.Elastic.easeOut">Elastic.easeOut</option>
+						<option value="Fx.Transitions.Elastic.easeInOut">Elastic.easeInOut</option>				  
+				</field> 
+
+				<field 
+					name="auto_start"
+					type="list" class="lofswitch" 
+					default="0" 
+					label="AUTO_START"
+					description="AUTO_START_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			
+				<fieldset name="advanced">
+					<field name="auto_strip_tags" type="list" class="lofswitch"   default="1" label="STRIP_TAGS" description="STRIP_TAGS_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+					</field>
+					
+				<field 
+					name="enable_cache" 
+					type="list" 
+					default="0" 
+					label="CACHE" 
+					description="CACHING_DESC">
+						<option value="1">Use global</option>
+						<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text" default="30" label="CACHE_TIME" description="CACHE_TIME_DESC" />
+			 
+
+				<field name="open_target" type="list" default="_parent" label="CLICK_LINK_OPEN_IN" description="CLICK_LINK_OPEN_IN_DESC">
+					<option value="_blank">New window</option>
+					<option value="_parent">Parent window</option>
+				</field>	
+			</fieldset>
+			<fieldset name="end_form" title="ENDFORM">
+					<field  type="lofspacer" name="end_form" title="end"/>
+			</fieldset>
+		</fields>	
+	</config>
+</extension>

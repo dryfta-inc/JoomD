@@ -1,0 +1,79 @@
+.pane-sliders .panel h3 {
+	padding:12px!important;	
+}
+.lof-even  h3{ background:#f9f9f9!important;}
+
+.lof-odd:hover,.lof-even:hover{ border:#E2E2E2 solid 1px!important}
+.lof-odd:hover h3,.lof-even:hover h3{ background:#f2f2f2!important; color:#fff!important}
+#CONTENTSETTING-options{   }
+#IMAGESETTING-options{ }
+.it-box{position:absolute;top:40%; left:45%; z-index:1000; background:url(bg_trans.png);-moz-border-radius: 2em 1em; border-radius: 2em 1em;border: 5px solid #c4c8cc;-moz-box-shadow: 5px 5px 7px #888;}
+.it-box .it-message{padding:50px 100px;	color:#FAFAFA;font-weight:bold;}
+.lof-switcher1,
+.lof-switcher0  {
+        background: url("yes_no.png") no-repeat scroll 0 0 transparent;
+        cursor: pointer;
+        float: left;
+        height: 28px;
+        margin-top: 4px;
+        width: 42px;
+    }
+    .lof-switcher1 {
+        background-position: -42px 0px;
+    }
+/*
+ * Form 
+ */
+ .it-addrow-block .row { padding:3px 0px;display:block;clear:both; cursor:hand; cursor:pointer }
+ .it-addrow-block input[type=text] {float:left; width:70%}
+ .it-addrow-block .row .remove { display:block; float:left; background:url(remove.png) no-repeat;width:20px; height:16px;margin-left:12px}
+ .it-addrow-block  .add{ background:url(add.png) no-repeat;width:26px; height:26px; display:block; text-indent:-999cm; cursor:hand; cursor:pointer}
+ .it-header{ border:#FAFAFA solid 1px; background:#FAFAFA ;padding:5px 0 5px 50px}
+
+#module-form  legend{
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #CF052B;
+    color: #fff;
+    margin-left: -2px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px; text-shadow: 0px 1px 1px #000; 
+}
+#module-form fieldset {   -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 10px;
+  
+    font-size: 11px;}
+	.lof-wrapper .lof-toolbars { clear:both; padding:12px 0px;}
+.lof-wrapper .lof-toolbar-items li{ display:block; font-weight:bold; float:left; display:block;
+   background: #333; margin:4px 5px 10px 0;
+ -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px;
+	padding:5px 9px;
+	color:#FFF;
+	cursor:hand; cursor:pointer;
+	text-shadow: 0px 1px 1px #000;
+}
+.lof-wrapper .lof-toolbar-items li:hover,.lof-wrapper .lof-toolbar-items li.active{  background:url(arrow.png) no-repeat  30px 0 #999;}
+.lof-wrapper .lof-fscontainer{ clear:both; position:relative; padding:12px 0; border:#CCCCCC solid 1px;   -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px; 
+    -moz-border-radius-bottomleft:3px;
+    -webkit-border-bottom-left-radius:3px; }
+.lof-wrapper .lof-fscontainer h3{ padding:0;}
+.lof-wrapper .lof-fscontainer h3 span{color:#333;  background:#CCC; padding:4px 10px; font-size:11px; }
+.lof-wrapper .lof-fscontainer fieldset {
+	padding:0;
+	border:0; 
+	background:none;
+}
+#jform_params_custom_slider_class-lbl, #jform_params_override_links-lbl{ max-width:100%;}
+.it-addrow-block{ clear:both;}

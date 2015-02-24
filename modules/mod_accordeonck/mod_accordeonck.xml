@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+    <name>Menu Accordeon CK</name>
+    <author>Cédric KEIFLIN</author>
+    <creationDate>octobre 2011</creationDate>
+    <copyright>Cédric KEIFLIN</copyright>
+    <license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>ced1870@gmail.com</authorEmail>
+    <authorUrl>http://www.joomlack.fr</authorUrl>
+    <version>1.6.1</version>
+    <description>MOD_ACCORDEONCK_DESC</description>
+    <files>
+        <filename module="mod_accordeonck">mod_accordeonck.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>logo_accordeonmenuck.png</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+        <folder>language</folder>
+        <folder>elements</folder>
+    </files>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_accordeonck.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_accordeonck.sys.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.mod_accordeonck.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.mod_accordeonck.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_accordeonck/elements">
+                <field
+                    name="menutype"
+                    type="ckmenu"
+                    label="MOD_ACCORDEONCK_MENUTYPE"
+                    description="MOD_ACCORDEONCK_MENUTYPE_DESC"
+                    icon="text_list_numbers.png" />
+                <field
+                    name="startLevel"
+                    type="cklist"
+                    default="1"
+                    label="MOD_ACCORDEONCK_STARTLEVEL"
+                    description="MOD_ACCORDEONCK_STARTLEVEL_DESC"
+                    icon="chart_organisation_add.png" >
+                    <option value="1">J1</option>
+                    <option value="2">J2</option>
+                    <option value="3">J3</option>
+                    <option value="4">J4</option>
+                    <option value="5">J5</option>
+                    <option value="6">J6</option>
+                    <option value="7">J7</option>
+                    <option value="8">J8</option>
+                    <option value="9">J9</option>
+                    <option value="10">J10</option>
+                </field>
+
+                <field
+                    name="endLevel"
+                    type="cklist"
+                    default="0"
+                    label="MOD_ACCORDEONCK_ENDLEVEL"
+                    description="MOD_ACCORDEONCK_ENDLEVEL_DESC"
+                    icon="chart_organisation_delete.png" >
+                    <option value="0">JALL</option>
+                    <option value="1">J1</option>
+                    <option value="2">J2</option>
+                    <option value="3">J3</option>
+                    <option value="4">J4</option>
+                    <option value="5">J5</option>
+                    <option value="6">J6</option>
+                    <option value="7">J7</option>
+                    <option value="8">J8</option>
+                    <option value="9">J9</option>
+                    <option value="10">J10</option>
+                </field>
+				
+                <field
+                    name="imgalignement"
+                    type="ckradio"
+                    default="none"
+                    label="MOD_ACCORDEONCK_IMGALIGNEMENT"
+                    description="MOD_ACCORDEONCK_IMGALIGNEMENT_DESC"
+                    icon="text_padding_left.png" >
+                    <option value="none">MOD_ACCORDEONCK_NONE</option>
+                    <option value="left">MOD_ACCORDEONCK_LEFT</option>
+                    <option value="right">MOD_ACCORDEONCK_RIGHT</option>
+                </field>
+
+            </fieldset>
+
+            <fieldset
+                name="advanced">
+                <field
+                    name="tag_id"
+                    type="cktext"
+                    label="MOD_ACCORDEONCK_TAG_ID"
+                    description="MOD_ACCORDEONCK_TAG_ID_DESC"
+                    icon="textfield_key.png" />
+
+                <field
+                    name="class_sfx"
+                    type="cktext"
+                    label="MOD_ACCORDEONCK_CLASS"
+                    description="MOD_ACCORDEONCK_CLASS_DESC"
+                    icon="text_signature.png"/>
+
+                <field
+                    name="layout"
+                    type="ckmodulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                    icon="layout.png"/>
+
+                <field
+                    name="moduleclass_sfx"
+                    type="cktext"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                    icon="text_signature.png"/>
+
+                <field
+                    name="cache"
+                    type="cklist"
+                    default="1"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL
+                    </option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+                    </option>
+                </field>
+                <field
+                    name="cache_time"
+                    type="cktext"
+                    default="900"
+                    label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                    description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+                    icon="hourglass.png"
+                    suffix="min"/>
+                <field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+                    <option
+						value="itemid">
+                    </option>
+                </field>
+            </fieldset>
+			
+            <fieldset name="effects" label="MOD_ACCORDEONCK_EFFECTS">
+                <field name="eventtype" type="ckradio" label="MOD_ACCORDEONCK_EVENTTYPE" description="MOD_ACCORDEONCK_EVENTTYPE_DESC" default="click" icon="mouse.png">
+                    <option value="click">MOD_ACCORDEONCK_CLICK</option>
+                    <option value="mouseover">MOD_ACCORDEONCK_MOUSEOVER</option>
+                </field>
+                <field name="eventtarget" type="ckradio" label="MOD_ACCORDEONCK_EVENTTARGET" description="MOD_ACCORDEONCK_EVENTTARGET_DESC" default="link" icon="cursor.png" >
+                    <option value="link">MOD_ACCORDEONCK_LINK</option>
+                    <option value="image">MOD_ACCORDEONCK_IMAGE</option>
+                </field>
+                <field name="fadetransition" type="ckradio" label="MOD_ACCORDEONCK_FADETRANSITION" description="MOD_ACCORDEONCK_FADETRANSITION_DESC" default="false" icon="layers.png">
+                    <option value="true">JYES</option>
+                    <option value="false">JNO</option>
+                </field>
+                <field name="mooduration" type="cktext" default="500" label="MOD_ACCORDEONCK_MOODUREE" description="MOD_ACCORDEONCK_MOODUREE_DESC" icon="hourglass.png"
+					suffix="ms" />
+                <field name="mootransition" type="cklist" default="Fx.Transitions.linear" label="MOD_ACCORDEONCK_TRANSITION" description="MOD_ACCORDEONCK_TRANSITION_DESC" icon="chart_curve.png">
+                    <option value="linear">Linear</option>
+                    <option value="quad:in">Quad:In</option>
+                    <option value="Quad:Out">Quad:Out</option>
+                    <option value="Quad:In:Out">Quad:In:Out</option>
+                    <option value="Cubic:In">Cubic:In</option>
+                    <option value="Cubic:Out">Cubic:Out</option>
+                    <option value="Cubic:In:Out">Cubic:In:Out</option>
+                    <option value="Quart:In">Quart:In</option>
+                    <option value="Quart:Out">Quart:Out</option>
+                    <option value="Quart:In:Out">Quart:In:Out</option>
+                    <option value="Quint:In">Quint:In</option>
+                    <option value="Quint:Out">Quint:Out</option>
+                    <option value="Quint:In:Out">Quint:In:Out</option>
+                    <option value="Pow:In">Pow:In</option>
+                    <option value="Pow:Out">Pow:Out</option>
+                    <option value="Pow:In:Out">Pow:In:Out</option>
+                    <option value="Expo:In">Expo:In</option>
+                    <option value="Expo:Out">Expo:Out</option>
+                    <option value="Expo:In:Out">Expo:In:Out</option>
+                    <option value="Circ:In">Circ:In</option>
+                    <option value="Circ:Out">Circ:Out</option>
+                    <option value="Circ:In:Out">Circ:In:Out</option>
+                    <option value="Sine:In">Sine:In</option>
+                    <option value="Sine:Out">Sine:Out</option>
+                    <option value="Sine:In:Out">Sine:In:Out</option>
+                    <option value="Back:In">Back:In</option>
+                    <option value="Back:Out">Back:Out</option>
+                    <option value="Back:In:Out">Back:In:Out</option>
+                    <option value="Bounce:In">Bounce:In</option>
+                    <option value="Bounce:Out">Bounce:Out</option>
+                    <option value="Bounce:In:Out">Bounce:In:Out</option>
+                    <option value="Elastic:In">Elastic:In</option>
+                    <option value="Elastic:Out">Elastic:Out</option>
+                    <option value="Elastic:In:Out">Elastic:In:Out</option>
+                    <option value="Pow:Out">Pow:Out</option>
+                    <option value="Pow:In">Pow:In</option>
+                </field>
+            </fieldset>
+            <fieldset name="styles" label="MOD_ACCORDEONCK_STYLES">
+                <field name="imageplus" type="cktext" size="60" default="modules/mod_accordeonck/assets/plus.png" label="MOD_ACCORDEONCK_IMAGEPLUS" description="MOD_ACCORDEONCK_IMAGEPLUS_DESC" icon="image.png" />
+                <field name="imageminus" type="cktext" size="60" default="modules/mod_accordeonck/assets/minus.png" label="MOD_ACCORDEONCK_IMAGEMINUS" description="MOD_ACCORDEONCK_IMAGEMINUS_DESC" icon="image.png" />
+                <field name="imageposition" type="ckradio" label="MOD_ACCORDEONCK_IMAGEPOSITION" description="MOD_ACCORDEONCK_IMAGEPOSITION_DESC" default="right" icon="text_padding_left.png">
+                    <option value="left">MOD_ACCORDEONCK_LEFT</option>
+                    <option value="right">MOD_ACCORDEONCK_RIGHT</option>
+                </field>
+                <field name="usestyles" type="ckradio" default="1" label="MOD_ACCORDEONCK_USESTYLES" description="MOD_ACCORDEONCK_USESTYLES_DESC" icon="css.png" >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+                <field name="spacer1" type="ckspacer" label="MOD_ACCORDEONCK_STYLES_SPACER1" />
+                <field name="fontsize1" type="cktext" size="30" default="12px" label="MOD_ACCORDEONCK_FONTSIZE1" description="MOD_ACCORDEONCK_FONTSIZE1_DESC" />
+                <field name="desccustomcss1" type="textarea" rows="5" cols="40" default="display: block;color: #666;" label="MOD_ACCORDEONCK_DESCCUSTOMCSS1" description="MOD_ACCORDEONCK_DESCCUSTOMCSS1_DESC" />
+                <field name="spacer2" type="ckspacer" label="MOD_ACCORDEONCK_STYLES_SPACER2" />
+                <field name="fontsize2" type="cktext" size="30" default="11px" label="MOD_ACCORDEONCK_FONTSIZE2" description="MOD_ACCORDEONCK_FONTSIZE2_DESC" />
+                <field name="desccustomcss2" type="textarea" rows="5" cols="40" default="display: block;color: #666;" label="MOD_ACCORDEONCK_DESCCUSTOMCSS2" description="MOD_ACCORDEONCK_DESCCUSTOMCSS2_DESC" />
+                <field name="spacer3" type="ckspacer" label="MOD_ACCORDEONCK_STYLES_SPACER3" />
+                <field name="fontsize3" type="cktext" size="30" default="10px" label="MOD_ACCORDEONCK_FONTSIZE3" description="MOD_ACCORDEONCK_FONTSIZE3_DESC" />
+                <field name="desccustomcss3" type="textarea" rows="5" cols="40" default="display: block;color: #666;" label="MOD_ACCORDEONCK_DESCCUSTOMCSS3" description="MOD_ACCORDEONCK_DESCCUSTOMCSS3_DESC" />
+                <field name="spacer4" type="ckspacer" label="MOD_ACCORDEONCK_STYLES_SPACER4" />
+                <field name="fontsize4" type="cktext" size="30" default="10px" label="MOD_ACCORDEONCK_FONTSIZE4" description="MOD_ACCORDEONCK_FONTSIZE4_DESC" />
+                <field name="desccustomcss4" type="textarea" rows="5" cols="40" default="display: block;color: #666;" label="MOD_ACCORDEONCK_DESCCUSTOMCSS4" description="MOD_ACCORDEONCK_DESCCUSTOMCSS4_DESC" />
+                <field name="spacer5" type="ckspacer" label="MOD_ACCORDEONCK_STYLES_SPACER5" />
+                <field name="fontsize5" type="cktext" size="30" default="10px" label="MOD_ACCORDEONCK_FONTSIZE5" description="MOD_ACCORDEONCK_FONTSIZE5_DESC" />
+                <field name="desccustomcss5" type="textarea" rows="5" cols="40" default="display: block;color: #666;" label="MOD_ACCORDEONCK_DESCCUSTOMCSS5" description="MOD_ACCORDEONCK_DESCCUSTOMCSS5_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

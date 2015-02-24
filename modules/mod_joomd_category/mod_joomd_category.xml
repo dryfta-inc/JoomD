@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_category</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.0.0</version>
+	<description>MOD_JOOMD_CATEGORY_XML_DESCRIPTION</description>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_joomd_category.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_category.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_category">mod_joomd_category.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="SELECTTYPELABEL" description="SELECTTYPEDESCR">
+			</field>
+			<field name="featured" type="radio" default="" label="FEATUREDLABEL" description="FEATUREDDESCR">
+				<option value="1">YUP</option>
+				<option value="">NOPE</option>
+			</field>
+			<field name="order" type="list" label="ORDERBYLABEL" description="ORDERBYDESCR" default="ordering asc">
+				<option value="ordering asc">ORDERING</option>
+				<option value="name asc">ALPHABETICALLY</option>
+				<option value="id desc">LATEST</option>
+				<option value="rand()">RANDOM</option>
+			</field>
+			<field name="limit" type="text" default="5" label="LIMITLABEL" description="LIMITDESCR" />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

@@ -1,0 +1,9 @@
+ul.tag_cloud_items li	{
+	float:left;
+	padding:5px 10px;
+	list-style:none;
+}
+
+.clr	{
+	clear:both;
+}

@@ -1,0 +1,80 @@
+#jd_map .infobox_overlay	{
+	background:url(../images/windowbg.gif) top left no-repeat;
+}
+
+#jd_map .user_overlay	{
+	background:url(../images/member_overlay.png) top left no-repeat!important;
+}
+
+#jd_map .windowclose_button	{
+	background:url(../images/windowclose.gif) top left no-repeat;
+	cursor:pointer;
+	width:17px;
+	height:17px;
+	float:right;
+	margin: 1px 5px 0px 0px;
+	z-index: 999999999;
+}
+
+#jd_map .field_row	{
+	margin-bottom:10px;
+	clear:both;
+}
+
+#jd_map .field_label	{
+	float:left;
+}
+
+#jd_map .field_value	{
+	float:left;
+}
+
+.inner_overlay	{
+	padding:5px 10px 5px 25px;
+	width:230px;
+	height:136px;
+	overflow:hidden;
+}
+
+.resize_control	{
+	width: 20px;
+	height: 20px;
+	margin-top: -20px;
+	z-index: 99;
+	position: relative;
+	text-indent:-9999px;
+	background:url(../images/map_resize.png) no-repeat top left;
+	cursor:pointer;
+}
+
+.jd_map_collapse	{
+	background:url(../images/map_resize_2.png) no-repeat top left!important;
+}
+
+.close_jd_dir	{
+	display:none;
+	cursor:pointer;
+	position:absolute;
+	z-index:12;
+	color:#fff;
+}
+
+.hide_route	{
+	color:#000!important;
+}
+
+.jd_dir_panel	{
+	display:none;
+	width:0px;
+	height:0px;
+	color:#fff;
+	background:url('../images/dir_panel.png') top left repeat;
+	position:absolute;
+	border:solid 1px #ccc;
+	overflow-y:scroll;
+	z-index:11;
+}
+
+.gdir	{
+	cursor:pointer;
+}

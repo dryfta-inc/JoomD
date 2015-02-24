@@ -1,0 +1,108 @@
+/**
+ * $ModDesc
+ * 
+ * @version		$Id: helper.php $Revision
+ * @package		modules
+ * @subpackage	$Subpackage.
+ * @copyright	Copyright (C) Dec 2009 LandOfCoder.com <@emai:landofcoder@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+ */
+@charset "utf-8";
+/* CSS Document */
+.lof-articlessroller{position:relative; }
+.lof-articlessroller .lof-container{height:100%;width:100%;position:relative; }
+.lof-articlessroller .lof-row { float:left;	position:relative;overflow:hidden; padding-bottom:12px; padding-top:8px}
+/* main flash */
+.lof-articlessroller .lof-main-wapper{overflow:hidden;padding:0px;margin:0px;position:relative;overflow:hidden;z-index:1}
+.lof-articlessroller .lof-main-wapper .lof-main-item{overflow:hidden;padding:0px;margin:0px; height:100%;width:100%;position:absolute;}
+/** BULLETS NAVIGATOR **/
+.lof-articlessroller ul.lof-navigator{top:0;padding:0;margin:0;position:absolute;width:10000;}
+.lof-articlessroller .lof-navigator-outer{position:relative; margin-right:8px;	overflow:hidden; float:right;z-index:3 }
+.lof-articlessroller .lof-navigator li{	
+	background:none!important;padding:0!important;margin:0!important;
+	height:14px!important;	width:14px!important;
+	text-indent:9999px;
+	cursor:hand;
+	cursor:pointer;
+	float:left;
+	list-style:none;
+}
+.lof-articlessroller .lof-navigator li span{ background:url(images/dot.png) no-repeat center; width:14px; height:14px; float:left; color:#FFF; display:block; }
+.lof-articlessroller .lof-navigator li.active span{ background:url(images/dot_hover.png) no-repeat  center; display:block; color:#FFF;width:14px; height:14px; float:left;}
+/** BUTTON CONTROL **/
+.lof-articlessroller .lof-next, .lof-articlessroller .lof-previous{
+	position:absolute; 
+	z-index:10;
+	top:4px;
+	height:14px;
+	width:13px;	
+	display:none;
+	text-indent:-999999px;
+	overflow:hidden;
+}
+.lof-articlessroller .lof-next{	background:url(images/arrow-right.png)  no-repeat; right:0px; }
+.lof-articlessroller .lof-next:hover{ background:url(images/arrow-right.png) no-repeat; }
+.lof-articlessroller .lof-previous{	background:url(images/arrow-left.png)  no-repeat; right:61px; }
+.lof-articlessroller .lof-previous:hover{ background:url(images/arrow-left.png)  no-repeat; }
+.lof-articlessroller .lof-vertical .lof-next{ top:-13px; right:45%;	background:url(images/arrow-top.png) }
+.lof-articlessroller .lof-vertical .lof-previous{ top:auto; left:auto; bottom:-13px; right:45%;	background:url(images/arrow-bottom.png) }
+/**  NAVIGATOR - BOTTOM alignment **/
+.lof-articlessroller .lof-bottom .lof-navigator-outer{ position:absolute;right:0px;	bottom:0px; background:#CCC; -moz-border-radius:8px 8px 8px 8px;}
+/** NAVIGATOR - TOP alignment  **/
+.lof-articlessroller .lof-top .lof-navigator-outer{	position:absolute;	right:10px;	top:11px;}
+/**  NAVIGATOR - RIGHT alignment **/
+.lof-articlessroller .lof-right .lof-navigator-outer{position:absolute;	right:0px;	top:10px;}
+/**  NAVIGATOR - LEFT alignment **/
+.lof-articlessroller .lof-left .lof-navigator-outer{position:absolute;	left:10px;	top:10px;}
+/** THUMBNAIL - LEFT alignment **/
+.lof-articlessroller .lof-thumbleft .lof-inner .lof-title{ clear:none; float:none; padding:0}
+.lof-articlessroller .lof-thumbleft a.lof-image-link { float:left; padding:0 20px 10px 0; }
+.lof-articlessroller .lof-main-wapper img{height:140px; width:235px;}
+.lof-articlessroller .lof-thumbleft img.lof-image { float:left;}
+/** THUMBNAIL - RIGHT alignment **/
+.lof-articlessroller .lof-thumbright .lof-inner .lof-title{ clear:none; float:none; padding:0}
+.lof-articlessroller .lof-thumbright a.lof-image-link { float:right; padding:0 20px 10px 0}
+.lof-articlessroller .lof-thumbright img.lof-image { float:right;}
+/*** CSS STYLE FOR ITEM ****/
+/*.lof-articlessroller .lof-inner { 
+ 	-moz-transition:background-color 1s;
+	-webkit-transition:background-color 1s;
+	margin:0 10px; 
+	position:relative; 
+ 	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	}*/
+	
+	.lof-articlessroller .lof-clearfix{
+		clear:both;
+		width:100%;
+		height:1px
+	}
+	/*.lof-articlessroller .lof-inner:hover{ 
+		background:#F9F9F9;-moz-transition:background-color 1s;-webkit-transition:background-color 1s;
+		-moz-box-shadow:0 0 10px #C3C3C3; -webkit-box-shadow:0 0 10px #EFEFEF; box-shadow: 0px 0px 10px #EFEFEF;	
+	}*/
+	.lof-articlessroller .lof-inner img.lof-image{ background:#F0F0F0; 
+		border:5px solid #F0F0F0;
+		border:#E8E8E8  solid 1px;
+		padding:5px;
+		background:#FFF;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		float:none;
+		margin:0
+		}
+		.lof-articlessroller .lof-inner .lof-title{
+			clear:both;
+			padding:0px 0px 10px 0px;
+			position:relative;	
+			display:block;
+			font-size:13px;
+			font-weight:bold;
+		}
+		.lof-articlessroller .lof-inner a{
+			text-decoration:none;
+			text-transform:none
+		}
+		.lof-articlessroller .lof-inner .lof-readmore { display:block; clear:both; padding:5px 0px 0px 0px; /*background:url(images/readmore.png) no-repeat left 8px; */}
+		.lof-articlessroller .lof-infor{  height:20px; top:20px; left:0; height:30px;  color:#FFF; display:none; }

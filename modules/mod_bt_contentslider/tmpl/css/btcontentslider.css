@@ -1,0 +1,189 @@
+/*======= BT CONTENT SLIDER ========*/
+.bt-cs {
+	position: relative;
+	border: none;
+	display: inline-block;
+}
+
+.slides_container {
+	overflow: hidden;
+	position: relative;
+}
+
+.bt_handles{display:none;}
+.slides_container{margin:0px 20px;}
+.bt-cs h3 {
+	color: #d67901;
+	line-height: 37px;
+	text-indent: 15px;
+	text-transform: uppercase;
+	background: url(../images/bg-header.png) repeat-x;
+	height: 37px;
+	border: 1px solid #cfcfcf;
+	margin: 0 !important;
+}
+
+/*
+	Handles - Next/prev buttons
+*/
+.bt-cs .next,.bt-cs .prev {
+	display: block;
+	width: 10px;
+	height: 15px;
+}
+
+.bt-cs .bt_handles {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:999;
+}
+
+.bt-cs a.next {
+	background: url(../images/re-right.png) !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:9;
+	margin:0;
+	padding:0;
+}
+
+.bt-cs a.prev {
+	background: url(../images/re-left.png) !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:999;
+	margin:0;
+	padding:0;
+}
+
+.bt-cs .next:hover {
+	background: url(../images/re-right-hover.png) scroll 0 0 transparent
+		!important;
+}
+
+.bt-cs .prev:hover {
+	background: url(../images/re-left-hover.png) scroll 0 0 transparent
+		!important;
+}
+.bt-cs .bt_handles li {
+	float: left;
+	margin: 0 1px;
+	list-style: none;
+	padding:0px;
+}
+
+.bt_handles li a {
+	display: block !important;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(../images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	padding: 12px 0 0 0 !important;
+	overflow: hidden;
+}
+
+.bt_handles li a:active,.bt_handles li a:focus,.bt_handles li a:hover {
+	background-color: transparent !important;
+}
+
+.bt_handles li.current a {
+	background-position: 0 -12px;
+}
+
+.bt-cs .bt-container {
+	position: relative;
+}
+
+.bt-cs .bt-row {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	padding: 8px 0 12px 0;
+}
+
+/* main flash */
+.bt-cs .bt-main-wapper {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.bt-cs .bt-main-wapper .bt-main-item {
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.bt-cs .bt-inner {
+	margin: 0;
+	position: relative;
+	padding: 0 10px;
+}
+.bt-cs .bt-inner a {
+	text-decoration: none;
+}
+.bt-cs .bt-inner img {
+  }
+a.bt-image-link img{width:160px !important;}
+.bt-cs .bt-inner .bt-title {
+	clear: both;
+	padding: 0 0px 10px 0px;
+	display: block;
+	color: #fff;
+	font-size:11px; font-weight:bold;
+ 	text-transform: uppercase;
+}
+.bt-cs .bt-inner .bt-title-nointro {
+	clear: both;
+	padding: 0 0px 10px 0px;
+	color: #d67900;
+	font-weight: bold;
+	text-transform: auto;
+}
+
+.bt-cs .bt-inner .bt-category {
+	clear: both;
+	color: #4a4a4a;
+	margin: 5px 0px 10px 0px;
+	display: block;
+	font-weight: bold;
+}
+
+.bt-cs .bt-inner .bt-introtext {
+	clear: both;
+    display: block;
+    font-weight: normal;
+    height:71px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+.bt-cs .bt-inner .bt-introtext img {
+	margin: 5px 0px;
+	
+}
+.bt-cs .bt-extra {
+	clear: both;
+	margin-top: 5px;
+}
+
+.bt-cs .bt-date,.bt-cs .bt-author {
+	font-weight: nomarl;
+	font-size: 80%;
+}
+
+.bt-row-separate {
+	clear: both;
+	height: 1px;
+	border-bottom: 1px dotted #959595;
+	margin: 0px 10px;
+	margin-bottom: 15px;
+}

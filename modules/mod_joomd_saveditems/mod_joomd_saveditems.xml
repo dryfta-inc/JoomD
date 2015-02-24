@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_saveditems</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.0.0</version>
+	<description>JOOMDSAVEDITEMSMODULEDESCR</description>
+	<languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_joomd_saveditems.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_saveditems.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_saveditems">mod_joomd_saveditems.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/components/com_joomd/libraries/elements">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="Select Type" description="Select Type to display the Entries from">
+			</field>
+			<field name="featured" type="radio" default="" label="Featured" description="Select Yes if you want to display only Featured Entries">
+				<option value="1">Yes</option>
+				<option value="">No</option>
+			</field>
+			<field name="fields" type="sqlmultilistx" query="select id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" multiple="multiple" label="Select Fields" description="Select Fields to display." size="5">
+			</field>
+			<field name="orderby" type="sqlmultilistx" default="ordering asc" query="select concat('t.field_', id, ' asc') as id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" label="Ordering" description="Select the sorting option">
+				<option value="i.ordering asc">ordering</option>
+				<option value="i.id desc">Latest Entries</option>
+				<option value="i.hits desc">Most Viewed</option>
+				<option value="rand()">Random</option>
+			</field>
+			<field name="limit" type="text" default="5" label="Enter Number" description="Enter how many entries you want to display." />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

@@ -1,0 +1,33 @@
+/* Dark Theme */
+
+.roktabs-wrapper {padding: 0;}
+.roktabs-wrapper .dark {position: relative;border: 1px solid #272727;color: #999;}
+.roktabs-wrapper .dark .roktabs-container-inner {position:relative;overflow: hidden;}
+.roktabs-wrapper .dark .roktabs-container-wrapper {clear: both;position: relative;overflow:hidden;width: 30000px;}
+.roktabs-wrapper .dark .roktabs-container-wrapper div {float: left;/*width: 450px;*//*width: 220px;*/}
+.roktabs-wrapper .dark .roktabs-container-wrapper div.wrapper {padding: 14px;width: auto;}
+.roktabs-wrapper .dark .roktabs-links {overflow: hidden;margin:0;}
+.roktabs-wrapper .dark .active-arrows .roktabs-links {margin:0 21px;}
+.roktabs-wrapper .dark .roktabs-links ul {text-align: left;font-weight: bold;list-style-type: none;padding: 0;overflow:hidden;}
+.roktabs-wrapper .dark .roktabs-links ul.roktabs-top {margin: 0;background: url(tabbg-dark.png) 0 0 repeat-x;height: 32px;}
+.roktabs-wrapper .dark .roktabs-links ul.roktabs-bottom {margin: 0;background: url(tabbg-bottom-dark.png) 0 0 repeat-x;height: 32px;}
+.roktabs-wrapper .dark .roktabs-links ul li {float: left;padding: 0;margin: 0;text-decoration: none;border-right: 1px solid #272727;border-bottom: none;color: #999;position: relative;height: 31px;line-height: 31px;}
+.roktabs-wrapper .dark .roktabs-links ul li span {padding: 0 10px;}
+.roktabs-wrapper .dark .roktabs-links ul li.first {border-left: 0;}
+.roktabs-wrapper .dark .roktabs-links ul li.active.last {border-right: 1px solid #272727;}
+.roktabs-wrapper .dark .roktabs-links ul li.last {border-right: 0;}
+.roktabs-wrapper .dark .roktabs-links ul li.hover {color: #ccc;}
+.roktabs-wrapper .dark .roktabs-links ul.roktabs-top li.active {background: url(tabbg-active-dark.png) 0 0 repeat-x;color: #ccc;height: 31px;border-bottom: 1px solid #151515;}
+.roktabs-wrapper .dark .roktabs-links ul.roktabs-bottom li.active {background: url(tabbg-bottom-active-dark.png) 0 0 repeat-x;color: #ccc;height: 31px;border-top: 1px solid #151515;margin-top: -1px;}
+.roktabs-wrapper .dark .roktabs-links ul li.active.first {border-left: 0;}
+.roktabs-wrapper .dark .roktabs-scroller {position: absolute;bottom: 0;right: 0;height: 32px;}
+.roktabs-wrapper .dark .arrow-next, .roktabs-wrapper .dark .arrow-prev {line-height: 29px;margin: 1px;text-align: center;float: left;cursor: pointer;border: 1px solid #272727;z-index: 2;width:17px;position:absolute;top:0;height:29px;}
+.roktabs-wrapper .dark .arrow-next {right:0;background: url(next-dark.png) 50% 0 no-repeat;}
+.roktabs-wrapper .dark .arrow-prev {left:0;background: url(prev-dark.png) 50% 0 no-repeat;}
+.roktabs-wrapper .dark .arrow-next-hover {background-position: 50% -29px;}
+.roktabs-wrapper .dark .arrow-prev-hover {background-position: 50% -29px;}
+.roktabs-wrapper .dark .arrow-prev span, .roktabs-wrapper .dark .arrow-next span {display: none;}
+.roktabs-wrapper .dark .roktabs-container-tr, .roktabs-wrapper .dark .roktabs-container-inner, .roktabs-wrapper .dark .active-arrows {background: #151515;}
+.clear {clear: both;}
+.roktabs-wrapper .icon-left .tab-icon {vertical-align:middle;margin-right:5px;}
+.roktabs-wrapper .icon-right .tab-icon {vertical-align:middle;margin-left:5px;}

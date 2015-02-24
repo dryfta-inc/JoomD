@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" method="upgrade" client="site">
+	<name>RokTabs</name>
+	<author>RocketTheme, LLC</author>
+	<creationDate>January 24, 2012</creationDate>
+	<authorEmail>support@rockettheme.com</authorEmail>
+	<authorUrl>http://www.rockettheme.com</authorUrl>
+	<copyright>(C) 2005 - 2012 RocketTheme, LLC. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.6</version>
+	<description>RokTabs is a news module designed to show section articles in a pleasing format.  Brought to you by RocketTheme</description>
+	<files>
+		<filename module="mod_roktabs">mod_roktabs.php</filename>
+		<filename>RT-LICENSE.php</filename>
+		<filename>CHANGELOG.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>fields</folder>
+        <folder>admin</folder>
+        <folder>images</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/modules/mod_roktabs/fields">
+                <!--><field name="" type="k2check" default="" label="" description=""/>-->
+                
+                <field name="style" type="list" default="light" label="Theme Style" description="The style theme you want to use. Custom will disable the default styles and will let you use your own customized style. It will be added 'base' classname.">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="base">Custom</option>
+                </field>
+                
+				<field name="content_type" type="hidden" default="joomla" />
+<!--                <field name="content_type" type="list" default="joomla" label="Content Type" description="whether to use Joomla Core Content, or K2 Content">
+                    <option value="joomla">Joomla Core Content</option>
+                    <option value="k2">K2 Content</option>
+                </field>-->
+        
+                <field type="spacer" default="&lt;div id=&quot;joomla-label&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Joomla Core Content&lt;/div&gt;" label="" description="" />
+				
+                <field name="catid" type="category" default="" multiple="true" size="10" extension="com_content" label="Joomla Category" description="" />
+                <field name="show_front" type="list" default="1" label="Joomla Featured Items" description="Show featured articles in this module">
+                    <option value="1">Show</option>
+                    <option value="0">Hide</option>
+                    <option value="2">Only Featured Items</option>
+                </field>		
+        
+                <!--><field name="@spacer" type="spacer" default="&lt;div id=&quot;k2-label&quot;  id=&quot;k2-label&quot;style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;K2 Content&lt;/div&gt;" label="" description="" />
+                <field name="catfilter" type="radio" default="0" label="K2 Category filter">
+                  <option value="0">All</option>
+                  <option value="1">Select</option>
+                </field>
+                <field name="category_id" type="categories" default="" label="K2 Filter items by category" description="Select one ore more categories for which you want to filter an items list. Select none to fetch items from all categories."/>
+                <field name="FeaturedItems" type="list" default="1" label="K2 Featured Items" description="">
+                  <option value="0">Hide</option>
+                  <option value="1">Show</option>
+                  <option value="2">Show only Featured Items</option>
+                </field>-->
+                
+                <field name="spacer_content_parameters" type="spacer" label="&lt;div id=&quot;content-label&quot;  style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Content Parameters&lt;/div&gt;" default="" description="" />
+                
+                <field name="itemsOrdering" type="list" default="" label="Item Ordering" description="">
+                  <option value="">Default</option>
+                  <option value="date">Oldest first</option>
+                  <option value="rdate">Most recent first</option>
+                  <option value="alpha">Title Alphabetical</option>
+                  <option value="ralpha">Title Reverse-Alphabetical</option>
+                  <option value="order">Ordering</option>
+                </field>
+                
+                <field name="strip_tags" type="text" default="a,i,br,img" label="Allowed HTML tags" description="List the HTML tags you want to allow in your content, separated by comma. All the others will be stripped out." />
+                
+                <field name="show_readmore" type="list" default="1" label="Default Readmore" description="">
+                  <option value="0">Hide</option>
+                  <option value="1">Show</option>
+                </field>
+                <field name="readmore" type="text" default="Read more..." label="Custom Readmore Text" description="Custom Text to use for the Read More links" />
+                <field name="spacer_animation" type="spacer" label="&lt;div style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Animation and Styling&lt;/div&gt;" default="" description="" />
+        
+                <field name="width" type="text" default="500" label="Width" description="Width in pixel to be used for RokTabs" />
+                <field name="tabs_count" type="text" default="3" label="Max # of Tabs (0 = All)" description="The maximum number of tabs to show. Use 0 to show them all. &lt;img src='../templates/rhuk_milkyway/template_thumbnail.png' alt='' /&gt;&lt;script&gt;alert('hello');&lt;/script&gt;" />
+                <field name="duration" type="text" default="600" label="Transition Duration" description="Duration in ms of the transition effect" />
+                <field name="transition_type" type="list" default="scrolling" label="Type of Transition" description="The type of the transition. Can be scrolling or fading.">
+                    <option value="scrolling">Scrolling</option>
+                    <option value="fading">Fading</option>
+                </field>
+                <field name="transition_fx" type="list" default="Quad.easeInOut" label="Transition Effect" description="The effect to be used for the transition">
+                    <option value="linear">linear</option>
+                    <option value="Quad.easeOut">Quad.easeOut</option>
+                    <option value="Quad.easeIn">Quad.easeIn</option>
+                    <option value="Quad.easeInOut">Quad.easeInOut</option>
+                    <option value="Cubic.easeOut">Cubic.easeOut</option>
+                    <option value="Cubic.easeIn">Cubic.easeIn</option>
+                    <option value="Cubic.easeInOut">Cubic.easeInOut</option>
+                    <option value="Quart.easeOut">Quart.easeOut</option>
+                    <option value="Quart.easeIn">Quart.easeIn</option>
+                    <option value="Quart.easeInOut">Quart.easeInOut</option>
+                    <option value="Quint.easeOut">Quint.easeOut</option>
+                    <option value="Quint.easeIn">Quint.easeIn</option>
+                    <option value="Quint.easeInOut">Quint.easeInOut</option>
+                    <option value="Expo.easeOut">Expo.easeOut</option>
+                    <option value="Expo.easeIn">Expo.easeIn</option>
+                    <option value="Expo.easeInOut">Expo.easeInOut</option>
+                    <option value="Circ.easeOut">Circ.easeOut</option>
+                    <option value="Circ.easeIn">Circ.easeIn</option>
+                    <option value="Circ.easeInOut">Circ.easeInOut</option>
+                    <option value="Sine.easeOut">Sine.easeOut</option>
+                    <option value="Sine.easeIn">Sine.easeIn</option>
+                    <option value="Sine.easeInOut">Sine.easeInOut</option>
+                    <option value="Back.easeOut">Back.easeOut</option>
+                    <option value="Back.easeIn">Back.easeIn</option>
+                    <option value="Back.easeInOut">Back.easeInOut</option>
+                    <option value="Bounce.easeOut">Bounce.easeOut</option>
+                    <option value="Bounce.easeIn">Bounce.easeIn</option>
+                    <option value="Bounce.easeInOut">Bounce.easeInOut</option>
+                    <option value="Elastic.easeOut">Elastic.easeOut</option>
+                    <option value="Elastic.easeIn">Elastic.easeIn</option>
+                    <option value="Elastic.easeInOut">Elastic.easeInOut</option>
+                </field>
+                <field name="linksMargins" type="radio" default="0" label="Subtract roktabs-links margins" description="Whether to subtract roktabs-links margins from the tabs width">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="navscrolling" type="radio" default="1" label="Scrollable Tabs" description="Whether to enable the scroll ability on the navigation tabs">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="spacer_tabs_details" type="spacer" label="&lt;div style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Tabs Details&lt;/div&gt;" default="" description="" />
+                <field name="tabs_position" type="list" default="top" label="Tabs Position" description="Where make the tabs to appear">
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                    <option value="hidden">Hidden</option>
+                </field>
+                <field name="tabs_event" type="list" default="click" label="Tabs Interaction" description="If you want to mouseover or click for triggering the tab change">
+                    <option value="click">Click</option>
+                    <option value="mouseenter">MouseOver</option>
+                </field>
+                <field name="tabs_title" type="list" default="content" label="Tabs Title" description="Choose one of the way you want your Tabs title are set.&lt;br&gt;&lt;strong&gt;By Content Title:&lt;/strong&gt; uses the Title assigned when creating the content.&lt;br&gt;&lt;strong&gt;By First Content h6 tag:&lt;/strong&gt; searches for the first h6 tag in your content and use its value as Tab Title (you can hide or show h6 in the content from the option below).&lt;br&gt;&lt;strong&gt;By Incremental:&lt;/strong&gt; set the Tabs title by the 'Incremental prepend text' option below and then append incremental values (i.e. Tab 1 | Tab 2 | Tab 3).">
+                    <option value="content">By Content Title</option>
+                    <option value="h6">By First Content h6 tag</option>
+                    <option value="incremental">By Incremental</option>
+                </field>
+                <field name="tabs_incremental" type="text" default="Tab " label="Incremental prepend text" description="The prepend text to be used when Incremental Tabs Title is set" />
+                <field name="tabs_hideh6" type="radio" default="1" label="Hide h6 tags?" description="Whether to hide or not h6 tags when used as Tabs Titles">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="tabs_prefixed" type="radio" default="0" label="Prefix tabs with numbers" description="Whether to prefix or not the tabs with the current tab position">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="tabs_showicons" type="radio" default="0" label="Show Tab Icons" description="Choose whether or not to show tab icons">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="tabs_iconside" type="list" default="left" label="Tab Icon Side" description="Choose whether the tab icons should show on the right or the left of the tab title">
+                    <option value="left">Left</option>
+                    <option value="right">Right</option>
+                </field>
+                <field name="tabs_iconpath" type="text" default="__module__/images" label="Tab Icons Path" description="The location of your tab icons, use __template__ for current template directory, and __module__ for current module directory" size="40" />
+                <field name="tabs_icon" type="roktabsicons" default="icon_home.gif, icon_security.gif, icon_comment.gif, icon_world.gif, icon_note.gif" label="Tabs Icons" />
+                
+                <field name="spacer_autoplay" type="spacer" label="&lt;div style=&quot;font-weight:normal;font-size:12px;color:#fff;padding:4px;margin:0;background:#666;&quot;&gt;Autoplay Settings&lt;/div&gt;" default="" description="" />
+                <field name="autoplay" type="radio" default="0" label="Autoplay" description="Whether to autoplay RokTabs or no">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="autoplay_delay" type="text" default="2000" label="Autoplay Delay (ms)" description="Amount in milliseconds for the autoplay to change. Default 2secs (2000ms)" />
+                <field name="spacer_spacer" type="spacer" default="" label="&lt;hr/&gt;" description="" />
+                <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="cache" type="hidden" default="0"/>
+                <field name="module_cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+                    <option value="1">Use global</option>
+                    <option value="0">No caching</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

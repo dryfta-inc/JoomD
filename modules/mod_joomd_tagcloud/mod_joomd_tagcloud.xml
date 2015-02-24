@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_tagcloud</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>2.0.1</version>
+	<description>JOOMDTAGCLOUDMODULEDESCR</description>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_tagcloud.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_tagcloud.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_tagcloud">mod_joomd_tagcloud.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/default.php</filename>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/components/com_joomd/libraries/elements">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="Select Type" description="Select Type to display the Entries from">
+			</field>
+			<field name="cats" type="sqlmultilistx" query="select id, name from #__joomd_category where published = 1 order by name asc" key_field="id" value_field="name" 
+default="0" multiple="multiple" label="Select Categories" description="Select categories to display the entries from or Leave it if you want to display from all the categories." size="5">
+			</field>
+			<field name="featured" type="radio" default="" label="Featured" description="Select Yes if you want to display only Featured Entries">
+				<option value="1">Yes</option>
+				<option value="">No</option>
+			</field>
+			<field name="fieldid" type="sql" query="select id, name from #__joomd_field where published = 1 and type in (1,2,3,4,7,8,9) order by name asc" key_field="id" value_field="name" 
+	default="0" label="Select Field" description="Select Field to display.">
+			</field>
+			<field name="min" type="text" default="10" label="Min Font size" description="Enter Minimum Font size in px." />
+			<field name="max" type="text" default="32" label="Max Font size" description="Enter Maximum Font size in px." />
+			<field name="limit" type="text" default="5" label="Enter Number" description="Enter how many entries you want to display." />
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>

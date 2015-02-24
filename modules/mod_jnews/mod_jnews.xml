@@ -1,0 +1,357 @@
+<?xml version="1.0" ?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="module" version="1.5.0" method="upgrade">
+	<name>jNews Module</name>
+	<creationDate>June 2011</creationDate>
+	<author>Joobi Limited</author>
+	<copyright>Copyright (C) 2012 Joobi Limited All rights reserved</copyright>
+	<license>http://www.joobi.co/index.php?option=com_content&amp;view=article&amp;id=12&amp;Itemid=54</license>
+	<authorEmail>support@joobi.co</authorEmail>
+	<authorUrl>http://www.joobi.co</authorUrl>
+	<version>2.0</version>
+
+	<description>jNews Module</description>
+	<files>
+		<filename module="mod_jnews">mod_jnews.php</filename>
+		<filename module="mod_jnews">mod_jnews.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/components/com_jnews/params">
+		<param name="help" type="help" default="module" label="Help" description="Click on the help button to get some help" />
+		<param name="linear" type="radio" default="0" label="Show module in line" description="Select whether or not to show the information in a line or with a vertical presentation.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Enter the class suffix you would like to use so you can define custom CSS styling." />
+		<param name="cssfile" type="filelist" directory="/components/com_jnews/modules/css/" default="default.css" label="Theme" description="Select the theme or CSS file for the module" />
+		<param name="effect" type="list" default="default" label="Display Effect" description="Select the effect you want to add to your module">
+			<option value="default">Normal</option>
+			<option value="mootools-slide">Mootools Slide</option>
+			<option value="mootools-modal">Mootools Modal</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="listids" type="text" default="0" label="List IDs" description="THIS IS A REQUIRED FIELD. Enter the id number of the lists you wish to allow users to subscribe to seperated by a comma ,  . If only one is entered there will not be an option displayed but they will automatically be subscribed to this list" />
+		
+		<param name="showlistname" type="radio" default="1" label="Show List Name" description="Select whether or not to show the name of the list after the introduction.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="defaultchecked" type="radio" default="1" label="Check list by default" description="Select whether or not to you want the check box for each list checked by default.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="dropdown" type="radio" default="0" label="Display list in dropdown" description="Select yes if you want to display your lists in a dropdown">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="selecteddrop" type="text" default="0" label="Selected dropdown list" description="In case of you dislay your lists in a dropdown, you can specify here the value of the selected list by default" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="red_url" type="text" size="40" default="" label="Redirect URL" description="The URL that you want the user to be redirected after they have been subscribed, if not specified it will redirect automatically to the user subscription form." />
+		<param name="red_subscription" type="radio" default="0" label="Redirect After Subscription" description="Redirect page after subscription from the module to jNews page.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="module_message" type="radio" default="0" label="Pop-up Subscription Message" description="Select Yes to pop-up the subscription message. Select No to put the message in the module.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		
+		<param name="introtext" type="textarea" cols="40" rows="5" default="" label="Introduction text" description="The text that appears in the introduction. LEAVE BLANK TO NOT SHOW NOTHING.  Use pretext for CSS layout." />
+		<param name="posttext" type="textarea" cols="40" rows="5" default="" label="Post-text" description="This is the Text or HTML that is displayed at the bottom of the subscription form. LEAVE BLANK TO NOT SHOW ANYTHING. Use postext for CSS layout." />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="fieldsize" type="text" default="18" label="Field size" description="Enter the ammount of characters for the name and e-mail form fields." />
+		<param name="shownamefield" type="radio" default="1" label="Show Name Field" description="select whether or not to show the name field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="column1" type="radio" default="0" label="Show Column 1 Field" description="select whether or not to show column 1 field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="req_column1" type="radio" default="0" label="Require Column 1" description="Select whether to set the column 1 field required or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="column2" type="radio" default="0" label="Show Column 2 Field" description="select whether or not to show column 2 field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="req_column2" type="radio" default="0" label="Require Column 2" description="Select whether to set the column 2 field required or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="column3" type="radio" default="0" label="Show Column 3 Field" description="select whether or not to show column 3 field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="req_column3" type="radio" default="0" label="Require Column 3" description="Select whether to set the column 3 field required or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="column4" type="radio" default="0" label="Show Column 4 Field" description="select whether or not to show column 4 field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="req_column4" type="radio" default="0" label="Require Column 4" description="Select whether to set the column 4 field required or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="column5" type="radio" default="0" label="Show Column 5 Field" description="select whether or not to show column 5 field.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="req_column5" type="radio" default="0" label="Require Column 5" description="Select whether to set the column 5 field required or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="receivehtmldefault" type="radio" default="1" label="Default Receive HTML" description="Set this option to show the default html mailing configuration. If the Show Receive HTML is set to No then this option will be the default.">
+			<option value="1">HTML</option>
+			<option value="0">Text</option>
+		</param>
+		<param name="showreceivehtml" type="radio" default="1" label="Show Receive HTML" description="Set to Yes to allow users to decide whether they want HTML or not. Set to No to use default receive html.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="show_terms" type="radio" default="0" label="Show Terms and Condition" description="Add the Terms and Condition.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="check_terms" type="radio" default="0" label="Check Terms and Condition" description="Check the terms and condition by default.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="terms_condition" type="text" size="60" default="" label="Terms and Condtion Link" description="Enter the complete link for the terms and conditions here." />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="enable_captcha" type="radio" default="1" label="Use Captcha" description="Enable captcha functionality.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="captcha_width" type="text" size="5" default="80" label="Captcha Width" description="Define the width of the captcha." />
+		<param name="captcha_height" type="text" size="5" default="25" label="Captcha Height" description="Define the height of the captcha." />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="button_text" type="text" default="" label="Button Unregistered Text" description="The text that appears on subcribe button, when people are not subcribed yet, if left blank it will load _JNEWS_MOD_SUBSCRIBE from your language file" />
+		<param name="button_img" type="text" directory="/images/" size="40" default="" label="Button Unregistered Image" description="An image that you want to use for the subcribe button,  when people are not subcribed yet, if left blank the button name will be used. If your images is on the site you can specify only the path images/tick.png otherwise specify the full url to your image." />
+		<param name="button_text_change" type="text" default="" label="Button Registered Text" description="The text that appears on subcribe button,  when people are logged in, if left blank it will load _JNEWS_CHANGE_SUBSCRIPTIONS from your language file" />
+		<param name="button_img_change" size="40" type="text" default="" label="Button Registered Image" description="An image that you want to use for the subcribe button,  when people are logged in, if left blank the button name will be used.  If your images is on the site you can specify only the path images/tick.png otherwise specify the full url to your image." />
+		<param name="mootools_btntext" type="text" default="" label="Mootools Button Text" description="Text displayed on mootools button if the mootools effect is used. If you don't specify, the default value will be used.'" />
+		<param name="mootools_boxw" type="text" default="200" label="Mootools Box Width" description="The width for the mootools popup/modal box." />
+		<param name="mootools_boxh" type="text" default="210" label="Mootools Box Height" description="The height for the mootools popup/modal box." />
+		<param name="use_new" type="radio" default="1" label="Use new module layout" description="Use new module layout that is in div tags.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+	</params>
+	<params group="advanced">
+		<param name="mod_align" type="list" default="" label="Module alignement" description="display alignement of the module.  If left blank , it will use default CSS.">
+			<option value="">No alignement</option>
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+		</param>
+		<param name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+	
+
+	<config>
+		<fields name="params" addfieldpath="/components/com_jnews/params">
+			<fieldset name="basic">
+				<field name="help" type="help" default="module" label="Help" description="Click on the help button to get some help" />
+				<field name="use_new" type="radio" default="1" label="Use new module layout" description="Use new module layout that is in div tags.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="linear" type="radio" default="0" label="Show module in line" description="Select whether or not to show the information in a line or with a vertical presentation.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Enter the class suffix you would like to use so you can define custom CSS styling." />
+				<field name="cssfile" type="filelist" directory="/components/com_jnews/modules/css/" default="default.css" label="Theme" description="Select the theme or CSS file for the module" />
+				<field name="effect" type="list" default="default" label="Display Effect" description="Select the effect you want to add to your module">
+					<option value="default">Normal</option>
+					<option value="mootools-slide">Mootools Slide</option>
+	<!--  			<option value="mootools-modal">Mootools Modal</option> -->
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="listids" type="text" default="0" label="List IDs" description="THIS IS A REQUIRED FIELD. Enter the id number of the lists you wish to allow users to subscribe to seperated by a comma ,  . If only one is entered there will not be an option displayed but they will automatically be subscribed to this list" />
+				
+				<field name="showlistname" type="radio" default="1" label="Show List Name" description="Select whether or not to show the name of the list after the introduction.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="defaultchecked" type="radio" default="1" label="Check list by default" description="Select whether or not to you want the check box for each list checked by default.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="dropdown" type="radio" default="0" label="Display list in dropdown" description="Select yes if you want to display your lists in a dropdown">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="selecteddrop" type="text" default="0" label="Selected dropdown list" description="In case of you dislay your lists in a dropdown, you can specify here the value of the selected list by default" />
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="red_url" type="text" size="40" default="" label="Redirect URL" description="The URL that you want the user to be redirected after they have been subscribed, if not specified it will redirect automatically to the user subscription form." />
+				<field name="red_subscription" type="radio" default="0" label="Redirect After Subscription" description="Redirect page after subscription from the module to jNews page.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="module_message" type="radio" default="0" label="Pop-up Subscription Message" description="Select Yes to pop-up the subscription message. Select No to put the message in the module.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+
+				
+				<field name="introtext" type="textarea" cols="40" rows="5" default="" label="Introduction text" description="The text that appears in the introduction. LEAVE BLANK TO NOT SHOW NOTHING.  Use pretext for CSS layout."  filter="SAFEHTML" />
+				<field name="posttext" type="textarea" cols="40" rows="5" default="" label="Post-text" description="This is the Text or HTML that is displayed at the bottom of the subscription form. LEAVE BLANK TO NOT SHOW ANYTHING. Use postext for CSS layout." filter="SAFEHTML" />
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+
+				<field name="fieldsize" type="text" default="10" label="Field size" description="Enter the ammount of characters for the name and e-mail form fields." />
+				<field name="shownamefield" type="radio" default="1" label="Show Name Field" description="select whether or not to show the name field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+
+				<field name="column1" type="radio" default="0" label="Show Column 1 Field" description="select whether or not to show column 1 field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="req_column1" type="radio" default="0" label="Require Column 1" description="Select whether to set the column 1 field required or not.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="column2" type="radio" default="0" label="Show Column 2 Field" description="select whether or not to show column 2 field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="req_column2" type="radio" default="0" label="Require Column 2" description="Select whether to set the column 2 field required or not.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="column3" type="radio" default="0" label="Show Column 3 Field" description="select whether or not to show column 3 field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="req_column3" type="radio" default="0" label="Require Column 3" description="Select whether to set the column 3 field required or not.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="column4" type="radio" default="0" label="Show Column 4 Field" description="select whether or not to show column 4 field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="req_column4" type="radio" default="0" label="Require Column 4" description="Select whether to set the column 4 field required or not.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="column5" type="radio" default="0" label="Show Column 5 Field" description="select whether or not to show column 5 field.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="req_column5" type="radio" default="0" label="Require Column 5" description="Select whether to set the column 5 field required or not.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="receivehtmldefault" type="radio" default="1" label="Default Receive HTML" description="Set this option to show the default html mailing configuration. If the Show Receive HTML is set to No then this option will be the default.">
+					<option value="1">HTML</option>
+					<option value="0">Text</option>
+				</field>
+				<field name="showreceivehtml" type="radio" default="1" label="Show Receive HTML" description="Set to Yes to allow users to decide whether they want HTML or not. Set to No to use default receive html.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="show_terms" type="radio" default="0" label="Show Terms and Condition" description="Add the Terms and Condition.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="check_terms" type="radio" default="0" label="Check Terms and Condition" description="Check the terms and condition by default.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field name="terms_condition" type="text" size="60" default="" label="Terms and Condtion Link" description="Enter the complete link for the terms and conditions here." />
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="enable_captcha" type="radio" default="1" label="Use Captcha" description="Enable captcha functionality.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				
+				<field name="captcha_width" type="text" size="5" default="80" label="Captcha Width" description="Define the width of the captcha." />
+				<field name="captcha_height" type="text" size="5" default="25" label="Captcha Height" description="Define the height of the captcha." />
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+				<field name="button_text" type="text" default="" label="Button Unregistered Text" description="The text that appears on subcribe button, when people are not subcribed yet, if left blank it will load _JNEWS_MOD_SUBSCRIBE from your language file" />
+				<field name="button_img" type="text" directory="/images/" size="40" default="" label="Button Unregistered Image" description="An image that you want to use for the subcribe button,  when people are not subcribed yet, if left blank the button name will be used. If your images is on the site you can specify only the path images/tick.png otherwise specify the full url to your image." />
+				<field name="button_text_change" type="text" default="" label="Button Registered Text" description="The text that appears on subcribe button,  when people are logged in, if left blank it will load _JNEWS_CHANGE_SUBSCRIPTIONS from your language file" />
+				<field name="button_img_change" size="40" type="text" default="" label="Button Registered Image" description="An image that you want to use for the subcribe button,  when people are logged in, if left blank the button name will be used.  If your images is on the site you can specify only the path images/tick.png otherwise specify the full url to your image." />
+				<field name="mootools_btntext" type="text" default="" label="Mootools Button Text" description="Text displayed on mootools button if the mootools effect is used. If you don't specify, the default value will be used.'" />
+				<field name="mootools_boxw" type="text" default="200" label="Mootools Box Width" description="The width for the mootools popup/modal box." />
+				<field name="mootools_boxh" type="text" default="210" label="Mootools Box Height" description="The height for the mootools popup/modal box." />
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="mod_align" type="list" default="" label="Module alignement" description="display alignement of the module.  If left blank , it will use default CSS.">
+					<option value="">No alignement</option>
+					<option value="right">Right</option>
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+				</field>
+				<field name="cache" type="radio" default="0" label="Enable Cache" description="Select whether to cache the content of this module">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</install>

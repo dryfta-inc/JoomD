@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>mod_joomd_items_slider</name>
+	<author>Danish Babu</author>
+	<creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teen.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_JOOMD_ITEMS_SLIDER_XML_DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_items_slider.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_joomd_items_slider.ini</language>
+    </languages>
+	<files>
+		<filename module="mod_joomd_items_slider">mod_joomd_items_slider.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>js_css</folder>
+	</files>
+
+<config>
+	<fields name="params">
+		<fieldset name="basic" addfieldpath="/components/com_joomd/libraries/elements">
+			<field name="typeid" type="sql" query="select id, name from #__joomd_types where published = 1 order by id asc" key_field="id" value_field="name" 
+default="1" label="SELECTTYPELABEL" description="SELECTTYPEDESCR">
+			</field>
+			<field name="cats" type="sqlmultilistx" query="select id, name from #__joomd_category where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" multiple="multiple" label="SELECTCATEGORYLABEL" description="SELECTCATEGORYDESCR" size="5">
+			</field>
+			<field name="titlefield" type="sql" query="select id, name from #__joomd_field where published = 1 and type = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTTITLEFIELDLABEL" description="SELECTTITLEFIELDDESCR">
+			</field>
+			<field name="imagefield" type="sql" query="select id, name from #__joomd_field where published = 1 and type = 10 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTIMAGEFIELDLABEL" description="SELECTIMAGEFIELDDESCR">
+			</field>
+			<field name="descrfield" type="sql" query="select id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" 
+	default="0" label="SELECTDESCRFIELDLABEL" description="SELECTDESCRFIELDDESCR">
+			</field>
+			<field name="char_limit" type="text" default="100" label="CHAR_LIMIT_LABEL" description="CHAR_LIMIT_DESCR" size="5" />
+			<field name="featured" type="radio" default="" label="FEATUREDLABEL" description="FEATUREDDESCR">
+				<option value="1">YUP</option>
+				<option value="">NOPE</option>
+			</field>
+			<field name="orderby" type="sqlmultilistx" default="i.ordering asc" query="select concat('t.field_', id, ' asc') as id, name from #__joomd_field where published = 1 order by name asc" key_field="id" value_field="name" label="ORDERBYLABEL" description="ORDERBYDESCR">
+				<option value="i.ordering asc">ORDERING</option>
+				<option value="i.id desc">LATEST</option>
+				<option value="i.hits desc">MOST_VIEWED</option>
+				<option value="rand()">RANDOM</option>
+			</field>
+			<field name="limit" type="text" default="5" label="LIMITLABEL" description="LIMITDESCR" />
+		</fieldset>
+		<fieldset name="SCROLLER">
+			<field name="ctrl_type" type="list" default="scrollbar" label="CONTROL_TYPE_LABEL" description="CONTROL_TYPE_DESCR">
+				<option value="scrollbar">SCROLLBAR</option>
+				<option value="index">INDEXES</option>
+				<option value="none">NN</option>
+			</field>
+			<field name="num_display" type="text" default="3" label="NUMBER_DISPLAY_LABEL" description="NUMBER_DISPLAY_DESCR" size="5" />
+			<field name="width" type="text" default="195" label="WIDTH_LABEL" description="NUMBER_DISPLAY_DESCR" size="5" />
+			<field name="height" type="text" default="180" label="HEIGHT_LABEL" description="NUMBER_DISPLAY_DESCR" size="5" />
+			<field name="slide_margin" type="text" default="5" label="SLIDE_MARGIN_LABEL" description="SLIDE_MARGIN_DESCR" size="5" />
+			<field name="auto_scroll" type="radio" default="1" label="AUTO_SCROLL_LABEL" description="AUTO_SCROLL_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="delay" type="text" default="4000" label="DELAY_LABEL" description="DELAY_DESCR" size="5" />
+			<field name="scroll_speed" type="text" default="1000" label="SCROLL_SPEED_LABEL" description="SCROLL_SPEED_DESCR" size="5" />
+			<field name="display_buttons" type="radio" default="1" label="DISPLAY_BUTTONS_LABEL" description="DISPLAY_BUTTONS_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="display_caption" type="radio" default="1" label="DISPLAY_CAPTION_LABEL" description="DISPLAY_CAPTION_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="caption_align" type="list" default="bottom" label="CAPTION_ALIGN_LABEL" description="CAPTION_ALIGN_DESCR">
+				<option value="top">TOP</option>
+				<option value="bottom">BOTTOM</option>
+			</field>
+			<field name="caption_position" type="list" default="inside" label="CAPTION_POSITION_LABEL" description="CAPTION_POSITION_DESCR">
+				<option value="inside">INSIDE</option>
+				<option value="outside">OUTSIDE</option>
+			</field>
+			<field name="caption_effect" type="list" default="slide" label="CAPTION_EFFECT_LABEL" description="CAPTION_EFFECT_DESCR">
+				<option value="slide">SLIDE</option>
+				<option value="fade">FADE</option>
+				<option value="none">NN</option>
+			</field>
+			<field name="mousewheel" type="radio" default="1" label="MOUSEWHEEL_LABEL" description="MOUSEWHEEL_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+		</fieldset>
+		<fieldset name="LIGHTBOX">
+			<field name="lightbox" type="radio" default="1" label="LIGHTBOX_LABEL" description="LIGHTBOX_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="rotate" type="radio" default="1" label="ROTATE_LABEL" description="ROTATE_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="delay2" type="text" default="4000" label="DELAY_LABEL" description="DELAY_DESCR" size="5" />
+			<field name="duration" type="text" default="600" label="DURATION_LABEL" description="DURATION_DESCR" size="5" />
+			<field name="display_number" type="radio" default="1" label="DISPLAY_NUMBER_LABEL" description="DISPLAY_NUMBER_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="display_dbuttons" type="radio" default="1" label="DISPLAY_BUTTONS_LABEL" description="DISPLAY_BUTTONS_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="display_caption2" type="radio" default="1" label="DISPLAY_CAPTION_LABEL" description="DISPLAY_CAPTION_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+			<field name="caption_position2" type="list" default="slide" label="CAPTION_POSITION_LABEL" description="CAPTION_POSITION_DESCR">
+				<option value="inside">INSIDE</option>
+				<option value="outside">OUTSIDE</option>
+			</field>
+			<field name="cont_nav" type="radio" default="1" label="CONT_NAV_LABEL" description="CONT_NAV_DESCR">
+				<option value="1">YUP</option>
+				<option value="0">NOPE</option>
+			</field>
+		</fieldset>
+		<fieldset name="advanced">
+			<field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+				<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+			</field>
+		</fieldset>
+	</fields>
+</config>
+	
+</extension>
