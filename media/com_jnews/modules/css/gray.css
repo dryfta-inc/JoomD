@@ -1,0 +1,24 @@
+/* jNews module CSS Gray */
+div.jNewsMod {
+	margin-bottom: 10px;
+	background: transparent url(../skin/gray/topright.png) 100% 0 no-repeat;
+	height: 1%;
+	padding:0px;
+	color: #595959 !important;
+}
+
+.jNewsMod form, .jNewsMod form span, .jNewsMod form span a, .jNewsMod .subscripitonRHTML{
+	color: #595959 !important;
+}
+
+div.jNewsMod div.jNewsRT {
+	background: transparent url(../skin/gray/topleft.png) 0 0 no-repeat;
+}
+div.jNewsMod div div.jNewsRB {
+	background: transparent url(../skin/gray/botright.png) 100% 100% no-repeat;
+}
+div.jNewsMod div div div.jNewsLB {
+	background: transparent url(../skin/gray/botleft.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
+

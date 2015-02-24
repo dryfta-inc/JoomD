@@ -1,0 +1,89 @@
+/*  jNews module CSS*/
+.jNewsMod {
+	padding:0px;
+}
+
+.jNewsMod .inputbox {
+	padding:2px;
+	margin:2px;
+}
+
+.jNewsMod .subscriptionField {
+	padding:3px;
+}
+
+.jNewsMod .subscriptionButton {
+	padding: 10px 6px 6px;
+}
+
+.jNewsMod .subscriptionButton input.button {
+	font-size: 1.1em;
+}
+
+.jNewsMod .subscriptionCaptcha {
+	margin-top:5px;
+	margin-bottom:5px;	
+}
+
+.jNewsMod .captchaCodeCaption {
+	font-size:smaller;
+	vertical-align: top;
+}
+
+.jNewsMod .subscriptionCaptcha .entered_captcha, .jNewsMod .subscriptionCaptcha .captchImg {
+	float:left;
+}
+
+
+.jNewsMod .postext {
+	font-size: small;
+	color: #999;
+}
+
+div#aca_clickcontainer {
+	border: 1px solid #000;
+	letter-spacing:1px;
+
+}
+div#aca_clickcontainer:hover {
+	border: 1px solid #000;
+	letter-spacing:1px;
+	background: #F5F5F5;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+a.aca_clicklink, a#acatoggleclick {
+	display:block;
+	font-size: 1.2em;
+}
+
+#modjnewstoggle{
+	display : block;
+	font-size:16px;
+}
+
+#acamoduletoggle:focus {
+	border: 1px solid #000;
+}
+
+div.jnews_module p.jnews-nolist {
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Helvetica, sans-serif, arial;
+}
+ul.jNewsLists{
+	margin: 1px;
+	padding: 1px;
+}
+
+ul.jNewsLists li{
+	list-style: none;
+	background: none;
+	padding: 1px;
+}
+
+.noshow {
+	display:none;
+	color: #CCC;
+}

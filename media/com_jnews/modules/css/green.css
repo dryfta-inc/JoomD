@@ -1,0 +1,23 @@
+/*  jNews module CSS Green */
+div.jNewsMod {
+	margin-bottom: 10px;
+	background: transparent url(../skin/green/topright.png) 100% 0 no-repeat;
+	height: 1%;
+	padding:0px;
+	color: #FFF !important;
+}
+
+.jNewsMod form, .jNewsMod form span, .jNewsMod form span a, .jNewsMod .subscripitonRHTML{
+	color: #FFF !important;
+}
+
+div.jNewsMod div.jNewsRT {
+	background: transparent url(../skin/green/topleft.png) 0 0 no-repeat;
+}
+div.jNewsMod div div.jNewsRB {
+	background: transparent url(../skin/green/botright.png) 100% 100% no-repeat;
+}
+div.jNewsMod div div div.jNewsLB {
+	background: transparent url(../skin/green/botleft.png) 0 100% no-repeat;
+	padding: 12px 15px 15px 15px;
+}
