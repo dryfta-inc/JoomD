@@ -1,0 +1,1 @@
+DROP TABLE `#__joomd_reviews`, `#__joomd_rnrconfig`;

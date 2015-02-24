@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	System Restore Point definition for AdminTools by AkeebaBackup.com
+	
+	Copyright ©2011 Nicholas K. Dionysopoulos / AkeebaBackup.com
+	License: GNU General Public License version 3, or later
+-->
+<restorepoint>
+	<customdirs>
+		<dir>administrator/modules/mod_atjupgrade</dir>
+		<dir>plugins/system/admintools</dir>
+	</customdirs>
+	<customfiles>
+		<file>plugins/system/admintools.php</file>
+		<file>plugins/system/admintools.xml</file>
+	</customfiles>
+	<langfiles>
+		<lang>mod_atjupgrade</lang>
+		<lang>plg_system_admintools</lang>
+	</langfiles>
+</restorepoint>

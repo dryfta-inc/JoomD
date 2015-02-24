@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+QuiXplorer -- VERSION HISTORY & RELEASE NOTES
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Version 2.3.1 - 2004-08-12:
+	File-access vulnerability discovered by Cyrille Barthelemy.
+	This version contains the fix.
+	Some other minor fixes are included as well.
+--------------------------------------------------------------------------------
+Version 2.3 - 2003-04-27:
+	Russian translation thanks to Mikhail M. Pigulsky.
+	Improved download-function for Internet Explorer & Opera.
+	Small changes to support PHP4 < 4.1.0.
+	New Icon-theme: KDE's Crystal.
+	Improved (sym)link support.
+--------------------------------------------------------------------------------
+Version 2.2 - 2003-04-08:
+	Improved search-function by adding '?' and '*' wildcards.
+	Upload & Search as separate functions.
+	French translation thanks to Olivier Pariseau.
+	A few cosmetic/practical improvements.
+--------------------------------------------------------------------------------
+Version 2.1 - 2003-03-23:
+	Fixed filetype bug thanks to David Klein. (who also helped with row highlight)
+	Spanish translation thanks to J. Pedro Flor P.
+	Begun development of Zip/Tar/Gzip library to work with QuiXplorer.
+	Fixed small bug regarding apostroph.
+--------------------------------------------------------------------------------
+Version 2.0 - 2003-03-03:
+	Added user-management.
+	Begun multi-language support with modules English, Dutch and German.
+--------------------------------------------------------------------------------
+Version 1.6 - 2003-02-12:
+	Fixed some stupid "bugs".
+	"Register_globals = On" no longer needed for user-authentication.
+--------------------------------------------------------------------------------
+Version 1.5 - 2003-02-11:
+	Fixed major "bug" in root_dir control.
+	"Register_globals = On" no longer needed to run properly.
+--------------------------------------------------------------------------------
+Version 1.4 - 2003-02-06:
+	Added optional user-authentication.
+	User-authentication may not work in PHP 4.1.2.
+	(there is a bug in PHP 4.1.2 regarding $_SESSION)
+--------------------------------------------------------------------------------
+Version 1.2 - 2003-01-31:
+	Added displaying of free disk space & fixed some minor bugs.
+--------------------------------------------------------------------------------
+Version 1.1 - 2003-01-28:
+	Fixed some "bugs" in QuiXplorer.
+--------------------------------------------------------------------------------
+Version 1.0 - 2003-01-27:
+	First release with basic functions.
+--------------------------------------------------------------------------------

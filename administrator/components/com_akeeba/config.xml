@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_akeeba"
+			section="component" />
+	</fieldset>
+	
+	<fieldset name="frontend" label="CONFIG_FRONTEND_HEADER_LABEL" description="CONFIG_FRONTEND_HEADER_DESC">
+		<field name="frontend_enable" type="radio" default="0"
+			label="CONFIG_FEBENABLE_LABEL"
+			description="CONFIG_FEBENABLE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="frontend_secret_word" type="password" default="" size="30"
+			label="CONFIG_SECRETWORD_LABEL"
+			description="CONFIG_SECRETWORD_DESC" />
+		<field name="frontend_email_on_finish" type="radio" default="0"
+			label="CONFIG_FRONTENDEMAIL_LABEL"
+			description ="CONFIG_FRONTENDEMAIL_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="frontend_email_address" type="text" default="" size="50"
+			label="CONFIG_ARBITRARYFEEMAIL_LABEL"
+			description ="CONFIG_ARBITRARYFEEMAIL_DESC" />
+		<field name="frontend_email_subject" type="text" default="" size="50"
+			label="CONFIG_FEEMAILSUBJECT_LABEL"
+			description ="CONFIG_FEEMAILSUBJECT_DESC" />
+		<field name="frontend_email_body" type="textarea" default="" rows="10" cols="55"
+			label="CONFIG_FEEMAILBODY_LABEL"
+			description ="CONFIG_FEEMAILBODY_DESC" />
+		<field name="siteurl" type="hidden" default=""
+			label="" />		
+		<field name="jversion" type="hidden" default=""
+			label="" />		
+		<field name="jlibrariesdir" type="hidden" default=""
+			label="" />		
+		<field name="lastversion" type="hidden" default=""
+			label="" />
+	</fieldset>
+
+	<fieldset name="liveupdate" label="CONFIG_LIVEUPDATE_HEADER_LABEL" description="CONFIG_LIVEUPDATE_HEADER_DESC">
+		<field name="usesvnsource" type="radio" default="0"
+			label="CONFIG_LIVEUPDATE_USESVN_LABEL"
+			description="CONFIG_LIVEUPDATE_USESVN_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="update_dlid" type="text" default="" size="30"
+			label="CONFIG_DOWNLOADID_LABEL"
+			description ="CONFIG_DOWNLOADID_DESC" />
+		<field name="minstability" type="radio" default="alpha" label="CONFIG_LIVEUPDATE_MINSTABILITY_LABEL" description="CONFIG_LIVEUPDATE_MINSTABILITY_DESC">
+			<option value="alpha">AKEEBA_STABILITY_ALPHA</option>
+			<option value="beta">AKEEBA_STABILITY_BETA</option>
+			<option value="rc">AKEEBA_STABILITY_RC</option>
+			<option value="stable">AKEEBA_STABILITY_STABLE</option>
+		</field>
+		<field name="lastupdatecheck" type="hidden" default="2009-01-01"
+			label="" />
+		<field name="updateini" type="hidden" default=""
+			label="" />		
+		<field name="liveupdate" type="hidden" default=""
+			label="" />		
+	</fieldset>
+	
+	<fieldset name="security" label="CONFIG_SECURITY_HEADER_LABEL" description="CONFIG_SECURITY_HEADER_DESC">
+		<field name="useencryption" type="radio" default="1"
+			label="CONFIG_SECURITY_USEENCRYPTION_LABEL"
+			description="CONFIG_SECURITY_USEENCRYPTION_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	</fieldset>
+	
+	
+	<params>
+		<param name="siteurl" type="hidden" default=""
+			label="Site's URL, for the front-end backup" />
+		<param name="jversion" type="hidden" default=""
+			label="Joomla! version family" />
+		<param name="jlibrariesdir" type="hidden" default=""
+			label="" />		
+		<param name="lastversion" type="hidden" default=""
+			label="" />
+
+		<!-- Access control setup -->
+		<param name="minimum_acl_group" type="radio" default="super administrator"
+			label="CONFIG_MINACL_LABEL"
+			description="CONFIG_MINACL_DESC">
+			<option value="super administrator">CONFIG_OPT_AUTHSUPER</option>
+			<option value="administrator">CONFIG_OPT_AUTHADMIN</option>
+			<option value="manager">CONFIG_OPT_AUTHMANAGER</option>
+		</param>
+		
+		<!-- Front-end backup feature -->
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="frontend_enable" type="radio" default="0"
+			label="CONFIG_FEBENABLE_LABEL"
+			description="CONFIG_FEBENABLE_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="frontend_secret_word" type="password" default="" size="30"
+			label="CONFIG_SECRETWORD_LABEL"
+			description="CONFIG_SECRETWORD_DESC" />
+		<param name="frontend_email_on_finish" type="radio" default="0"
+			label="CONFIG_FRONTENDEMAIL_LABEL"
+			description ="CONFIG_FRONTENDEMAIL_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="frontend_email_address" type="text" default="" size="50"
+			label="CONFIG_ARBITRARYFEEMAIL_LABEL"
+			description ="CONFIG_ARBITRARYFEEMAIL_DESC" />
+		<param name="frontend_email_subject" type="text" default="" size="50"
+			label="CONFIG_FEEMAILSUBJECT_LABEL"
+			description ="CONFIG_FEEMAILSUBJECT_DESC" />
+		<param name="frontend_email_body" type="textarea" default="" rows="10" cols="55"
+			label="CONFIG_FEEMAILBODY_LABEL"
+			description ="CONFIG_FEEMAILBODY_DESC" />
+
+		<!-- Live update -->
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="usesvnsource" type="radio" default="0"
+			label="CONFIG_LIVEUPDATE_USESVN_LABEL"
+			description="CONFIG_LIVEUPDATE_USESVN_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="update_dlid" type="text" default="" size="30"
+			label="CONFIG_DOWNLOADID_LABEL"
+			description ="CONFIG_DOWNLOADID_DESC" />
+		<param name="minstability" type="radio" default="alpha" label="CONFIG_LIVEUPDATE_MINSTABILITY_LABEL" description="CONFIG_LIVEUPDATE_MINSTABILITY_DESC">
+			<option value="alpha">AKEEBA_STABILITY_ALPHA</option>
+			<option value="beta">AKEEBA_STABILITY_BETA</option>
+			<option value="rc">AKEEBA_STABILITY_RC</option>
+			<option value="stable">AKEEBA_STABILITY_STABLE</option>
+		</param>
+		<param name="lastupdatecheck" type="hidden" default="2009-01-01"
+			label="Last update check date" />
+		<param name="updateini" type="hidden" default=""
+			label="Update information cache" />
+		<param name="liveupdate" type="hidden" default=""
+			label="Live Update information cache" />
+			
+		<!-- Security -->
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="useencryption" type="radio" default="1"
+			label="CONFIG_SECURITY_USEENCRYPTION_LABEL"
+			description="CONFIG_SECURITY_USEENCRYPTION_DESCRIPTION">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>	
+</config>

@@ -1,0 +1,24 @@
+.icon-48-newsletter	{
+	background:url(../images/icon-48-newsletter.png) top left no-repeat;
+}
+
+div.toolbuttons	{
+	width:32px;
+	height:32px;
+	float:right;
+	margin-left:5px;
+	border:#eee solid 1px;
+	cursor:pointer;
+}
+
+div.toolbuttons:hover	{
+	border-color:#eee #ccc #ccc #eee;
+	color:#0b55c4;
+}
+
+div.toolbuttons a	{
+	display: block;
+    height: 32px;
+    margin: 0 auto;
+    width: 32px;
+}

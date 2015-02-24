@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_osefileman</name>
+    <version>3.1.0</version>
+    <description>An Open Source File Management System.</description>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <author>Open Source Excellence</author>
+    <authoremail>info@opensource-excellence.com</authoremail>
+    <authorurl>http://www.opensource-excellence.com</authorurl>
+    <copyright>Copyright (C) 2008-2011 Open Source Excellence. All rights reserved.</copyright>
+    <creationDate>10-Feb-2011</creationDate>
+    <installfile>install.osefileman.php</installfile>
+    <administration>
+        <menu img="components/com_osefileman/favicon.ico">OSE Fileman</menu>
+        <files>
+		<folder>config/</folder>
+	    	<folder>images/</folder>
+	    	<folder>include/</folder>
+	    	<folder>ftp_tmp/</folder>
+	    	<folder>languages/</folder>
+	    	<folder>libraries/</folder>
+	    	<folder>scripts/</folder>
+		<folder>style/</folder>
+		<filename>favicon.ico</filename>
+    		<filename>LICENSE</filename>
+    		<filename>README.txt</filename>
+    		<filename>RELEASE.txt</filename>
+    		<filename>osefileman.php</filename>
+    		<filename>index.html</filename>
+    		<filename>install.osefileman.php</filename>
+    		<filename>osefileman.xml</filename>
+        </files>
+    </administration>
+</extension>

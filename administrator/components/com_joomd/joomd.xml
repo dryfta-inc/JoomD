@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0">
+	<name>JoomD</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>August 2012</creationDate>
+	<author>Danish Babu</author>
+	<authorEmail>support@joomla6teen.com</authorEmail>
+	<authorUrl>http://www.joomla6teeen.com</authorUrl>
+	<copyright>Copyright (C) 2012 joomla6teen.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>2.3.0</version>
+	<description>COM_JOOMD_DESCRIPTION</description>
+	
+	<scriptfile>script.php</scriptfile>
+
+	<files folder="site">
+		
+		<filename>joomd.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>router.php</filename>
+		
+		<folder>images</folder>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>libraries</folder>
+		<folder>models</folder>
+		<folder>others</folder>
+		<folder>templates</folder>
+		<folder>views</folder>
+		<folder>language</folder>
+		<filename>readme.txt</filename>
+		<filename>changelog.txt</filename>
+	
+	</files>
+	
+	<languages folder="site">
+    	<language tag="en-GB">language/en-GB/en-GB.com_joomd.ini</language>
+    </languages>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<administration>
+		
+		<menu img="components/com_joomd/assets/images/icon-16-joomd.png">JOOMD</menu>
+		<submenu>
+			<menu view="config" img="components/com_joomd/assets/images/icon-16-config.png">JOOMD_CONFIG</menu>
+			<menu view="apps" img="components/com_joomd/assets/images/icon-16-apps.png">JOOMD_APPS_MANAGER</menu>
+			<menu view="type" img="components/com_joomd/assets/images/icon-16-type.png">JOOMD_TYPE_MANAGER</menu>
+			<menu view="field" img="components/com_joomd/assets/images/icon-16-field.png">JOOMD_FIELD_MANAGER</menu>
+			<menu view="category" img="components/com_joomd/assets/images/icon-16-category.png">JOOMD_CATEGORY_MANAGER</menu>
+			<menu view="css" img="components/com_joomd/assets/images/icon-16-css.png">JOOMD_CSS_MANAGER</menu>
+		</submenu>
+		
+
+		<files folder="admin">
+
+		<filename>joomd.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		
+		<folder>sql</folder>
+		
+		<filename>toolbar.joomd.php</filename>
+				
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>help</folder>
+		<folder>models</folder>
+		<folder>others</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		<folder>language</folder>
+		
+	</files>
+	
+	<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_joomd.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_joomd.ini</language>
+	</languages>
+		
+	</administration>
+	
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="JoomD Update Site">http://joomla6teen.com/updates/joomd-upgrade.xml</server>
+	</updateservers>
+	
+</extension>

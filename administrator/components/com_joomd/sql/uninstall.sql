@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `#__joomd_apps`, `#__joomd_apptype`, `#__joomd_category`, `#__joomd_cnf`, `#__joomd_config`, `#__joomd_field`, `#__joomd_field_address`, `#__joomd_fieldtypes`, `#__joomd_iconfig`, `#__joomd_item`, `#__joomd_item_cat`, `#__joomd_templates`, `#__joomd_tnc`, `#__joomd_tnf`, `#__joomd_type1`, `#__joomd_type2`, `#__joomd_types`, `#__joomd_user_item`;

@@ -1,0 +1,42 @@
+.icon-48-csv	{
+	background-image:url(../images/icon-48-csv.png);
+}
+
+.selector	{
+	clear:both;
+}
+
+.csvpanel fieldset.adminform {
+	border:#dbdbdb 1px solid;
+	border-radius:0px 4px 4px 4px;
+	box-shadow:rgba(0, 0, 0, 0.2) 0px 3px 3px,;
+	background-image:-moz-linear-gradient(center top, #f8f8f8, #eeeeee);
+	background-image:-webkit-linear-gradient(top, #f8f8f8, #eeeeee);
+	background-color:#eeeeee);
+	padding:30px 20px 20px;
+	overflow:hidden;
+	margin-right: 22px;
+	margin-left: 0;
+    margin-top: 23px !important;
+}
+.csvpanel table{ border-spacing:0;
+  border-collapse:collapse;
+}
+.csvpanel fieldset.adminform legend{
+	background:url(../images/legend.png) 0px 0px repeat-x;
+	border: 1px solid #3A3A3A;
+	border-radius: 4px 4px 0px 0px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	color: #FFFFFF;
+	display: block;
+	font-size: 10px;
+	font-weight: normal;
+	left: 5px;
+	margin: -29px 5px 0 -21px;
+	padding: 7px 35px;
+	position: relative;
+	text-decoration: none !important;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+	top: 0;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - JoomdCaptcha</name>
+	<author>Danish Babu</author>
+	<creationDate>May 2010</creationDate>
+	<copyright>(C) 2010 http://www.joomla6teen.com</copyright>
+	<license>http://www.joomla6teen.com</license>
+	<authorEmail>danish@skoolsonline.com</authorEmail>
+	<authorUrl>http://joomla6teen.com/</authorUrl>
+	<version>0.1</version>
+	<description>Provides a captcha image and checks to ensure it is valid.</description>
+
+	<files>
+		<filename plugin="joomdcaptcha">joomdcaptcha.php</filename>
+		<folder>joomdcaptcha</folder>
+	</files>
+
+	<params>
+		<param name="length" type="text" default="4" label="Word Length" description="How many letters must the captcha have?"/>
+		<param name="size" type="text" default="20" label="Font Size" description="Font size"/>
+		
+		<param name="txtcolor" type="text" default="" label="Text Color" description="Color of Text (ex: '20,40,60' for RED=20, GREEN=40, BLUE=60). Left blank for random."/>
+		<param name="bgcolor" type="text" default="" label="Background Color" description="Color of Background (ex: '20,40,60' for RED=20, GREEN=40, BLUE=60). Left blank for random."/>
+	</params>
+	
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="length" type="text" default="4" label="Word Length" description="How many letters must the captcha have?"/>
+				<field name="size" type="text" default="20" label="Font Size" description="Font size"/>
+				
+				<field name="txtcolor" type="text" default="" label="Text Color" description="Color of Text (ex: '20,40,60' for RED=20, GREEN=40, BLUE=60). Left blank for random."/>
+				<field name="bgcolor" type="text" default="" label="Background Color" description="Color of Background (ex: '20,40,60' for RED=20, GREEN=40, BLUE=60). Left blank for random."/>
+			</fieldset>
+
+		</fields>
+	</config>
+	
+</install>

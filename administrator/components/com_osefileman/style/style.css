@@ -1,0 +1,172 @@
+.rowdata {
+	background-color: #EAECEE;
+}
+
+.rowdatasel {
+	background-color: #D8E1EB;
+}
+
+td.header {
+	background-color: #DDDDDD;
+	vertical-align: middle;
+}
+
+#filemanlogo{
+float: right;
+margin-right: 30px;
+}
+
+
+
+
+td.title {
+	background-repeat: repeat-x;
+	background-image: url(./tablebg.gif);
+	font-weight: bold;
+	font-size: 13;
+	border-top: solid 1px #000000;
+	border-bottom: solid 1px #000000;
+}
+
+small {
+	font-size: 10;
+}
+
+
+a, a:link, a:visited {
+
+	text-decoration: none;
+}
+
+a:hover, a:active {
+
+	text-decoration: none;
+}
+.nx_error, .nx_message {
+	font-size: 120%;
+  	margin-top: 0.8em;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 70% !important;
+  	clear: both;
+  	text-align: justify;
+  	vertical-align: middle;
+  	border-collapse: collapse;
+  	padding: 15px 20px 15px 80px;
+  	background-position: 20px 50%;
+  	background-repeat: no-repeat;
+  	-moz-border-radius: 20px;
+  	-khtml-border-radius: 20px;
+  	border-radius: 20px;
+}
+.nx_error {
+  	background-color: #fdd;
+	background-image: url( ../images/log_error.png );
+}
+.nx_message {
+  	background-color: #f1f3f5;
+	background-image: url( ../images/_info.gif );
+}
+
+div.icon-48-updater
+{
+  background: url(../images/refresh.png) no-repeat;
+}
+.items
+{
+width: 100%;
+border: 1px solid #eeeeee;
+background:none repeat scroll 0 0 #fefefe;
+}
+
+.filename
+{
+	padding: 5px;
+}
+.j15
+{
+  background: url(../images/compat_15_native.png) no-repeat;
+}
+
+.j16
+{
+  background: url(../images/compat_16_native.png) no-repeat;
+}
+
+#loadingindicator{
+background: url(../images/ajax-loader.gif) no-repeat scroll right center transparent;
+height: 40px;
+display: none;
+}
+
+div.icon-48-upman
+{
+  background: url(../images/process_add.png) no-repeat;
+}
+.setting-msg
+{
+	background: #FFFFAA none repeat scroll 0 0;
+	border:1px solid #FF8E1B;
+	color: #FF8E1B;
+	font-weight:
+	bold;padding: 5px;
+	width: 99%;
+	margin-bottom: 10px;
+}
+
+a, a:link, a:hover, a:visited
+{
+	color: #238db4;
+}
+.description
+{
+  color: #238db4;
+  font-size: large;
+}
+
+body
+{
+    font: 12px/12px Arial,Helvetica,sans-serif;
+}
+
+div#element-box div.m {
+    padding: 0px;
+}
+.toolbar
+{
+width: 99%;
+}
+
+.quote,
+#editfrm .adminform
+{
+margin-top: 80px;
+backgroun-color: #fefefe;
+border:1px solid #eeeeee;
+}
+
+
+button, .button
+{
+background-color: #FFF !important;
+font-weight:bold;
+color: #238DB4;
+cursor: pointer;
+font-size: 10px;
+}
+
+button, .button, #packListToolbar button, button:hover
+{
+	color: #FFF;
+	cursor: pointer;
+    background: url("../images/grad-d1.gif") repeat-x scroll 0 100% transparent;
+    border-color: #EEE #EEE #EEE #EEE;
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    font: bold 10px arial,helvetica,sans-serif;
+    text-align: center !important;
+    white-space: nowrap;
+    padding:0px 8px 0px 8px ;
+    height: 20px
+}
