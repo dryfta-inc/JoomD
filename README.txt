@@ -1,4 +1,4 @@
-# Welcome to JoomD!
+# What is JoomD?
 
 JoomD is a Content Builder, Directory solution and Content Construction Kit for Joomla. One can use it to build contents using its Type and Custom Fields Manager viz. News portal with Videos and Textual contents, Directory Listings with Newsletters, Business Directory with multiple categories and forms, full-featured Articles Listing website. You can build, virtually, any type of Content with JoomD.
 
