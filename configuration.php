@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'This site is down for maintenance.<br /> Please check back again in 15 minutes.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'JoomD Demo';
+	public $sitename = 'JoomD Demo Site';
 	public $editor = 'tinymce';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -13,10 +13,10 @@ class JConfig {
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
 	public $host = 'localhost';
-	public $user = 'demojoom_joomd1';
-	public $password = 'Da5otpxj2';
-	public $db = 'demojoom_joomd1';
-	public $dbprefix = 'cu_';
+	public $user = 'username';
+	public $password = 'password';
+	public $db = 'databasename';
+	public $dbprefix = 'jd_';
 	public $live_site = '';
 	public $secret = 'PPwhooPiHwxKzP8x';
 	public $gzip = '0';
@@ -32,7 +32,7 @@ class JConfig {
 	public $offset_user = 'UTC';
 	public $mailer = 'mail';
 	public $mailfrom = 'templates@joomla6teen.com';
-	public $fromname = 'Carpe Diem - April 2012 Joomla template by Joomla6Teen';
+	public $fromname = 'JoomD';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = '';
@@ -53,8 +53,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = '/home/demojoom/public_html/joomd/logs';
-	public $tmp_path = '/home/demojoom/public_html/joomd/tmp';
+	public $log_path = '/home/username/public_html/joomd/logs';
+	public $tmp_path = '/home/username/public_html/joomd/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $MetaRights = 'Joomla6Teen';
